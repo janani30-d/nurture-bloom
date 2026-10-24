@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Nurture & Bloom</title>
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/res-dash.css">
+</head>
+
+<body class="nb-dashboard">
+
+    <!-- =====================================
+         FIXED SIDEBAR
+    ====================================== -->
+    <aside class="dash-sidebar" id="dashSidebar">
+
+        <!-- LOGO -->
+        <a href="index.html" class="dash-logo">
+            <img src="images/logo.png" alt="Nurture & Bloom">
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="dash-navigation" aria-label="Dashboard navigation">
+
+            <span class="dash-nav-heading">MAIN MENU</span>
+
+            <!-- Dashboard -->
+            <a href="dashboard.html"
+               class="dash-nav-link"
+               aria-current="page">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="3" width="8" height="8" rx="1.5"/>
+                    <rect x="13" y="3" width="8" height="5" rx="1.5"/>
+                    <rect x="13" y="10" width="8" height="11" rx="1.5"/>
+                    <rect x="3" y="13" width="8" height="8" rx="1.5"/>
+                </svg>
+
+                <span>Dashboard</span>
+            </a>
+
+            <!-- Book a Class -->
+            <a href="book-class.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                    <path d="M12 13v5M9.5 15.5h5"/>
+                </svg>
+
+                <span>Book a Class</span>
+            </a>
+
+            <!-- My Bookings -->
+            <a href="my-bookings.html" class="dash-nav-link active">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                    <path d="m9 15 2 2 4-4"/>
+                </svg>
+
+                <span>My Bookings</span>
+            </a>
+
+            <!-- Session History -->
+            <a href="session-history.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 11a9 9 0 1 1 2.6 6.4"/>
+                    <path d="M3 4v7h7"/>
+                    <path d="M12 7v5l3 2"/>
+                </svg>
+
+                <span>Session History</span>
+            </a>
+
+            <!-- Exercise Guidance -->
+            <a href="exercise-guidance.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11z"/>
+                    <path d="M8 12h3l1.5-3 2 6 1.5-3H19"/>
+                </svg>
+
+                <span>Exercise Guidance</span>
+            </a>
+
+            <!-- Payments -->
+            <a href="payments.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <path d="M2 10h20M6 15h4"/>
+                </svg>
+
+                <span>Payments</span>
+            </a>
+
+            <!-- My Profile -->
+            <a href="dashboard-profile.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21v-2a8 8 0 0 1 16 0v2z"/>
+                </svg>
+
+                <span>My Profile</span>
+            </a>
+
+        </nav>
+
+        <!-- LOGOUT AT BOTTOM -->
+        <!-- LOGOUT AT BOTTOM -->
+<div class="dash-sidebar-bottom">
+
+    <a href="#" class="dash-logout-link" data-logout-trigger>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M10 17l5-5-5-5M15 12H3"/>
+            <path d="M12 3h6a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-6"/>
+        </svg>
+
+        <span>Logout</span>
+    </a>
+
+</div>
+
+    </aside>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div class="dash-sidebar-overlay" id="dashSidebarOverlay"></div>
+
+
+    <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+    <div class="dash-main">
+
+        <!-- FIXED TOPBAR -->
+        <header class="dash-topbar">
+
+            <!-- LEFT: HAMBURGER + TITLE -->
+            <div class="dash-topbar-left">
+
+                <button type="button"
+                        class="dash-menu-toggle"
+                        id="dashMenuToggle"
+                        aria-label="Open navigation menu"
+                        aria-controls="dashSidebar"
+                        aria-expanded="false">
+
+                    <svg class="dash-menu-icon"
+                         viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+
+                    <svg class="dash-close-icon"
+                         viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="m6 6 12 12M18 6 6 18"/>
+                    </svg>
+
+                </button>
+
+                <div class="dash-page-heading">
+                    <span class="dash-heading-eyebrow">
+                        YOUR WELLNESS SPACE
+                    </span>
+                    <h1>Dashboard</h1>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: TOPBAR ICONS -->
+            <div class="dash-topbar-actions">
+
+                <!-- 1. DARK MODE -->
+                <button type="button"
+                        class="dash-icon-btn dash-dark-btn"
+                        id="dashDarkToggle"
+                        aria-label="Toggle dark mode"
+                        title="Dark Mode">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5
+                                 8.5 8.5 0 1 0 20.5 15.5Z"/>
+                    </svg>
+
+                </button>
+
+
+                <!-- 2. RTL -->
+                <button type="button"
+                        class="dash-icon-btn dash-rtl-btn"
+                        id="dashRtlToggle"
+                        aria-label="Toggle right-to-left layout"
+                        title="RTL">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 7h13l-4-4"/>
+                        <path d="m20 7-4 4"/>
+                        <path d="M17 17H4l4 4"/>
+                        <path d="m4 17 4-4"/>
+                    </svg>
+
+                </button>
+
+
+                <!-- 3. NOTIFICATIONS -->
+                <div class="dash-action-wrap">
+
+                    <button type="button"
+                            class="dash-icon-btn dash-notification-btn"
+                            id="dashNotificationToggle"
+                            aria-label="Notifications, 3 unread"
+                            aria-controls="dashNotificationPanel"
+                            aria-expanded="false"
+                            title="Notifications">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z"/>
+                            <path d="M10 21h4"/>
+                        </svg>
+
+                        <span class="dash-notification-count">3</span>
+
+                    </button>
+
+                    <!-- NOTIFICATION DROPDOWN -->
+                    <div class="dash-dropdown dash-notification-panel"
+                         id="dashNotificationPanel"
+                         hidden>
+
+                        <div class="dash-dropdown-heading">
+                            <strong>Notifications</strong>
+                            <span>3 unread</span>
+                        </div>
+
+                        <a href="my-bookings.html"
+                           class="dash-notification-item">
+
+                            <span class="dash-notification-symbol">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Upcoming class</strong>
+                                <small>Check your next scheduled session.</small>
+                            </span>
+
+                        </a>
+
+                        <a href="payments.html"
+                           class="dash-notification-item">
+
+                            <span class="dash-notification-symbol">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                                    <path d="M2 10h20"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Payment update</strong>
+                                <small>View your latest payment details.</small>
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 4. SETTINGS -->
+                <a href="dashboard-settings.html"
+                   class="dash-icon-btn dash-settings-btn"
+                   aria-label="Settings"
+                   title="Settings">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 8.5a3.5 3.5 0 1 0 0 7
+                                 3.5 3.5 0 0 0 0-7Z"/>
+
+                        <path d="M19.4 13.5a7.5 7.5 0 0 0 0-3
+                                 l1.5-1.2-1.8-3.1-1.8.7
+                                 a7.5 7.5 0 0 0-2.6-1.5L14.4 3h-3.6
+                                 l-.3 2.4a7.5 7.5 0 0 0-2.6 1.5l-1.8-.7
+                                 -1.8 3.1 1.5 1.2a7.5 7.5 0 0 0 0 3
+                                 l-1.5 1.2 1.8 3.1 1.8-.7
+                                 a7.5 7.5 0 0 0 2.6 1.5l.3 2.4h3.6
+                                 l.3-2.4a7.5 7.5 0 0 0 2.6-1.5l1.8.7
+                                 1.8-3.1Z"/>
+                    </svg>
+
+                </a>
+
+
+                <!-- PROFILE -->
+                <div class="dash-action-wrap dash-profile-wrap">
+
+                    <button type="button"
+                            class="dash-profile-btn"
+                            id="dashProfileToggle"
+                            aria-controls="dashProfilePanel"
+                            aria-expanded="false">
+
+                        <img src="images/profile.jpg"
+                             alt=""
+                             class="dash-profile-avatar">
+
+                        <span class="dash-profile-info">
+                            <strong>Priya</strong>
+                            <small>Member</small>
+                        </span>
+
+                        <svg class="dash-profile-chevron"
+                             viewBox="0 0 24 24"
+                             aria-hidden="true">
+                            <path d="m7 10 5 5 5-5"/>
+                        </svg>
+
+                    </button>
+
+                    <!-- PROFILE DROPDOWN -->
+                    <div class="dash-dropdown dash-profile-panel"
+                         id="dashProfilePanel"
+                         hidden>
+
+                        <a href="dashboard-profile.html">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4"/>
+                                <path d="M4 21v-2a8 8 0 0 1 16 0v2z"/>
+                            </svg>
+                            <span>My Profile</span>
+                        </a>
+
+                        <a href="dashboard-settings.html">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19 13.5a7 7 0 0 0 0-3l2-1.5-2-3.5
+                                         -2.3.9a7 7 0 0 0-2.5-1.4L14 2h-4l-.4 3
+                                         a7 7 0 0 0-2.5 1.4L5 5.5 3 9l2 1.5
+                                         a7 7 0 0 0 0 3L3 15l2 3.5 2.3-.9
+                                         a7 7 0 0 0 2.5 1.4L10 22h4l.4-3
+                                         a7 7 0 0 0 2.5-1.4l2.3.9 2-3.5z"/>
+                            </svg>
+                            <span>Settings</span>
+                        </a>
+
+                        <a href="login.html" class="dash-profile-logout">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M10 17l5-5-5-5M15 12H3"/>
+                                <path d="M12 3h6a3 3 0 0 1 3 3v12
+                                         a3 3 0 0 1-3 3h-6"/>
+                            </svg>
+                            <span>Logout</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+<!-- ======================================================
+     NURTURE & BLOOM — MY BOOKINGS
+     File: my-bookings.html
+
+     Keep your existing shared dashboard header and sidebar.
+     Replace only the main page content with this markup.
+====================================================== -->
+
+<main class="dash-content my-bookings-content" id="dashContent">
+
+    <!-- PAGE INTRO -->
+    <section class="mb-page-hero">
+        <div class="mb-hero-copy">
+            <span class="mb-eyebrow">YOUR WELLNESS JOURNEY</span>
+
+            <h1>My Bookings</h1>
+
+            <p>
+                Manage your upcoming sessions, review past classes,
+                and make time for your well-being. Every small step
+                is a step toward a healthier, happier you.
+            </p>
+
+            <div class="mb-hero-actions">
+                <a href="book-class.html" class="mb-btn mb-btn-primary">
+                    <svg viewBox="0 0 24 24" width="17" height="17"
+                         fill="none" stroke="currentColor"
+                         stroke-width="1.8" stroke-linecap="round">
+                        <path d="M12 5v14M5 12h14"/>
+                    </svg>
+                    Book a New Class
+                </a>
+
+                <a href="session-history.html" class="mb-btn mb-btn-outline">
+                    View Session History
+                </a>
+            </div>
+        </div>
+
+        <div class="mb-hero-image">
+            <img src="images/bookclass-hero.jpg"
+                 alt="A peaceful prenatal wellness session">
+        </div>
+    </section>
+
+
+    <!-- BOOKING SUMMARY -->
+    <section class="mb-summary-grid" aria-label="Booking summary">
+
+        <article class="mb-summary-card">
+            <div class="mb-summary-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                    <path d="m9 15 2 2 4-4"/>
+                </svg>
+            </div>
+
+            <div class="mb-summary-info">
+                <p>Upcoming Bookings</p>
+                <h3 id="mbUpcomingCount">3</h3>
+                <small>Your next wellness sessions</small>
+            </div>
+        </article>
+
+        <article class="mb-summary-card">
+            <div class="mb-summary-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="m8 12 2.5 2.5L16 9"/>
+                </svg>
+            </div>
+
+            <div class="mb-summary-info">
+                <p>Completed Classes</p>
+                <h3 id="mbCompletedCount">8</h3>
+                <small>Sessions completed so far</small>
+            </div>
+        </article>
+
+        <article class="mb-summary-card">
+            <div class="mb-summary-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19V5M4 19h17"/>
+                    <path d="m7 15 4-4 3 2 6-7"/>
+                </svg>
+            </div>
+
+            <div class="mb-summary-info">
+                <p>Total Sessions</p>
+                <h3 id="mbTotalCount">11</h3>
+                <small>Your wellness progress</small>
+            </div>
+        </article>
+
+        <article class="mb-summary-card">
+            <div class="mb-summary-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2.5" y="5" width="19" height="14" rx="2"/>
+                    <path d="M2.5 10h19M7 15h3"/>
+                </svg>
+            </div>
+
+            <div class="mb-summary-info">
+                <p>Upcoming Payments</p>
+                <h3 id="mbUpcomingPayments">₹0</h3>
+                <small>No pending payments</small>
+            </div>
+        </article>
+
+    </section>
+
+
+    <!-- UPCOMING BOOKINGS -->
+    <section class="mb-section" id="mbUpcomingSection">
+
+        <div class="mb-section-heading">
+            <div>
+                <span class="mb-eyebrow">STAY ON TRACK</span>
+                <h2>Upcoming Bookings</h2>
+                <p>Keep track of your next classes and scheduled sessions.</p>
+            </div>
+
+            <a href="book-class.html" class="mb-btn mb-btn-outline">
+                Explore Classes
+            </a>
+        </div>
+
+
+        <!-- SEARCH AND FILTERS -->
+        <div class="mb-filter-panel">
+
+            <div class="mb-filter-field">
+                <label for="mbSearchInput">Search bookings</label>
+
+                <div class="mb-search-wrap">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round">
+                        <circle cx="10.8" cy="10.8" r="6.8"/>
+                        <path d="m16 16 4.5 4.5"/>
+                    </svg>
+
+                    <input type="search"
+                           id="mbSearchInput"
+                           placeholder="Search class or booking ID">
+                </div>
+            </div>
+
+            <div class="mb-filter-field">
+                <label for="mbStatusFilter">Booking status</label>
+
+                <select id="mbStatusFilter">
+                    <option value="all">All statuses</option>
+                    <option value="upcoming">Upcoming</option>
+                    <option value="completed">Completed</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+            </div>
+
+            <div class="mb-filter-field">
+                <label for="mbTypeFilter">Class category</label>
+
+                <select id="mbTypeFilter">
+                    <option value="all">All categories</option>
+                    <option value="yoga">Prenatal Yoga</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="breathing">Breathing</option>
+                    <option value="postnatal">Postnatal</option>
+                </select>
+            </div>
+
+            <button type="button"
+                    class="mb-btn mb-btn-soft mb-reset-btn"
+                    id="mbResetFilters">
+                Reset Filters
+            </button>
+
+        </div>
+
+
+        <!-- BOOKING CARDS -->
+        <div class="mb-booking-list" id="mbBookingList">
+
+            <!-- BOOKING 1 -->
+            <article class="mb-booking-card"
+                     data-booking-id="NB1001"
+                     data-status="upcoming"
+                     data-category="yoga">
+
+                <div class="mb-booking-image">
+                    <img src="images/prenatal-yoga.jpg"
+                         alt="Gentle prenatal yoga class">
+                </div>
+
+                <div class="mb-booking-details">
+
+                    <div>
+                        <div class="mb-booking-title-row">
+                            <div>
+                                <h3>Gentle Prenatal Yoga</h3>
+                                <span class="mb-booking-id">
+                                    Booking ID: NB1001
+                                </span>
+                            </div>
+
+                            <span class="mb-status mb-status-upcoming">
+                                Upcoming
+                            </span>
+                        </div>
+
+                        <div class="mb-booking-meta">
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round">
+                                        <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                        <path d="M16 3v4M8 3v4M3 10h18"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Date</span>
+                                    <strong>27 October 2026</strong>
+                                </div>
+                            </div>
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="9"/>
+                                        <path d="M12 7v5l3 2"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Time & Duration</span>
+                                    <strong>09:00 AM · 45 minutes</strong>
+                                </div>
+                            </div>
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <circle cx="12" cy="8" r="3"/>
+                                        <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Instructor</span>
+                                    <strong>Ananya</strong>
+                                </div>
+                            </div>
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                                        <circle cx="12" cy="10" r="2.5"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Session Mode</span>
+                                    <strong>In-studio</strong>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mb-booking-footer">
+
+                        <div class="mb-booking-price">
+                            <span>Session fee</span>
+                            <strong>₹499</strong>
+                        </div>
+
+                        <div class="mb-booking-actions">
+                            <button type="button"
+                                    class="mb-btn mb-btn-soft"
+                                    data-mb-action="details"
+                                    data-booking-id="NB1001">
+                                View Details
+                            </button>
+
+                            <button type="button"
+                                    class="mb-btn mb-btn-outline"
+                                    data-mb-action="reschedule"
+                                    data-booking-id="NB1001">
+                                Reschedule
+                            </button>
+
+                            <button type="button"
+                                    class="mb-btn mb-btn-danger"
+                                    data-mb-action="cancel"
+                                    data-booking-id="NB1001">
+                                Cancel
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- BOOKING 2 -->
+            <article class="mb-booking-card"
+                     data-booking-id="NB1002"
+                     data-status="upcoming"
+                     data-category="fitness">
+
+                <div class="mb-booking-image">
+                    <img src="images/mindful-movement.jpg"
+                         alt="Mindful movement fitness session">
+                </div>
+
+                <div class="mb-booking-details">
+
+                    <div>
+                        <div class="mb-booking-title-row">
+                            <div>
+                                <h3>Mindful Movement</h3>
+                                <span class="mb-booking-id">
+                                    Booking ID: NB1002
+                                </span>
+                            </div>
+
+                            <span class="mb-status mb-status-upcoming">
+                                Upcoming
+                            </span>
+                        </div>
+
+                        <div class="mb-booking-meta">
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round">
+                                        <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                        <path d="M16 3v4M8 3v4M3 10h18"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Date</span>
+                                    <strong>29 October 2026</strong>
+                                </div>
+                            </div>
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="9"/>
+                                        <path d="M12 7v5l3 2"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Time & Duration</span>
+                                    <strong>11:00 AM · 40 minutes</strong>
+                                </div>
+                            </div>
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <circle cx="12" cy="8" r="3"/>
+                                        <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Instructor</span>
+                                    <strong>Meera</strong>
+                                </div>
+                            </div>
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <rect x="3" y="4" width="18" height="13" rx="2"/>
+                                        <path d="M8 21h8M12 17v4"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Session Mode</span>
+                                    <strong>Online</strong>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mb-booking-footer">
+
+                        <div class="mb-booking-price">
+                            <span>Session fee</span>
+                            <strong>₹399</strong>
+                        </div>
+
+                        <div class="mb-booking-actions">
+                            <button type="button"
+                                    class="mb-btn mb-btn-soft"
+                                    data-mb-action="details"
+                                    data-booking-id="NB1002">
+                                View Details
+                            </button>
+
+                            <button type="button"
+                                    class="mb-btn mb-btn-outline"
+                                    data-mb-action="reschedule"
+                                    data-booking-id="NB1002">
+                                Reschedule
+                            </button>
+
+                            <button type="button"
+                                    class="mb-btn mb-btn-danger"
+                                    data-mb-action="cancel"
+                                    data-booking-id="NB1002">
+                                Cancel
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- BOOKING 3 -->
+            <article class="mb-booking-card"
+                     data-booking-id="NB1003"
+                     data-status="upcoming"
+                     data-category="breathing">
+
+                <div class="mb-booking-image">
+                    <img src="images/mindful-breathing.jpg"
+                         alt="Guided mindful breathing class">
+                </div>
+
+                <div class="mb-booking-details">
+
+                    <div>
+                        <div class="mb-booking-title-row">
+                            <div>
+                                <h3>Mindful Breathing</h3>
+                                <span class="mb-booking-id">
+                                    Booking ID: NB1003
+                                </span>
+                            </div>
+
+                            <span class="mb-status mb-status-upcoming">
+                                Upcoming
+                            </span>
+                        </div>
+
+                        <div class="mb-booking-meta">
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round">
+                                        <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                        <path d="M16 3v4M8 3v4M3 10h18"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Date</span>
+                                    <strong>31 October 2026</strong>
+                                </div>
+                            </div>
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="9"/>
+                                        <path d="M12 7v5l3 2"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Time & Duration</span>
+                                    <strong>04:00 PM · 30 minutes</strong>
+                                </div>
+                            </div>
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <circle cx="12" cy="8" r="3"/>
+                                        <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Instructor</span>
+                                    <strong>Kavya</strong>
+                                </div>
+                            </div>
+
+                            <div class="mb-meta-item">
+                                <div class="mb-meta-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor"
+                                         stroke-width="1.8"
+                                         stroke-linecap="round"
+                                         stroke-linejoin="round">
+                                        <rect x="3" y="4" width="18" height="13" rx="2"/>
+                                        <path d="M8 21h8M12 17v4"/>
+                                    </svg>
+                                </div>
+
+                                <div class="mb-meta-text">
+                                    <span>Session Mode</span>
+                                    <strong>Online</strong>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mb-booking-footer">
+
+                        <div class="mb-booking-price">
+                            <span>Session fee</span>
+                            <strong>₹299</strong>
+                        </div>
+
+                        <div class="mb-booking-actions">
+                            <button type="button"
+                                    class="mb-btn mb-btn-soft"
+                                    data-mb-action="details"
+                                    data-booking-id="NB1003">
+                                View Details
+                            </button>
+
+                            <button type="button"
+                                    class="mb-btn mb-btn-outline"
+                                    data-mb-action="reschedule"
+                                    data-booking-id="NB1003">
+                                Reschedule
+                            </button>
+
+                            <button type="button"
+                                    class="mb-btn mb-btn-danger"
+                                    data-mb-action="cancel"
+                                    data-booking-id="NB1003">
+                                Cancel
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+
+        <!-- EMPTY STATE -->
+        <div class="mb-empty-state" id="mbEmptyState" hidden>
+            <div class="mb-empty-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="7"/>
+                    <path d="m16 16 4 4M8 11h6"/>
+                </svg>
+            </div>
+
+            <h3>No bookings found</h3>
+
+            <p>
+                We couldn't find any bookings matching your search.
+                Try changing your filters or explore a new class.
+            </p>
+
+            <button type="button"
+                    class="mb-btn mb-btn-outline"
+                    id="mbEmptyReset">
+                Clear Filters
+            </button>
+
+            <a href="book-class.html" class="mb-btn mb-btn-primary">
+                Browse Classes
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- RECENT BOOKING HISTORY -->
+    <section class="mb-section" id="mbHistorySection">
+
+        <div class="mb-section-heading">
+            <div>
+                <span class="mb-eyebrow">YOUR PROGRESS</span>
+                <h2>Recent Booking History</h2>
+                <p>Review the sessions you have already completed.</p>
+            </div>
+
+            <a href="session-history.html" class="mb-btn mb-btn-outline">
+                View Full History
+            </a>
+        </div>
+
+        <div class="mb-history-panel">
+            <div class="mb-history-table-wrap">
+
+                <table class="mb-history-table">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Booking ID</th>
+                            <th>Session Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="mbHistoryBody">
+
+                        <tr data-booking-id="NB0987">
+                            <td>
+                                <div class="mb-history-class">
+                                    <img src="images/stretch-restore.jpg"
+                                         alt="Stretch and restore class">
+
+                                    <div>
+                                        <strong>Stretch &amp; Restore</strong>
+                                        <span>Wellness session</span>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>NB0987</td>
+                            <td>12 Oct 2026</td>
+                            <td>₹449</td>
+
+                            <td>
+                                <span class="mb-status mb-status-completed">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td>
+                                <button type="button"
+                                        class="mb-history-view"
+                                        data-mb-action="history-details"
+                                        data-booking-id="NB0987"
+                                        aria-label="View Stretch and Restore booking">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor" stroke-width="1.8"
+                                         stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr data-booking-id="NB0974">
+                            <td>
+                                <div class="mb-history-class">
+                                    <img src="images/mindful-movement.jpg"
+                                         alt="Mindful movement class">
+
+                                    <div>
+                                        <strong>Mindful Movement</strong>
+                                        <span>Fitness session</span>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>NB0974</td>
+                            <td>08 Oct 2026</td>
+                            <td>₹399</td>
+
+                            <td>
+                                <span class="mb-status mb-status-completed">
+                                    Completed
+                                </span>
+                            </td>
+
+                            <td>
+                                <button type="button"
+                                        class="mb-history-view"
+                                        data-mb-action="history-details"
+                                        data-booking-id="NB0974"
+                                        aria-label="View Mindful Movement booking">
+                                    <svg viewBox="0 0 24 24" fill="none"
+                                         stroke="currentColor" stroke-width="1.8"
+                                         stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/>
+                                        <circle cx="12" cy="12" r="3"/>
+                                    </svg>
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- WELLNESS REMINDER -->
+    <section class="mb-reminder-banner">
+
+        <div class="mb-reminder-copy">
+            <div class="mb-reminder-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11Z"/>
+                </svg>
+            </div>
+
+            <div>
+                <h3>A little time for yourself goes a long way</h3>
+                <p>
+                    Stay consistent with your wellness routine, take
+                    breaks when you need them, and choose sessions
+                    that feel right for your stage and comfort.
+                </p>
+            </div>
+        </div>
+
+        <a href="exercise-guidance.html" class="mb-btn mb-btn-primary">
+            Explore Wellness Tips
+        </a>
+
+    </section>
+
+</main>
+
+
+<!-- ======================================================
+     BOOKING DETAILS MODAL
+====================================================== -->
+
+<div class="mb-modal"
+     id="mbDetailsModal"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="mbDetailsClassName"
+     aria-hidden="true"
+     data-mb-modal="details">
+
+    <div class="mb-modal-dialog mb-modal-dialog-wide">
+
+        <div class="mb-modal-header">
+            <div>
+                <h2>Booking Details</h2>
+                <p>Review your session information.</p>
+            </div>
+
+            <button type="button"
+                    class="mb-modal-close"
+                    data-mb-close
+                    aria-label="Close booking details">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round">
+                    <path d="m6 6 12 12M18 6 6 18"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mb-modal-body">
+
+            <div class="mb-details-cover">
+                <img id="mbDetailsImage"
+                     src="images/classes/prenatal-yoga.jpg"
+                     alt="Selected class">
+            </div>
+
+            <div class="mb-details-heading">
+                <div>
+                    <h3 id="mbDetailsClassName">Gentle Prenatal Yoga</h3>
+                    <p id="mbDetailsClassMeta">45 minutes · In-studio</p>
+                </div>
+
+                <span class="mb-status mb-status-upcoming"
+                      id="mbDetailsStatus">
+                    Upcoming
+                </span>
+            </div>
+
+            <div class="mb-details-grid">
+
+                <div class="mb-detail-item">
+                    <span>Booking ID</span>
+                    <strong id="mbDetailsId">NB1001</strong>
+                </div>
+
+                <div class="mb-detail-item">
+                    <span>Session date</span>
+                    <strong id="mbDetailsDate">27 October 2026</strong>
+                </div>
+
+                <div class="mb-detail-item">
+                    <span>Session time</span>
+                    <strong id="mbDetailsTime">09:00 AM</strong>
+                </div>
+
+                <div class="mb-detail-item">
+                    <span>Instructor</span>
+                    <strong id="mbDetailsInstructor">Ananya</strong>
+                </div>
+
+                <div class="mb-detail-item">
+                    <span>Session fee</span>
+                    <strong id="mbDetailsPrice">₹499</strong>
+                </div>
+
+                <div class="mb-detail-item">
+                    <span>Session type</span>
+                    <strong id="mbDetailsMode">In-studio</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mb-modal-footer">
+            <button type="button"
+                    class="mb-btn mb-btn-outline"
+                    data-mb-close>
+                Close
+            </button>
+
+            <button type="button"
+                    class="mb-btn mb-btn-primary"
+                    id="mbDetailsReschedule"
+                    data-mb-action="reschedule-current">
+                Reschedule Booking
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ======================================================
+     RESCHEDULE MODAL
+====================================================== -->
+
+<div class="mb-modal"
+     id="mbRescheduleModal"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="mbRescheduleTitle"
+     aria-hidden="true"
+     data-mb-modal="reschedule">
+
+    <div class="mb-modal-dialog">
+
+        <div class="mb-modal-header">
+            <div>
+                <h2 id="mbRescheduleTitle">Reschedule Session</h2>
+                <p>Choose a new date and time for your class.</p>
+            </div>
+
+            <button type="button"
+                    class="mb-modal-close"
+                    data-mb-close
+                    aria-label="Close reschedule window">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round">
+                    <path d="m6 6 12 12M18 6 6 18"/>
+                </svg>
+            </button>
+        </div>
+
+        <form id="mbRescheduleForm">
+
+            <div class="mb-modal-body">
+
+                <div class="mb-cancel-notice"
+                     style="margin-bottom: 20px;">
+                    <h3 id="mbRescheduleClassName">
+                        Gentle Prenatal Yoga
+                    </h3>
+
+                    <p>
+                        Booking ID:
+                        <strong id="mbRescheduleBookingId">NB1001</strong>
+                    </p>
+                </div>
+
+                <div class="mb-modal-form">
+
+                    <div class="mb-form-row">
+
+                        <div class="mb-modal-field">
+                            <label for="mbNewDate">New date</label>
+
+                            <input type="date"
+                                   id="mbNewDate"
+                                   name="newDate"
+                                   min="2026-10-23"
+                                   required>
+                        </div>
+
+                        <div class="mb-modal-field">
+                            <label for="mbNewTime">New time</label>
+
+                            <select id="mbNewTime"
+                                    name="newTime"
+                                    required>
+                                <option value="">Select a time</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-modal-field">
+                        <label for="mbRescheduleReason">
+                            Reason (optional)
+                        </label>
+
+                        <textarea id="mbRescheduleReason"
+                                  name="reason"
+                                  placeholder="Tell us if you have any scheduling preferences."></textarea>
+                    </div>
+
+                    <div class="mb-form-message"
+                         id="mbRescheduleMessage"
+                         role="status"
+                         aria-live="polite"></div>
+
+                </div>
+            </div>
+
+            <div class="mb-modal-footer">
+                <button type="button"
+                        class="mb-btn mb-btn-soft"
+                        data-mb-close>
+                    Keep Current Booking
+                </button>
+
+                <button type="submit"
+                        class="mb-btn mb-btn-primary">
+                    Confirm New Schedule
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+
+<!-- ======================================================
+     CANCEL BOOKING MODAL
+====================================================== -->
+
+<div class="mb-modal"
+     id="mbCancelModal"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="mbCancelTitle"
+     aria-hidden="true"
+     data-mb-modal="cancel">
+
+    <div class="mb-modal-dialog">
+
+        <div class="mb-modal-header">
+            <div>
+                <h2 id="mbCancelTitle">Cancel Booking?</h2>
+                <p>Please review your selection before continuing.</p>
+            </div>
+
+            <button type="button"
+                    class="mb-modal-close"
+                    data-mb-close
+                    aria-label="Close cancellation window">
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round">
+                    <path d="m6 6 12 12M18 6 6 18"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mb-modal-body">
+
+            <div class="mb-cancel-notice">
+                <h3 id="mbCancelClassName">Gentle Prenatal Yoga</h3>
+
+                <p>
+                    Are you sure you want to cancel this booking?
+                    This demo will update the page locally and will
+                    not contact a booking service.
+                </p>
+
+                <p style="margin-top: 10px;">
+                    Booking ID:
+                    <strong id="mbCancelBookingId">NB1001</strong>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="mb-modal-footer">
+            <button type="button"
+                    class="mb-btn mb-btn-soft"
+                    data-mb-close>
+                Keep Booking
+            </button>
+
+            <button type="button"
+                    class="mb-btn mb-btn-danger"
+                    id="mbConfirmCancel">
+                Yes, Cancel Booking
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- TOAST NOTIFICATION -->
+
+<div class="mb-toast"
+     id="mbToast"
+     role="status"
+     aria-live="polite">
+    <span id="mbToastMessage">Your booking has been updated.</span>
+</div>
+
+         </div>
+
+<!-- LOGOUT CONFIRMATION MODAL -->
+<div class="logout-modal-overlay" id="logoutModal" aria-hidden="true">
+
+    <div class="logout-modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="logoutModalTitle"
+         aria-describedby="logoutModalDescription">
+
+        <!-- Close Button -->
+        <button type="button"
+                class="logout-modal-close"
+                id="logoutCloseBtn"
+                aria-label="Close logout popup">
+            &times;
+        </button>
+
+        <!-- Logout Icon -->
+        <div class="logout-modal-icon">
+            <svg viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 17L15 12L10 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M15 12H3"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"/>
+                <path d="M12 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <!-- Content -->
+        <h2 id="logoutModalTitle">Logout?</h2>
+
+        <p id="logoutModalDescription">
+            Are you sure you want to logout from your account?
+        </p>
+
+        <!-- Actions -->
+        <div class="logout-modal-actions">
+
+            <button type="button"
+                    class="logout-btn logout-btn-cancel"
+                    id="logoutCancelBtn">
+                No, Stay
+            </button>
+
+            <button type="button"
+                    class="logout-btn logout-btn-confirm"
+                    id="logoutConfirmBtn">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 17L15 12L10 7"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M15 12H3"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"/>
+                    <path d="M12 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                Yes, Logout
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- JAVASCRIPT -->
+    <script src="js/dashboard.js"></script>
+    <script src="js/global-settings.js"></script>
+
+</body>
+</html>

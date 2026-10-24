@@ -1,0 +1,1971 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nurture & Bloom | Prenatal & Postnatal Fitness</title>
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         HEADER
+    =============================== -->
+    <header class="nb-header" id="nbHeader">
+
+        <div class="nb-header-container">
+
+            <!-- LOGO -->
+            <a href="index.html"
+               class="nb-logo"
+               aria-label="Nurture and Bloom Home">
+
+                <img src="images/logo.png"
+                     alt="Nurture & Bloom"
+                     width="180"
+                     height="60">
+            </a>
+
+            <!-- NAVIGATION -->
+            <nav class="nb-navigation"
+                 id="nbNavigation"
+                 aria-label="Main navigation">
+
+                <!-- MOBILE MENU HEADER -->
+                <div class="nb-mobile-menu-header">
+
+                   
+
+                    <button type="button"
+                            class="nb-menu-close"
+                            id="nbMenuClose"
+                            aria-label="Close navigation menu">
+
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+
+                    </button>
+
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <ul class="nb-nav-list">
+
+                    <!-- HOME DROPDOWN -->
+                    <li class="nb-nav-item nb-home-dropdown">
+
+                        <button type="button"
+                                class="nb-nav-link nb-home-toggle"
+                                id="nbHomeToggle"
+                                aria-expanded="false"
+                                aria-controls="nbHomeSubmenu">
+
+                            <span>Home</span>
+
+                            <i class="fa-solid fa-chevron-down"
+                               aria-hidden="true"></i>
+
+                        </button>
+
+                        <ul class="nb-home-submenu" id="nbHomeSubmenu">
+
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nb-nav-item">
+                        <a href="about.html" class="nb-nav-link">
+                            About Us
+                        </a>
+                    </li>
+
+
+                    <li class="nb-nav-item">
+                        <a href="classes.html" class="nb-nav-link active">
+                            Classes
+                        </a>
+                    </li>
+
+                    <li class="nb-nav-item">
+                        <a href="instructors.html" class="nb-nav-link">
+                            Instructors
+                        </a>
+                    </li>
+
+                    
+                    <li class="nb-nav-item">
+                        <a href="pricing.html" class="nb-nav-link">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li class="nb-nav-item">
+                        <a href="contact.html" class="nb-nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- MOBILE MENU ACTIONS -->
+                <div class="nb-header-actions">
+
+                    <!-- RTL TOGGLE -->
+                    <button type="button"
+                            class="nb-icon-button"
+                            id="nbRtlToggle"
+                            aria-label="Switch to right-to-left layout"
+                            aria-pressed="false"
+                            title="Toggle text direction">
+
+                        <i class="fa-solid fa-right-left"
+                           aria-hidden="true"></i>
+
+                    </button>
+
+                    <!-- DARK MODE TOGGLE -->
+                    <button type="button"
+                            class="nb-icon-button"
+                            id="nbThemeToggle"
+                            aria-label="Enable dark mode"
+                            aria-pressed="false"
+                            title="Toggle dark mode">
+
+                        <i class="fa-solid fa-moon"
+                           aria-hidden="true"></i>
+
+                    </button>
+
+                    <!-- LOGIN -->
+                    <a href="login.html"
+                       class="nb-button nb-button-secondary">
+
+                        Login
+
+                    </a>
+
+                    <!-- DASHBOARD -->
+                    <a href="dashboard.html"
+                       class="nb-button nb-button-primary">
+
+                        Dashboard
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE MENU TOGGLE -->
+            <button type="button"
+                    class="nb-menu-toggle"
+                    id="nbMenuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nbNavigation">
+
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ==============================
+         MENU OVERLAY
+         Outside the header
+    =============================== -->
+    <div class="nb-menu-overlay"
+         id="nbMenuOverlay"
+         aria-hidden="true">
+    </div>
+
+    <!-- ==============================
+         MAIN CONTENT
+         Add page sections here later
+    =============================== -->
+    <main id="mainContent">
+<!-- ==========================================
+     CLASSES PAGE — HERO SECTION
+========================================== -->
+
+<section class="classes-hero" id="classesHero">
+
+    <!-- Background Image -->
+    <div class="classes-hero-background">
+        <img
+            src="images/classes-hero.jpg"
+            alt="Prenatal fitness and wellness session"
+            class="classes-hero-image"
+        >
+    </div>
+
+    <!-- Background Overlay -->
+    <div class="classes-hero-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="classes-hero-container">
+
+        <div class="classes-hero-content">
+
+            <span class="classes-hero-eyebrow">
+                MOVE WITH CARE. GROW WITH CONFIDENCE.
+            </span>
+
+            <h1 class="classes-hero-title">
+                Find Your
+                <span>Practice</span>
+            </h1>
+
+            <p class="classes-hero-description">
+                Discover gentle, supportive movement designed to
+                nurture your body and mind through every stage
+                of motherhood.
+            </p>
+
+            <div class="classes-hero-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="classes-hero-breadcrumb-arrow"></span>
+                <span class="classes-hero-breadcrumb-current">
+                    Classes
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+     CLASSES PAGE — EXPLORE OUR CLASSES
+========================================== -->
+
+<section class="classes-explore" id="exploreClasses">
+
+    <div class="classes-explore-container">
+
+        <!-- SECTION HEADER -->
+        <div class="classes-explore-header">
+
+            <span class="classes-explore-eyebrow">
+                FIND YOUR FLOW
+            </span>
+
+            <h2 class="classes-explore-title">
+                A Practice That Meets You
+                <span>Where You Are</span>
+            </h2>
+
+            <p class="classes-explore-description">
+                Every stage of motherhood is different. Explore
+                supportive classes designed to help you move,
+                breathe, and feel more connected to yourself.
+            </p>
+
+        </div>
+
+        <!-- CLASS CARDS -->
+        <div class="classes-explore-grid">
+
+            <!-- CARD 1: PRENATAL YOGA -->
+            <article class="classes-explore-card">
+
+                <a href="contact.html"
+                   class="classes-explore-image-link"
+                   aria-label="Enquire about Prenatal Yoga">
+
+                    <div class="classes-explore-image-wrap">
+
+                        <img
+                            src="images/class-prenatal-yoga.jpg"
+                            alt="Pregnant woman practising gentle prenatal yoga"
+                            class="classes-explore-image"
+                            loading="lazy"
+                        >
+
+                        <span class="classes-explore-number">01</span>
+
+                    </div>
+
+                </a>
+
+                <div class="classes-explore-card-content">
+
+                    <span class="classes-explore-category">
+                        GENTLE MOVEMENT
+                    </span>
+
+                    <h3 class="classes-explore-card-title">
+                        Prenatal Yoga
+                    </h3>
+
+                    <p class="classes-explore-card-description">
+                        Find calm through mindful movement,
+                        gentle stretches, and breathing practices
+                        to your pregnancy journey.
+                    </p>
+
+                    <a href="contact.html"
+                       class="classes-explore-card-link">
+
+                        Explore This Class
+                        <span class="classes-explore-arrow"
+                              aria-hidden="true"></span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- CARD 2: PREGNANCY FITNESS -->
+            <article class="classes-explore-card">
+
+                <a href="contact.html"
+                   class="classes-explore-image-link"
+                   aria-label="Enquire about Pregnancy Fitness">
+
+                    <div class="classes-explore-image-wrap">
+
+                        <img
+                            src="images/class-pregnancy-fitness.jpg"
+                            alt="Pregnant woman doing a gentle fitness exercise"
+                            class="classes-explore-image"
+                            loading="lazy"
+                        >
+
+                        <span class="classes-explore-number">02</span>
+
+                    </div>
+
+                </a>
+
+                <div class="classes-explore-card-content">
+
+                    <span class="classes-explore-category">
+                        STRENGTH & MOBILITY
+                    </span>
+
+                    <h3 class="classes-explore-card-title">
+                        Pregnancy Fitness
+                    </h3>
+
+                    <p class="classes-explore-card-description">
+                        Build strength, support mobility, and
+                        maintain comfortable movement with
+                        pregnancy-appropriate exercises.
+                    </p>
+
+                    <a href="contact.html"
+                       class="classes-explore-card-link">
+
+                        Explore This Class
+                        <span class="classes-explore-arrow"
+                              aria-hidden="true"></span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- CARD 3: BREATHING & RELAXATION -->
+            <article class="classes-explore-card">
+
+                <a href="contact.html"
+                   class="classes-explore-image-link"
+                   aria-label="Enquire about Breathing and Relaxation">
+
+                    <div class="classes-explore-image-wrap">
+
+                        <img
+                            src="images/class-breathing-relaxation.jpg"
+                            alt="Woman practising a calm breathing exercise"
+                            class="classes-explore-image"
+                            loading="lazy"
+                        >
+
+                        <span class="classes-explore-number">03</span>
+
+                    </div>
+
+                </a>
+
+                <div class="classes-explore-card-content">
+
+                    <span class="classes-explore-category">
+                        MINDFUL WELLNESS
+                    </span>
+
+                    <h3 class="classes-explore-card-title">
+                        Breathing & Relaxation
+                    </h3>
+
+                    <p class="classes-explore-card-description">
+                        Create moments of stillness with guidence
+                        breathing, relaxation techniques, and
+                        mindfulles practices.
+                    </p>
+
+                    <a href="contact.html"
+                       class="classes-explore-card-link">
+
+                        Explore This Class
+                        <span class="classes-explore-arrow"
+                              aria-hidden="true"></span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- CARD 4: BIRTH PREPARATION -->
+            <article class="classes-explore-card">
+
+                <a href="contact.html"
+                   class="classes-explore-image-link"
+                   aria-label="Enquire about Birth Preparation">
+
+                    <div class="classes-explore-image-wrap">
+
+                        <img
+                            src="images/class-birth-preparation.jpg"
+                            alt="Pregnant woman learning a relaxation technique"
+                            class="classes-explore-image"
+                            loading="lazy"
+                        >
+
+                        <span class="classes-explore-number">04</span>
+
+                    </div>
+
+                </a>
+
+                <div class="classes-explore-card-content">
+
+                    <span class="classes-explore-category">
+                        PREPARATION & CONFIDENCE
+                    </span>
+
+                    <h3 class="classes-explore-card-title">
+                        Birth Preparation
+                    </h3>
+
+                    <p class="classes-explore-card-description">
+                        Explore breathing, relaxation, and
+                        movement techniques to help you prepare
+                        for birth with confidence.
+                    </p>
+
+                    <a href="contact.html"
+                       class="classes-explore-card-link">
+
+                        Explore This Class
+                        <span class="classes-explore-arrow"
+                              aria-hidden="true"></span>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- SECTION FOOTER -->
+        <div class="classes-explore-footer">
+
+            <p class="classes-explore-footer-text">
+                Not sure where to begin? We are here to help.
+            </p>
+
+            <a href="contact.html" class="classes-explore-contact-link">
+                Let's Find Your Class
+                <span class="classes-explore-arrow"
+                      aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     CLASSES PAGE — NEW MOM & BABY CLASSES
+========================================== -->
+
+<section class="classes-newmom-section" id="newMomClasses">
+    <div class="classes-newmom-container">
+
+        <!-- Section Header -->
+        <div class="classes-newmom-header">
+            <span class="classes-newmom-eyebrow">
+                YOUR NEXT CHAPTER
+            </span>
+
+            <h2 class="classes-newmom-title">
+                New Mom & <span>Baby Classes</span>
+            </h2>
+
+            <p class="classes-newmom-description">
+                Motherhood is a beautiful journey, and you deserve
+                support along the way. Discover gentle movement,
+                recovery, and bonding classes designed to help you
+                and your little one grow together.
+            </p>
+        </div>
+
+        <!-- Classes Grid -->
+        <div class="classes-newmom-grid">
+
+            <!-- Class Card 1 -->
+            <article class="classes-newmom-card">
+
+                <div class="classes-newmom-image-wrap">
+                    <img
+                        src="images/mom-baby-yoga.jpg"
+                        alt="Mother practicing gentle yoga with her baby"
+                        class="classes-newmom-image"
+                        loading="lazy">
+
+                    <span class="classes-newmom-tag">
+                        MOM & BABY
+                    </span>
+                </div>
+
+                <div class="classes-newmom-card-content">
+
+                    <span class="classes-newmom-card-eyebrow">
+                        BOND THROUGH MOVEMENT
+                    </span>
+
+                    <h3 class="classes-newmom-card-title">
+                        Mom & Baby Yoga
+                    </h3>
+
+                    <p class="classes-newmom-card-description">
+                        Enjoy gentle, adaptable movementable and
+                        relaxation alongsides your little one's in a
+                        welcoming and supportive environmental.
+                    </p>
+
+                    <div class="classes-newmom-card-meta">
+                        <span class="classes-newmom-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 aria-hidden="true">
+                                <circle cx="12" cy="12" r="9"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"/>
+                                <path d="M12 7v5l3 2"
+                                      stroke="currentColor"
+                                      stroke-width="1.7"
+                                      stroke-linecap="round"/>
+                            </svg>
+                            45 minutes
+                        </span>
+
+                        <span class="classes-newmom-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 aria-hidden="true">
+                                <circle cx="9" cy="8" r="3"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"/>
+                                <path d="M3.5 20v-2a5.5 5.5 0 0 1 11 0v2
+                                M17 5.5a3 3 0 0 1 0 5.8
+                                M17 14a5 5 0 0 1 3.5 4.8V20"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"/>
+                            </svg>
+                            All levels
+                        </span>
+                    </div>
+
+                    <a href="contact.html"
+                       class="classes-newmom-card-link">
+                        Enquire About This Class
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             aria-hidden="true">
+                            <path d="M5 12h14M13 5l7 7-7 7"
+                                  stroke="currentColor"
+                                  stroke-width="1.7"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- Class Card 2 -->
+            <article class="classes-newmom-card">
+
+                <div class="classes-newmom-image-wrap">
+                    <img
+                        src="images/postnatal-recovery.jpg"
+                        alt="New mother doing gentle postnatal exercises"
+                        class="classes-newmom-image"
+                        loading="lazy">
+
+                    <span class="classes-newmom-tag">
+                        POSTNATAL
+                    </span>
+                </div>
+
+                <div class="classes-newmom-card-content">
+
+                    <span class="classes-newmom-card-eyebrow">
+                        REBUILD AT YOUR PACE
+                    </span>
+
+                    <h3 class="classes-newmom-card-title">
+                        Postnatal Recovery
+                    </h3>
+
+                    <p class="classes-newmom-card-description">
+                        Ease back into movement with an appropriately
+                        adapted program focused on gradual strength,
+                        mobility, and awareness.
+                    </p>
+
+                    <div class="classes-newmom-card-meta">
+                        <span class="classes-newmom-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 aria-hidden="true">
+                                <circle cx="12" cy="12" r="9"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"/>
+                                <path d="M12 7v5l3 2"
+                                      stroke="currentColor"
+                                      stroke-width="1.7"
+                                      stroke-linecap="round"/>
+                            </svg>
+                            45 minutes
+                        </span>
+
+                        <span class="classes-newmom-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 aria-hidden="true">
+                                <path d="M12 21s-8-4.35-8-11
+                                a4.5 4.5 0 0 1 8-2.8
+                                A4.5 4.5 0 0 1 20 10
+                                c0 6.65-8 11-8 11Z"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linejoin="round"/>
+                            </svg>
+                            Gentle pace
+                        </span>
+                    </div>
+
+                    <a href="contact.html"
+                       class="classes-newmom-card-link">
+                        Enquire About This Class
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             aria-hidden="true">
+                            <path d="M5 12h14M13 5l7 7-7 7"
+                                  stroke="currentColor"
+                                  stroke-width="1.7"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- Class Card 3 -->
+            <article class="classes-newmom-card">
+
+                <div class="classes-newmom-image-wrap">
+                    <img
+                        src="images/mom-baby-bonding.jpg"
+                        alt="Mother spending quality bonding time with her baby"
+                        class="classes-newmom-image"
+                        loading="lazy">
+
+                    <span class="classes-newmom-tag">
+                        BONDING
+                    </span>
+                </div>
+
+                <div class="classes-newmom-card-content">
+
+                    <span class="classes-newmom-card-eyebrow">
+                        LITTLE MOMENTS MATTER
+                    </span>
+
+                    <h3 class="classes-newmom-card-title">
+                        Mom & Baby Bonding
+                    </h3>
+
+                    <p class="classes-newmom-card-description">
+                        Make space for meaningful connection through
+                        gentle interaction, relaxation, and simple
+                        activities shared your baby.
+                    </p>
+
+                    <div class="classes-newmom-card-meta">
+                        <span class="classes-newmom-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 aria-hidden="true">
+                                <circle cx="12" cy="12" r="9"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"/>
+                                <path d="M12 7v5l3 2"
+                                      stroke="currentColor"
+                                      stroke-width="1.7"
+                                      stroke-linecap="round"/>
+                            </svg>
+                            30 minutes
+                        </span>
+
+                        <span class="classes-newmom-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 aria-hidden="true">
+                                <path d="M12 21s-8-4.35-8-11
+                                a4.5 4.5 0 0 1 8-2.8
+                                A4.5 4.5 0 0 1 20 10
+                                c0 6.65-8 11-8 11Z"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linejoin="round"/>
+                            </svg>
+                            Baby-friendly
+                        </span>
+                    </div>
+
+                    <a href="contact.html"
+                       class="classes-newmom-card-link">
+                        Enquire About This Class
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             aria-hidden="true">
+                            <path d="M5 12h14M13 5l7 7-7 7"
+                                  stroke="currentColor"
+                                  stroke-width="1.7"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- Class Card 4 -->
+            <article class="classes-newmom-card">
+
+                <div class="classes-newmom-image-wrap">
+                    <img
+                        src="images/new-mom-wellness.jpg"
+                        alt="Mothers attending a supportive wellness class"
+                        class="classes-newmom-image"
+                        loading="lazy">
+
+                    <span class="classes-newmom-tag">
+                        WELLNESS
+                    </span>
+                </div>
+
+                <div class="classes-newmom-card-content">
+
+                    <span class="classes-newmom-card-eyebrow">
+                        GROW TOGETHER
+                    </span>
+
+                    <h3 class="classes-newmom-card-title">
+                        New Mom Wellness
+                    </h3>
+
+                    <p class="classes-newmom-card-description">
+                        Connect with other mothers in a welcoming
+                        setting focused on relaxation, self-care,
+                        confidence, and community support.
+                    </p>
+
+                    <div class="classes-newmom-card-meta">
+                        <span class="classes-newmom-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 aria-hidden="true">
+                                <circle cx="12" cy="12" r="9"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"/>
+                                <path d="M12 7v5l3 2"
+                                      stroke="currentColor"
+                                      stroke-width="1.7"
+                                      stroke-linecap="round"/>
+                            </svg>
+                            45 minutes
+                        </span>
+
+                        <span class="classes-newmom-meta-item">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 aria-hidden="true">
+                                <circle cx="9" cy="8" r="3"
+                                        stroke="currentColor"
+                                        stroke-width="1.7"/>
+                                <path d="M3.5 20v-2a5.5 5.5 0 0 1 11 0v2
+                                M17 5.5a3 3 0 0 1 0 5.8
+                                M17 14a5 5 0 0 1 3.5 4.8V20"
+                                stroke="currentColor"
+                                stroke-width="1.7"
+                                stroke-linecap="round"/>
+                            </svg>
+                            Community class
+                        </span>
+                    </div>
+
+                    <a href="contact.html"
+                       class="classes-newmom-card-link">
+                        Enquire About This Class
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             aria-hidden="true">
+                            <path d="M5 12h14M13 5l7 7-7 7"
+                                  stroke="currentColor"
+                                  stroke-width="1.7"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Section Bottom Note -->
+        <div class="classes-newmom-note">
+            <p>
+                Every recovery journey is different. Please consult
+                your healthcare professional before starting
+                postnatal exercise, and choose classes suited to
+                your individual recovery and needs.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==========================================
+     CLASSES PAGE — POSTNATAL RECOVERY
+========================================== -->
+
+<section class="classes-postnatal" id="postnatalRecovery">
+
+    <div class="classes-postnatal-container">
+
+        <!-- LEFT: IMAGE -->
+        <div class="classes-postnatal-visual">
+
+            <div class="classes-postnatal-image-wrap">
+
+                <img
+                    src="images/classes-postnatal.jpg"
+                    alt="Mother enjoying a gentle postnatal wellness session"
+                    class="classes-postnatal-image"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <!-- IMAGE LABEL -->
+            <div class="classes-postnatal-image-label">
+                <span class="classes-postnatal-label-line"></span>
+                <span>SPACE TO RESTORE. TIME TO GROW.</span>
+            </div>
+
+            <!-- DECORATIVE ELEMENT -->
+            <div class="classes-postnatal-decoration"
+                 aria-hidden="true"></div>
+
+        </div>
+
+        <!-- RIGHT: CONTENT -->
+        <div class="classes-postnatal-content">
+
+            <span class="classes-postnatal-eyebrow">
+                YOUR FOURTH TRIMESTER
+            </span>
+
+            <h2 class="classes-postnatal-title">
+                Your Recovery,
+                <span>Your Own Pace</span>
+            </h2>
+
+            <p class="classes-postnatal-intro">
+                Motherhood brings beautiful changes, and your
+                recovery deserves patience, care, and support.
+            </p>
+
+            <p class="classes-postnatal-description">
+                Our postnatal wellness approach focuses on
+                gradually reconnecting with your body through
+                gentle movement, mindful breathing, and
+                supportive practices suited to your recovery stage.
+            </p>
+
+            <!-- BENEFITS -->
+            <div class="classes-postnatal-benefits">
+
+                <!-- BENEFIT 1 -->
+                <div class="classes-postnatal-benefit">
+
+                    <span class="classes-postnatal-benefit-icon"
+                          aria-hidden="true">
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.5L9.2 16.5L19 6.8"
+                                  stroke="currentColor"
+                                  stroke-width="1.7"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+
+                    <div class="classes-postnatal-benefit-content">
+                        <h3>Gentle Movement</h3>
+                        <p>
+                            Ease back into appropriate movement
+                            gradually and comfortably.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- BENEFIT 2 -->
+                <div class="classes-postnatal-benefit">
+
+                    <span class="classes-postnatal-benefit-icon"
+                          aria-hidden="true">
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.5L9.2 16.5L19 6.8"
+                                  stroke="currentColor"
+                                  stroke-width="1.7"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+
+                    <div class="classes-postnatal-benefit-content">
+                        <h3>Core & Body Awareness</h3>
+                        <p>
+                            Reconnect with your posture, breathing,
+                            and body awareness as recovery allows.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- BENEFIT 3 -->
+                <div class="classes-postnatal-benefit">
+
+                    <span class="classes-postnatal-benefit-icon"
+                          aria-hidden="true">
+                        <svg viewBox="0 0 24 24"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12.5L9.2 16.5L19 6.8"
+                                  stroke="currentColor"
+                                  stroke-width="1.7"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+
+                    <div class="classes-postnatal-benefit-content">
+                        <h3>Mindful Relaxation</h3>
+                        <p>
+                            Make room for calm, rest, and moments
+                            of personal wellbeing.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <a href="contact.html" class="classes-postnatal-btn">
+                Talk to Our Team
+                <span class="classes-postnatal-arrow"
+                      aria-hidden="true"></span>
+            </a>
+
+            <!-- WELLNESS NOTE -->
+            <p class="classes-postnatal-note">
+                <span class="classes-postnatal-note-mark"
+                      aria-hidden="true">*</span>
+                Please consult your healthcare professional before
+                returning to exercise after childbirth. Your recovery
+                and individual needs come first.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+     CLASSES PAGE — FIND YOUR CLASS
+========================================== -->
+
+<section class="classes-guidance" id="findYourClass">
+
+    <div class="classes-guidance-container">
+
+        <!-- SECTION HEADER -->
+        <div class="classes-guidance-header">
+
+            <span class="classes-guidance-eyebrow">
+                A LITTLE GUIDANCE
+            </span>
+
+            <h2 class="classes-guidance-title">
+                Find the Practice
+                <span>That Feels Right</span>
+            </h2>
+
+            <p class="classes-guidance-description">
+                Every motherhood journey is different.
+                Let us help you discover a supportive practice
+                that suits your needs, preferences, and stage
+                of motherhood.
+            </p>
+
+        </div>
+
+        <!-- THREE STEPS -->
+        <div class="classes-guidance-grid">
+
+            <!-- STEP 01 -->
+            <article class="classes-guidance-step">
+
+                <span class="classes-guidance-step-number">
+                    01
+                </span>
+
+                <h3 class="classes-guidance-step-title">
+                    Discover Your Needs
+                </h3>
+
+                <p class="classes-guidance-step-description">
+                    Think about your current stage, comfort level,
+                    and the kind of support you are looking for healthcares.
+                </p>
+
+            </article>
+
+            <!-- STEP 02 -->
+            <article class="classes-guidance-step">
+
+                <span class="classes-guidance-step-number">
+                    02
+                </span>
+
+                <h3 class="classes-guidance-step-title">
+                    Connect With Us
+                </h3>
+
+                <p class="classes-guidance-step-description">
+                    Talk with our team about your goals and
+                    preferences so we can help you explore
+                    suitable class options.
+                </p>
+
+            </article>
+
+            <!-- STEP 03 -->
+            <article class="classes-guidance-step">
+
+                <span class="classes-guidance-step-number">
+                    03
+                </span>
+
+                <h3 class="classes-guidance-step-title">
+                    Choose Your Practice
+                </h3>
+
+                <p class="classes-guidance-step-description">
+                    Explore a class that aligns with your needs,
+                    with appropriate guidance for your stage
+                    of motherhood.
+                </p>
+
+            </article>
+
+        </div>
+
+        <!-- SECTION FOOTER -->
+        <div class="classes-guidance-footer">
+
+            <p class="classes-guidance-footer-text">
+                Not sure where to begin? We are here to help.
+            </p>
+
+            <a href="contact.html" class="classes-guidance-btn">
+                Let's Find Your Class
+
+                <span class="classes-guidance-arrow"
+                      aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+     CLASSES PAGE — WHAT TO EXPECT
+========================================== -->
+
+<section class="classes-expect" id="whatToExpect">
+
+    <div class="classes-expect-container">
+
+        <!-- SECTION HEADER -->
+        <div class="classes-expect-header">
+
+            <span class="classes-expect-eyebrow">
+                YOUR EXPERIENCE WITH US
+            </span>
+
+            <h2 class="classes-expect-title">
+                A Little More Care,
+                <span>At Every Step</span>
+            </h2>
+
+            <p class="classes-expect-description">
+                Your wellbeing deserves thoughtful attention.
+                Discover a welcoming experience designed to support
+                your movement, confidence, and connection throughout
+                your motherhood journey.
+            </p>
+
+        </div>
+
+        <!-- FEATURES GRID -->
+        <div class="classes-expect-grid">
+
+            <!-- FEATURE 1 -->
+            <article class="classes-expect-card">
+
+                <div class="classes-expect-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="17"
+                                stroke="currentColor"
+                                stroke-width="1.4"/>
+                        <circle cx="24" cy="18" r="4"
+                                stroke="currentColor"
+                                stroke-width="1.4"/>
+                        <path d="M15 33C16.5 27.5 20 25 24 25C28 25 31.5 27.5 33 33"
+                              stroke="currentColor"
+                              stroke-width="1.4"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <span class="classes-expect-number">01</span>
+
+                <h3 class="classes-expect-card-title">
+                    Personal Guidance
+                </h3>
+
+                <p class="classes-expect-card-description">
+                    Explore class options with guidance that takes
+                    your stage, comfort, and individual needs
+                    into consideration.
+                </p>
+
+            </article>
+
+            <!-- FEATURE 2 -->
+            <article class="classes-expect-card">
+
+                <div class="classes-expect-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 8C17 15 13 20 13 27C13 33.1 17.9 38 24 38C30.1 38 35 33.1 35 27C35 20 31 15 24 8Z"
+                              stroke="currentColor"
+                              stroke-width="1.4"
+                              stroke-linejoin="round"/>
+                        <path d="M19 28C19.5 31 21.5 33 25 33"
+                              stroke="currentColor"
+                              stroke-width="1.4"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <span class="classes-expect-number">02</span>
+
+                <h3 class="classes-expect-card-title">
+                    Mindful Movement
+                </h3>
+
+                <p class="classes-expect-card-description">
+                    Discover gentle movement and breathing practices
+                    designed around comfort, awareness, and
+                    guidance.
+                </p>
+
+            </article>
+
+            <!-- FEATURE 3 -->
+            <article class="classes-expect-card">
+
+                <div class="classes-expect-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 38C20 34 10 28 10 19C10 13.5 14 10 19 10C22 10 24 12 24 15C24 12 27 10 30 10C35 10 38 14 38 19C38 28 28 34 24 38Z"
+                              stroke="currentColor"
+                              stroke-width="1.4"
+                              stroke-linejoin="round"/>
+                        <path d="M16 23H21L24 18L28 27L31 23H34"
+                              stroke="currentColor"
+                              stroke-width="1.4"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <span class="classes-expect-number">03</span>
+
+                <h3 class="classes-expect-card-title">
+                    Supportive Instruction
+                </h3>
+
+                <p class="classes-expect-card-description">
+                    Learn in a caring environment where questions
+                    are welcome and your comfort matters.
+                </p>
+
+            </article>
+
+            <!-- FEATURE 4 -->
+            <article class="classes-expect-card">
+
+                <div class="classes-expect-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="18" cy="17" r="5"
+                                stroke="currentColor"
+                                stroke-width="1.4"/>
+                        <circle cx="31" cy="19" r="4"
+                                stroke="currentColor"
+                                stroke-width="1.4"/>
+                        <path d="M7 36C8 29 12 25 18 25C24 25 28 29 29 36"
+                              stroke="currentColor"
+                              stroke-width="1.4"
+                              stroke-linecap="round"/>
+                        <path d="M27 27C32 26 37 30 39 35"
+                              stroke="currentColor"
+                              stroke-width="1.4"
+                              stroke-linecap="round"/>
+                    </svg>
+                </div>
+
+                <span class="classes-expect-number">04</span>
+
+                <h3 class="classes-expect-card-title">
+                    A Welcoming Space
+                </h3>
+
+                <p class="classes-expect-card-description">
+                    Take time for yourself in a calm, encouraging
+                    setting that celebrates every stage
+                    of your journey.
+                </p>
+
+            </article>
+
+        </div>
+
+        <!-- BOTTOM NOTE -->
+        <div class="classes-expect-note">
+
+            <span class="classes-expect-note-line"></span>
+
+            <p>
+                Every journey is unique. Your practice should be,
+                too.
+            </p>
+
+            <span class="classes-expect-note-line"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     SECTION 6 — YOUR FIRST CLASS
+========================================== -->
+
+<section class="classes-first" id="yourFirstClass">
+
+    <div class="classes-first-container">
+
+        <!-- LEFT: IMAGE -->
+        <div class="classes-first-visual">
+
+            <div class="classes-first-image-wrap">
+                <img
+                    src="images/classes-first-class.jpg"
+                    alt="A peaceful prenatal wellness studio with yoga mats and supportive cushions"
+                    class="classes-first-image"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="classes-first-image-caption">
+                <span class="classes-first-caption-line"></span>
+                <p>A gentle beginning, just for you</p>
+            </div>
+
+            <div class="classes-first-decoration"></div>
+
+        </div>
+
+        <!-- RIGHT: CONTENT -->
+        <div class="classes-first-content">
+
+            <span class="classes-first-eyebrow">
+                YOUR FIRST VISIT
+            </span>
+
+            <h2 class="classes-first-title">
+                Your First Class,
+                <span>Made Simple</span>
+            </h2>
+
+            <p class="classes-first-intro">
+                Every motherhood journey is different. We want you to feel
+                comfortable, supported, and confident from the moment you
+                walk through our doors.
+            </p>
+
+            <p class="classes-first-description">
+                A few simple preparations can help you settle in, connect
+                with your instructor, and enjoy a practice that feels right
+                for you.
+            </p>
+
+            <!-- FIRST CLASS CHECKLIST -->
+            <div class="classes-first-checklist">
+
+                <!-- ITEM 1 -->
+                <div class="classes-first-item">
+
+                    <div class="classes-first-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.6"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M6 4h12l2 5-3 2-2-3H9l-2 3-3-2 2-5Z"/>
+                            <path d="M9 8v12h6V8"/>
+                        </svg>
+                    </div>
+
+                    <div class="classes-first-item-content">
+                        <h3>Wear Comfortable Clothing</h3>
+                        <p>
+                            Choose soft, comfortable clothing that allows
+                            you to move freely throughout your session.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="classes-first-item">
+
+                    <div class="classes-first-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.6"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M9 3h6"/>
+                            <path d="M10 3v3l-4 6v7a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-7l-4-6V3"/>
+                            <path d="M7 14h10"/>
+                        </svg>
+                    </div>
+
+                    <div class="classes-first-item-content">
+                        <h3>Bring Your Essentials</h3>
+                        <p>
+                            Bring a water bottle and any personal items
+                            that help you feel comfortable during class.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="classes-first-item">
+
+                    <div class="classes-first-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.6"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"/>
+                            <path d="M12 7v5l3 2"/>
+                        </svg>
+                    </div>
+
+                    <div class="classes-first-item-content">
+                        <h3>Arrive a Little Early</h3>
+                        <p>
+                            Give yourself time to settle in, explore the
+                            space, and speak with your instructor.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- ITEM 4 -->
+                <div class="classes-first-item">
+
+                    <div class="classes-first-item-icon">
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.6"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11Z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+
+                    <div class="classes-first-item-content">
+                        <h3>Share Your Needs</h3>
+                        <p>
+                            Let your instructor know about your comfort
+                            level, concerns, and any movement limitations.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CTA BUTTON -->
+            <a href="contact.html" class="classes-first-btn">
+                <span>Contact Us to Get Started</span>
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="M5 12h14"/>
+                    <path d="m13 6 6 6-6 6"/>
+                </svg>
+            </a>
+
+            <!-- WELLNESS NOTE -->
+            <div class="classes-first-note">
+                <span class="classes-first-note-mark">✦</span>
+                <p>
+                    Please consult your healthcare professional about
+                    whether a class is suitable for your individual needs.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END SECTION 6 — YOUR FIRST CLASS -->
+
+<!-- ==========================================
+     SECTION 7 — FREQUENTLY ASKED QUESTIONS
+========================================== -->
+
+<section class="classes-faq" id="classesFaq">
+
+    <div class="classes-faq-container">
+
+        <!-- SECTION HEADER -->
+        <div class="classes-faq-header">
+
+            <span class="classes-faq-eyebrow">
+                HERE TO HELP
+            </span>
+
+            <h2 class="classes-faq-title">
+                A Few Things You May
+                <span>Be Wondering</span>
+            </h2>
+
+            <p class="classes-faq-description">
+                Starting something new can bring questions.
+                Find helpful answers about our classes, your first visit,
+                and how to choose a practice that suits you.
+            </p>
+
+        </div>
+
+        <!-- FAQ ACCORDION -->
+        <div class="classes-faq-list">
+
+            <!-- FAQ 1 -->
+            <details class="classes-faq-item" open>
+
+                <summary class="classes-faq-question">
+                    <span class="classes-faq-number">01</span>
+
+                    <span class="classes-faq-question-text">
+                        Which class is right for me?
+                    </span>
+
+                    <span class="classes-faq-toggle" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                    </span>
+                </summary>
+
+                <div class="classes-faq-answer">
+                    <p>
+                        The right class depends on your stage of motherhood,
+                        comfort, and personal goals. Explore our class options
+                        or contact our team for guidance on finding a suitable
+                        starting point.
+                    </p>
+                </div>
+
+            </details>
+
+            <!-- FAQ 2 -->
+            <details class="classes-faq-item">
+
+                <summary class="classes-faq-question">
+                    <span class="classes-faq-number">02</span>
+
+                    <span class="classes-faq-question-text">
+                        Do I need previous fitness experience?
+                    </span>
+
+                    <span class="classes-faq-toggle" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                    </span>
+                </summary>
+
+                <div class="classes-faq-answer">
+                    <p>
+                        Previous experience may not be necessary for
+                        beginner-friendly classes. Let our team know about
+                        your experience and needs so we can help you explore
+                        an appropriate option.
+                    </p>
+                </div>
+
+            </details>
+
+            <!-- FAQ 3 -->
+            <details class="classes-faq-item">
+
+                <summary class="classes-faq-question">
+                    <span class="classes-faq-number">03</span>
+
+                    <span class="classes-faq-question-text">
+                        Can I exercise during pregnancy?
+                    </span>
+
+                    <span class="classes-faq-toggle" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                    </span>
+                </summary>
+
+                <div class="classes-faq-answer">
+                    <p>
+                        Exercise suitability varies from person to person.
+                        Consult your healthcare professional before starting
+                        or changing an exercise routine, and discuss any
+                        relevant guidance with your instructor.
+                    </p>
+                </div>
+
+            </details>
+
+            <!-- FAQ 4 -->
+            <details class="classes-faq-item">
+
+                <summary class="classes-faq-question">
+                    <span class="classes-faq-number">04</span>
+
+                    <span class="classes-faq-question-text">
+                        What should I bring to class?
+                    </span>
+
+                    <span class="classes-faq-toggle" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                    </span>
+                </summary>
+
+                <div class="classes-faq-answer">
+                    <p>
+                        Wear comfortable clothing and bring a water bottle
+                        along with any personal essentials you may need.
+                        Contact us beforehand if you would like to check
+                        what equipment is provided.
+                    </p>
+                </div>
+
+            </details>
+
+            <!-- FAQ 5 -->
+            <details class="classes-faq-item">
+
+                <summary class="classes-faq-question">
+                    <span class="classes-faq-number">05</span>
+
+                    <span class="classes-faq-question-text">
+                        How do I book my first session?
+                    </span>
+
+                    <span class="classes-faq-toggle" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                    </span>
+                </summary>
+
+                <div class="classes-faq-answer">
+                    <p>
+                        Visit our contact page to get in touch with our team.
+                        We can help you discuss your needs, explore suitable
+                        classes, and understand the next steps for booking.
+                    </p>
+                </div>
+
+            </details>
+
+        </div>
+
+        <!-- FAQ FOOTER -->
+        <div class="classes-faq-footer">
+
+            <div class="classes-faq-footer-content">
+                <span class="classes-faq-footer-mark">✦</span>
+
+                <p>
+                    Still have questions? We are happy to help you
+                    find a comfortable place to begin.
+                </p>
+            </div>
+
+            <a href="contact.html" class="classes-faq-contact-btn">
+                <span>Talk to Our Team</span>
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="M5 12h14"/>
+                    <path d="m13 6 6 6-6 6"/>
+                </svg>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END SECTION 7 — FREQUENTLY ASKED QUESTIONS -->
+
+<!-- ==========================================
+     SECTION 8 — FINAL CTA BANNER
+========================================== -->
+
+<section class="classes-cta" id="classesCta">
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="classes-cta-background">
+        <img
+            src="images/classes-cta-banner.jpg"
+            alt="A peaceful prenatal wellness studio filled with warm natural light"
+            class="classes-cta-image"
+            loading="lazy"
+        >
+    </div>
+
+    <!-- DARK OVERLAY -->
+    <div class="classes-cta-overlay"></div>
+
+    <!-- CTA CONTENT -->
+    <div class="classes-cta-container">
+
+        <div class="classes-cta-content">
+
+            <span class="classes-cta-eyebrow">
+                YOUR JOURNEY, YOUR PACE
+            </span>
+
+            <h2 class="classes-cta-title">
+                Make Space
+                <span>for Yourself.</span>
+            </h2>
+
+            <p class="classes-cta-description">
+                You deserve a moment to breathe, move, and reconnect
+                with yourself. Discover a practice that supports you
+                through every stage of your motherhood journey.
+            </p>
+
+            <!-- CTA BUTTONS -->
+            <div class="classes-cta-actions">
+
+                <a
+                    href="classes.html#exploreClasses"
+                    class="classes-cta-btn classes-cta-btn-primary"
+                >
+                    <span>Explore Our Classes</span>
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round"
+                         aria-hidden="true">
+                        <path d="M5 12h14"/>
+                        <path d="m13 6 6 6-6 6"/>
+                    </svg>
+                </a>
+
+                <a
+                    href="instructors.html"
+                    class="classes-cta-btn classes-cta-btn-secondary"
+                >
+                    Meet Our Instructors
+                </a>
+
+            </div>
+
+            <!-- DECORATIVE BOTTOM NOTE -->
+            <div class="classes-cta-note">
+                <span class="classes-cta-note-line"></span>
+
+                <p>
+                    A little time for you can make a meaningful difference.
+                </p>
+
+                <span class="classes-cta-note-line"></span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END SECTION 8 — FINAL CTA BANNER -->
+
+     </main>
+<!-- =========================================
+     NURTURE & BLOOM — FOOTER
+========================================= -->
+
+<footer class="nb-footer" id="nbFooter">
+
+    <div class="nb-footer-container">
+
+        <!-- BRAND COLUMN -->
+        <div class="nb-footer-brand">
+
+            <a href="index.html" class="nb-footer-logo">
+                <img src="images/logo.png"
+                     alt="Nurture & Bloom">
+            </a>
+
+            <p class="nb-footer-description">
+                Supporting your journey through pregnancy and
+                postpartum with safe, nurturing movement,
+                expert guidance, and a community that cares.
+            </p>
+
+            <!-- SOCIAL LINKS -->
+            <div class="nb-footer-socials">
+
+                <a href="https://www.instagram.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"
+                       aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.facebook.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"
+                       aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.youtube.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"
+                       aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"
+                       aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="nb-footer-column">
+
+            <h3 class="nb-footer-heading">Quick Links</h3>
+
+            <ul class="nb-footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Our Classes</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+
+        </div>
+
+        <!-- OUR PROGRAMS -->
+        <div class="nb-footer-column">
+
+            <h3 class="nb-footer-heading">Our Programs</h3>
+
+            <ul class="nb-footer-links">
+                <li>
+                    <a href="classes.html">Prenatal Fitness</a>
+                </li>
+                <li>
+                    <a href="classes.html">Postnatal Recovery</a>
+                </li>
+                <li>
+                    <a href="classes.html">Gentle Yoga</a>
+                </li>
+                <li>
+                    <a href="classes.html">Breathing & Relaxation</a>
+                </li>
+                <li>
+                    <a href="classes.html">Core Strengthening</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="nb-footer-column nb-footer-contact">
+
+            <h3 class="nb-footer-heading">Get in Touch</h3>
+
+            <p class="nb-footer-contact-text">
+                Have questions about our classes? We'd love
+                to help you find the right program.
+            </p>
+
+            <a href="contact.html" class="nb-footer-contact-link">
+                Contact Our Team
+                <i class="fa-solid fa-arrow-right"
+                   aria-hidden="true"></i>
+            </a>
+
+            <a href="login.html" class="nb-footer-member-link">
+                Member Login
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+    <div class="nb-footer-bottom">
+
+        <div class="nb-footer-bottom-container">
+
+            <p class="nb-footer-copyright">
+                &copy; <span id="nbFooterYear">2026</span>
+                Nurture & Bloom. All rights reserved.
+            </p>
+
+            <div class="nb-footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<button type="button"
+        class="nb-scroll-top"
+        id="nbScrollTop"
+        aria-label="Scroll to top"
+        title="Back to top">
+
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+
+</button>
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+    <script src="js/global-settings.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Nurture & Bloom</title>
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/res-dash.css">
+</head>
+
+<body class="nb-dashboard">
+
+    <!-- =====================================
+         FIXED SIDEBAR
+    ====================================== -->
+    <aside class="dash-sidebar" id="dashSidebar">
+
+        <!-- LOGO -->
+        <a href="index.html" class="dash-logo">
+            <img src="images/logo.png" alt="Nurture & Bloom">
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="dash-navigation" aria-label="Dashboard navigation">
+
+            <span class="dash-nav-heading">MAIN MENU</span>
+
+            <!-- Dashboard -->
+            <a href="dashboard.html"
+               class="dash-nav-link"
+               aria-current="page">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="3" width="8" height="8" rx="1.5"/>
+                    <rect x="13" y="3" width="8" height="5" rx="1.5"/>
+                    <rect x="13" y="10" width="8" height="11" rx="1.5"/>
+                    <rect x="3" y="13" width="8" height="8" rx="1.5"/>
+                </svg>
+
+                <span>Dashboard</span>
+            </a>
+
+            <!-- Book a Class -->
+            <a href="book-class.html" class="dash-nav-link active">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                    <path d="M12 13v5M9.5 15.5h5"/>
+                </svg>
+
+                <span>Book a Class</span>
+            </a>
+
+            <!-- My Bookings -->
+            <a href="my-bookings.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                    <path d="m9 15 2 2 4-4"/>
+                </svg>
+
+                <span>My Bookings</span>
+            </a>
+
+            <!-- Session History -->
+            <a href="session-history.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 11a9 9 0 1 1 2.6 6.4"/>
+                    <path d="M3 4v7h7"/>
+                    <path d="M12 7v5l3 2"/>
+                </svg>
+
+                <span>Session History</span>
+            </a>
+
+            <!-- Exercise Guidance -->
+            <a href="exercise-guidance.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11z"/>
+                    <path d="M8 12h3l1.5-3 2 6 1.5-3H19"/>
+                </svg>
+
+                <span>Exercise Guidance</span>
+            </a>
+
+            <!-- Payments -->
+            <a href="payments.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <path d="M2 10h20M6 15h4"/>
+                </svg>
+
+                <span>Payments</span>
+            </a>
+
+            <!-- My Profile -->
+            <a href="dashboard-profile.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21v-2a8 8 0 0 1 16 0v2z"/>
+                </svg>
+
+                <span>My Profile</span>
+            </a>
+
+        </nav>
+
+        <!-- LOGOUT AT BOTTOM -->
+        <!-- LOGOUT AT BOTTOM -->
+<div class="dash-sidebar-bottom">
+
+    <a href="#" class="dash-logout-link" data-logout-trigger>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M10 17l5-5-5-5M15 12H3"/>
+            <path d="M12 3h6a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-6"/>
+        </svg>
+
+        <span>Logout</span>
+    </a>
+
+</div>
+
+    </aside>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div class="dash-sidebar-overlay" id="dashSidebarOverlay"></div>
+
+
+    <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+    <div class="dash-main">
+
+        <!-- FIXED TOPBAR -->
+        <header class="dash-topbar">
+
+            <!-- LEFT: HAMBURGER + TITLE -->
+            <div class="dash-topbar-left">
+
+                <button type="button"
+                        class="dash-menu-toggle"
+                        id="dashMenuToggle"
+                        aria-label="Open navigation menu"
+                        aria-controls="dashSidebar"
+                        aria-expanded="false">
+
+                    <svg class="dash-menu-icon"
+                         viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+
+                    <svg class="dash-close-icon"
+                         viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="m6 6 12 12M18 6 6 18"/>
+                    </svg>
+
+                </button>
+
+                <div class="dash-page-heading">
+                    <span class="dash-heading-eyebrow">
+                        YOUR WELLNESS SPACE
+                    </span>
+                    <h1>Dashboard</h1>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: TOPBAR ICONS -->
+            <div class="dash-topbar-actions">
+
+                <!-- 1. DARK MODE -->
+                <button type="button"
+                        class="dash-icon-btn dash-dark-btn"
+                        id="dashDarkToggle"
+                        aria-label="Toggle dark mode"
+                        title="Dark Mode">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5
+                                 8.5 8.5 0 1 0 20.5 15.5Z"/>
+                    </svg>
+
+                </button>
+
+
+                <!-- 2. RTL -->
+                <button type="button"
+                        class="dash-icon-btn dash-rtl-btn"
+                        id="dashRtlToggle"
+                        aria-label="Toggle right-to-left layout"
+                        title="RTL">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 7h13l-4-4"/>
+                        <path d="m20 7-4 4"/>
+                        <path d="M17 17H4l4 4"/>
+                        <path d="m4 17 4-4"/>
+                    </svg>
+
+                </button>
+
+
+                <!-- 3. NOTIFICATIONS -->
+                <div class="dash-action-wrap">
+
+                    <button type="button"
+                            class="dash-icon-btn dash-notification-btn"
+                            id="dashNotificationToggle"
+                            aria-label="Notifications, 3 unread"
+                            aria-controls="dashNotificationPanel"
+                            aria-expanded="false"
+                            title="Notifications">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z"/>
+                            <path d="M10 21h4"/>
+                        </svg>
+
+                        <span class="dash-notification-count">3</span>
+
+                    </button>
+
+                    <!-- NOTIFICATION DROPDOWN -->
+                    <div class="dash-dropdown dash-notification-panel"
+                         id="dashNotificationPanel"
+                         hidden>
+
+                        <div class="dash-dropdown-heading">
+                            <strong>Notifications</strong>
+                            <span>3 unread</span>
+                        </div>
+
+                        <a href="my-bookings.html"
+                           class="dash-notification-item">
+
+                            <span class="dash-notification-symbol">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Upcoming class</strong>
+                                <small>Check your next scheduled session.</small>
+                            </span>
+
+                        </a>
+
+                        <a href="payments.html"
+                           class="dash-notification-item">
+
+                            <span class="dash-notification-symbol">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                                    <path d="M2 10h20"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Payment update</strong>
+                                <small>View your latest payment details.</small>
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 4. SETTINGS -->
+                <a href="dashboard-settings.html"
+                   class="dash-icon-btn dash-settings-btn"
+                   aria-label="Settings"
+                   title="Settings">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 8.5a3.5 3.5 0 1 0 0 7
+                                 3.5 3.5 0 0 0 0-7Z"/>
+
+                        <path d="M19.4 13.5a7.5 7.5 0 0 0 0-3
+                                 l1.5-1.2-1.8-3.1-1.8.7
+                                 a7.5 7.5 0 0 0-2.6-1.5L14.4 3h-3.6
+                                 l-.3 2.4a7.5 7.5 0 0 0-2.6 1.5l-1.8-.7
+                                 -1.8 3.1 1.5 1.2a7.5 7.5 0 0 0 0 3
+                                 l-1.5 1.2 1.8 3.1 1.8-.7
+                                 a7.5 7.5 0 0 0 2.6 1.5l.3 2.4h3.6
+                                 l.3-2.4a7.5 7.5 0 0 0 2.6-1.5l1.8.7
+                                 1.8-3.1Z"/>
+                    </svg>
+
+                </a>
+
+
+                <!-- PROFILE -->
+                <div class="dash-action-wrap dash-profile-wrap">
+
+                    <button type="button"
+                            class="dash-profile-btn"
+                            id="dashProfileToggle"
+                            aria-controls="dashProfilePanel"
+                            aria-expanded="false">
+
+                        <img src="images/profile.jpg"
+                             alt=""
+                             class="dash-profile-avatar">
+
+                        <span class="dash-profile-info">
+                            <strong>Priya</strong>
+                            <small>Member</small>
+                        </span>
+
+                        <svg class="dash-profile-chevron"
+                             viewBox="0 0 24 24"
+                             aria-hidden="true">
+                            <path d="m7 10 5 5 5-5"/>
+                        </svg>
+
+                    </button>
+
+                    <!-- PROFILE DROPDOWN -->
+                    <div class="dash-dropdown dash-profile-panel"
+                         id="dashProfilePanel"
+                         hidden>
+
+                        <a href="dashboard-profile.html">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4"/>
+                                <path d="M4 21v-2a8 8 0 0 1 16 0v2z"/>
+                            </svg>
+                            <span>My Profile</span>
+                        </a>
+
+                        <a href="dashboard-settings.html">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19 13.5a7 7 0 0 0 0-3l2-1.5-2-3.5
+                                         -2.3.9a7 7 0 0 0-2.5-1.4L14 2h-4l-.4 3
+                                         a7 7 0 0 0-2.5 1.4L5 5.5 3 9l2 1.5
+                                         a7 7 0 0 0 0 3L3 15l2 3.5 2.3-.9
+                                         a7 7 0 0 0 2.5 1.4L10 22h4l.4-3
+                                         a7 7 0 0 0 2.5-1.4l2.3.9 2-3.5z"/>
+                            </svg>
+                            <span>Settings</span>
+                        </a>
+
+                        <a href="login.html" class="dash-profile-logout">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M10 17l5-5-5-5M15 12H3"/>
+                                <path d="M12 3h6a3 3 0 0 1 3 3v12
+                                         a3 3 0 0 1-3 3h-6"/>
+                            </svg>
+                            <span>Logout</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+<!-- =========================================
+     BOOK A CLASS — NURTURE & BLOOM
+========================================= -->
+
+<main class="dash-content book-class-content" id="dashContent">
+
+    <!-- PAGE HERO -->
+    <section class="bc-page-intro">
+        <div class="bc-intro-text">
+            <span class="bc-eyebrow">YOUR WELLNESS JOURNEY</span>
+            <h1>Book a Class</h1>
+            <p>
+                Discover mindful movement, gentle exercise, and supportive
+                sessions designed around your wellness journey.
+            </p>
+
+            <a href="#bcClassGrid" class="bc-hero-btn">
+                Explore Classes
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12H19M12 5L19 12L12 19"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="bc-hero-image">
+            <img src="images/class-hero.jpg"
+                 alt="Woman practising gentle prenatal yoga in a peaceful studio">
+        </div>
+    </section>
+
+    <!-- WELLNESS STAGE -->
+    <section class="bc-stage-notice">
+        <div class="bc-stage-notice-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 21S3 16.5 3 10A5.5 5.5 0 0 1 12 6.5
+                         A5.5 5.5 0 0 1 21 10C21 16.5 12 21 12 21Z"
+                      stroke="currentColor" stroke-width="1.6"
+                      stroke-linejoin="round"/>
+                <path d="M8 12C9.5 10.5 10.5 10.5 12 12
+                         S14.5 13.5 16 12"
+                      stroke="currentColor" stroke-width="1.5"
+                      stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <div class="bc-stage-notice-copy">
+            <h2>Your Wellness Stage</h2>
+            <p>
+                Your dashboard currently shows
+                <strong id="bcCurrentStage">Second Trimester</strong>.
+                Choose a class that suits your current needs.
+            </p>
+        </div>
+
+        <a href="dashboard.html" class="bc-stage-link">
+            View Dashboard
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12H19M12 5L19 12L12 19"
+                      stroke="currentColor" stroke-width="1.7"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </section>
+
+    <!-- CLASS DISCOVERY -->
+    <section class="bc-discovery-section">
+
+        <div class="bc-section-heading">
+            <div>
+                <span class="bc-eyebrow">FIND YOUR FLOW</span>
+                <h2>Explore Our Classes</h2>
+                <p>Find your favourite session and make time for yourself.</p>
+            </div>
+
+            <div class="bc-class-count" aria-live="polite">
+                <strong id="bcResultCount">6</strong>
+                <span>classes available</span>
+            </div>
+        </div>
+
+        <!-- SEARCH AND FILTERS -->
+        <div class="bc-filter-panel">
+
+            <div class="bc-search-field">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <circle cx="10.8" cy="10.8" r="6.8"
+                            stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M16 16L21 21"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linecap="round"/>
+                </svg>
+
+                <input type="search"
+                       id="bcSearchInput"
+                       placeholder="Search classes..."
+                       aria-label="Search classes">
+            </div>
+
+            <div class="bc-filter-field">
+                <label for="bcCategoryFilter">Class Type</label>
+                <select id="bcCategoryFilter">
+                    <option value="all">All Classes</option>
+                    <option value="yoga">Prenatal Yoga</option>
+                    <option value="fitness">Gentle Fitness</option>
+                    <option value="breathing">Breathing & Relaxation</option>
+                    <option value="postnatal">Postnatal Recovery</option>
+                </select>
+            </div>
+
+            <div class="bc-filter-field">
+                <label for="bcStageFilter">Wellness Stage</label>
+                <select id="bcStageFilter">
+                    <option value="all">All Stages</option>
+                    <option value="first">First Trimester</option>
+                    <option value="second">Second Trimester</option>
+                    <option value="third">Third Trimester</option>
+                    <option value="postnatal">Postnatal</option>
+                </select>
+            </div>
+
+            <button type="button"
+                    class="bc-reset-filter"
+                    id="bcResetFilters">
+                Reset Filters
+            </button>
+
+        </div>
+
+        <!-- CLASS CARDS -->
+        <div class="bc-class-grid" id="bcClassGrid">
+
+            <!-- CLASS 1: PRENATAL YOGA -->
+            <article class="bc-class-card"
+                     data-category="yoga"
+                     data-stage="first,second,third">
+
+                <div class="bc-class-image">
+                    <img src="images/prenatal-yoga.jpg"
+                         alt="Pregnant woman practising a gentle yoga pose"
+                         loading="lazy">
+
+                    <span class="bc-class-tag">POPULAR</span>
+
+                    <span class="bc-image-duration">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8.5"
+                                    stroke="currentColor" stroke-width="1.6"/>
+                            <path d="M12 7V12L15.5 14"
+                                  stroke="currentColor" stroke-width="1.6"
+                                  stroke-linecap="round"/>
+                        </svg>
+                        45 min
+                    </span>
+                </div>
+
+                <div class="bc-class-body">
+                    <span class="bc-category-label">Prenatal Yoga</span>
+                    <h3>Gentle Prenatal Yoga</h3>
+                    <p>
+                        Comfortable stretches, mindful breathing, and
+                        gentle movement your pregnancy.
+                    </p>
+
+                    <div class="bc-class-details">
+                        <span>Studio / Online</span>
+                        <span class="bc-level">Beginner</span>
+                    </div>
+
+                    <div class="bc-card-footer">
+                        <div class="bc-price">
+                            <strong>₹499</strong>
+                            <span>/ session</span>
+                        </div>
+
+                        <button type="button" class="bc-book-btn"
+                                data-class="Gentle Prenatal Yoga"
+                                data-duration="45 minutes"
+                                data-price="499"
+                                data-category="Prenatal Yoga">
+                            Book Class
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CLASS 2: MINDFUL MOVEMENT -->
+            <article class="bc-class-card"
+                     data-category="fitness"
+                     data-stage="second,third">
+
+                <div class="bc-class-image">
+                    <img src="images/mindful-movement.jpg"
+                         alt="Woman practising low-impact movement in a bright fitness studio"
+                         loading="lazy">
+
+                    <span class="bc-class-tag">GENTLE</span>
+
+                    <span class="bc-image-duration">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8.5"
+                                    stroke="currentColor" stroke-width="1.6"/>
+                            <path d="M12 7V12L15.5 14"
+                                  stroke="currentColor" stroke-width="1.6"
+                                  stroke-linecap="round"/>
+                        </svg>
+                        40 min
+                    </span>
+                </div>
+
+                <div class="bc-class-body">
+                    <span class="bc-category-label">Gentle Fitness</span>
+                    <h3>Mindful Movement</h3>
+                    <p>
+                        Low-impact movement to encourage balance,
+                        flexibility, and body awareness.
+                    </p>
+
+                    <div class="bc-class-details">
+                        <span>Studio / Online</span>
+                        <span class="bc-level">Low Impact</span>
+                    </div>
+
+                    <div class="bc-card-footer">
+                        <div class="bc-price">
+                            <strong>₹399</strong>
+                            <span>/ session</span>
+                        </div>
+
+                        <button type="button" class="bc-book-btn"
+                                data-class="Mindful Movement"
+                                data-duration="40 minutes"
+                                data-price="399"
+                                data-category="Gentle Fitness">
+                            Book Class
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CLASS 3: MINDFUL BREATHING -->
+            <article class="bc-class-card"
+                     data-category="breathing"
+                     data-stage="first,second,third,postnatal">
+
+                <div class="bc-class-image">
+                    <img src="images/mindful-breathing.jpg"
+                         alt="Woman sitting comfortably during a guided breathing session"
+                         loading="lazy">
+
+                    <span class="bc-class-tag">RELAX & RESET</span>
+
+                    <span class="bc-image-duration">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8.5"
+                                    stroke="currentColor" stroke-width="1.6"/>
+                            <path d="M12 7V12L15.5 14"
+                                  stroke="currentColor" stroke-width="1.6"
+                                  stroke-linecap="round"/>
+                        </svg>
+                        30 min
+                    </span>
+                </div>
+
+                <div class="bc-class-body">
+                    <span class="bc-category-label">Breathing & Relaxation</span>
+                    <h3>Mindful Breathing</h3>
+                    <p>
+                        A calming session featuring guided breathing
+                        and relax techniques at own pace.
+                    </p>
+
+                    <div class="bc-class-details">
+                        <span>Online</span>
+                        <span class="bc-level">All Levels</span>
+                    </div>
+
+                    <div class="bc-card-footer">
+                        <div class="bc-price">
+                            <strong>₹299</strong>
+                            <span>/ session</span>
+                        </div>
+
+                        <button type="button" class="bc-book-btn"
+                                data-class="Mindful Breathing"
+                                data-duration="30 minutes"
+                                data-price="299"
+                                data-category="Breathing & Relaxation">
+                            Book Class
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CLASS 4: POSTNATAL RECOVERY -->
+            <article class="bc-class-card"
+                     data-category="postnatal"
+                     data-stage="postnatal">
+
+                <div class="bc-class-image">
+                    <img src="images/postnatal-recovery.jpg"
+                         alt="Mother practising gentle recovery exercises on a yoga mat"
+                         loading="lazy">
+
+                    <span class="bc-class-tag">POSTNATAL</span>
+
+                    <span class="bc-image-duration">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8.5"
+                                    stroke="currentColor" stroke-width="1.6"/>
+                            <path d="M12 7V12L15.5 14"
+                                  stroke="currentColor" stroke-width="1.6"
+                                  stroke-linecap="round"/>
+                        </svg>
+                        35 min
+                    </span>
+                </div>
+
+                <div class="bc-class-body">
+                    <span class="bc-category-label">Postnatal Recovery</span>
+                    <h3>Gentle Recovery Flow</h3>
+                    <p>
+                        A gentle introduction to restorative movement
+                        after birth, when cleared for exercise.
+                    </p>
+
+                    <div class="bc-class-details">
+                        <span>Studio / Online</span>
+                        <span class="bc-level">Gentle Pace</span>
+                    </div>
+
+                    <div class="bc-card-footer">
+                        <div class="bc-price">
+                            <strong>₹399</strong>
+                            <span>/ session</span>
+                        </div>
+
+                        <button type="button" class="bc-book-btn"
+                                data-class="Gentle Recovery Flow"
+                                data-duration="35 minutes"
+                                data-price="399"
+                                data-category="Postnatal Recovery">
+                            Book Class
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CLASS 5: STRETCH & RESTORE -->
+            <article class="bc-class-card"
+                     data-category="yoga"
+                     data-stage="second,third">
+
+                <div class="bc-class-image">
+                    <img src="images/stretch-restore.jpg"
+                         alt="Woman stretching gently on a yoga mat in a serene studio"
+                         loading="lazy">
+
+                    <span class="bc-class-tag">SLOW & STEADY</span>
+
+                    <span class="bc-image-duration">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8.5"
+                                    stroke="currentColor" stroke-width="1.6"/>
+                            <path d="M12 7V12L15.5 14"
+                                  stroke="currentColor" stroke-width="1.6"
+                                  stroke-linecap="round"/>
+                        </svg>
+                        50 min
+                    </span>
+                </div>
+
+                <div class="bc-class-body">
+                    <span class="bc-category-label">Prenatal Yoga</span>
+                    <h3>Stretch & Restore</h3>
+                    <p>
+                        Unwind with comfortable stretching and
+                        restorative poses suited to your abilities.
+                    </p>
+
+                    <div class="bc-class-details">
+                        <span>Studio</span>
+                        <span class="bc-level">Beginner</span>
+                    </div>
+
+                    <div class="bc-card-footer">
+                        <div class="bc-price">
+                            <strong>₹449</strong>
+                            <span>/ session</span>
+                        </div>
+
+                        <button type="button" class="bc-book-btn"
+                                data-class="Stretch & Restore"
+                                data-duration="50 minutes"
+                                data-price="449"
+                                data-category="Prenatal Yoga">
+                            Book Class
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- CLASS 6: CORE AWARENESS -->
+            <article class="bc-class-card"
+                     data-category="fitness"
+                     data-stage="second,third,postnatal">
+
+                <div class="bc-class-image">
+                    <img src="images/core-awareness.jpg"
+                         alt="Fitness instructor guiding a woman through gentle body-awareness exercises"
+                         loading="lazy">
+
+                    <span class="bc-class-tag">BODY AWARENESS</span>
+
+                    <span class="bc-image-duration">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="12" cy="12" r="8.5"
+                                    stroke="currentColor" stroke-width="1.6"/>
+                            <path d="M12 7V12L15.5 14"
+                                  stroke="currentColor" stroke-width="1.6"
+                                  stroke-linecap="round"/>
+                        </svg>
+                        30 min
+                    </span>
+                </div>
+
+                <div class="bc-class-body">
+                    <span class="bc-category-label">Gentle Fitness</span>
+                    <h3>Core Awareness</h3>
+                    <p>
+                        Gentle body-awareness and breathing practices
+                        with modifi appropriate your time.
+                    </p>
+
+                    <div class="bc-class-details">
+                        <span>Online</span>
+                        <span class="bc-level">Low Impact</span>
+                    </div>
+
+                    <div class="bc-card-footer">
+                        <div class="bc-price">
+                            <strong>₹349</strong>
+                            <span>/ session</span>
+                        </div>
+
+                        <button type="button" class="bc-book-btn"
+                                data-class="Core Awareness"
+                                data-duration="30 minutes"
+                                data-price="349"
+                                data-category="Gentle Fitness">
+                            Book Class
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- NO RESULTS -->
+        <div class="bc-empty-state" id="bcEmptyState" hidden>
+            <h3>No classes found</h3>
+            <p>Try another search or change your filters.</p>
+            <button type="button"
+                    id="bcEmptyReset"
+                    class="bc-secondary-btn">
+                View All Classes
+            </button>
+        </div>
+
+    </section>
+
+    <!-- WELLNESS GUIDANCE -->
+    <section class="bc-guidance-banner">
+        <div class="bc-guidance-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 3L14.5 8.5L20.5 9L16 13L17.3 19
+                         L12 16L6.7 19L8 13L3.5 9L9.5 8.5L12 3Z"
+                      stroke="currentColor" stroke-width="1.5"
+                      stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <div class="bc-guidance-copy">
+            <h2>Your Wellbeing Comes First</h2>
+            <p>
+                If you are pregnant or recovering after birth, consult
+                your healthcare professional before starting or changing
+                your exercise routine. Choose sessions suited to your needs.
+            </p>
+        </div>
+
+        <a href="exercise-guidance.html" class="bc-guidance-link">
+            Exercise Guidance
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12H19M12 5L19 12L12 19"
+                      stroke="currentColor" stroke-width="1.7"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </section>
+
+</main>
+
+
+<!-- =========================================
+     BOOKING MODAL
+========================================= -->
+
+<div class="bc-modal" id="bcBookingModal" aria-hidden="true">
+
+    <div class="bc-modal-backdrop" data-bc-close></div>
+
+    <section class="bc-modal-dialog"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="bcModalTitle">
+
+        <button type="button"
+                class="bc-modal-close"
+                id="bcModalClose"
+                aria-label="Close booking form">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 6L18 18M18 6L6 18"
+                      stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round"/>
+            </svg>
+        </button>
+
+        <span class="bc-eyebrow">YOUR NEXT STEP</span>
+        <h2 id="bcModalTitle">Book Your Class</h2>
+        <p class="bc-modal-description">
+            Choose your preferred date and session time.
+        </p>
+
+        <div class="bc-selected-class">
+            <img id="bcSelectedClassImage"
+                 src="images/classes/prenatal-yoga.jpg"
+                 alt=""
+                 class="bc-selected-class-image">
+
+            <div class="bc-selected-class-copy">
+                <h3 id="bcSelectedClassName">Gentle Prenatal Yoga</h3>
+                <p id="bcSelectedClassInfo">45 minutes · Prenatal Yoga</p>
+            </div>
+
+            <strong id="bcSelectedClassPrice">₹499</strong>
+        </div>
+
+        <form id="bcBookingForm">
+
+            <div class="bc-form-group">
+                <label for="bcBookingDate">Choose Date</label>
+                <input type="date"
+                       id="bcBookingDate"
+                       name="bookingDate"
+                       required>
+            </div>
+
+            <div class="bc-form-group">
+                <label for="bcBookingTime">Available Time</label>
+                <select id="bcBookingTime"
+                        name="bookingTime"
+                        required>
+                    <option value="">Select a time</option>
+                    <option value="08:00 AM">08:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="02:00 PM">02:00 PM</option>
+                    <option value="04:00 PM">04:00 PM</option>
+                </select>
+            </div>
+
+            <div class="bc-form-group">
+                <label for="bcBookingMode">Session Format</label>
+                <select id="bcBookingMode"
+                        name="bookingMode"
+                        required>
+                    <option value="Studio">In-Studio</option>
+                    <option value="Online">Online</option>
+                </select>
+            </div>
+
+            <div class="bc-booking-notice">
+                Session times are demonstration options. Actual availability
+                and class suitability must be confirmed with your instructor.
+            </div>
+
+            <div class="bc-modal-actions">
+                <button type="button"
+                        class="bc-secondary-btn"
+                        id="bcCancelBooking">
+                    Cancel
+                </button>
+
+                <button type="submit" class="bc-confirm-btn">
+                    Confirm Booking
+                </button>
+            </div>
+
+            <p class="bc-form-message"
+               id="bcBookingMessage"
+               role="status"
+               aria-live="polite"></p>
+
+        </form>
+    </section>
+</div>
+
+        </div>
+<!-- LOGOUT CONFIRMATION MODAL -->
+<div class="logout-modal-overlay" id="logoutModal" aria-hidden="true">
+
+    <div class="logout-modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="logoutModalTitle"
+         aria-describedby="logoutModalDescription">
+
+        <!-- Close Button -->
+        <button type="button"
+                class="logout-modal-close"
+                id="logoutCloseBtn"
+                aria-label="Close logout popup">
+            &times;
+        </button>
+
+        <!-- Logout Icon -->
+        <div class="logout-modal-icon">
+            <svg viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 17L15 12L10 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M15 12H3"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"/>
+                <path d="M12 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <!-- Content -->
+        <h2 id="logoutModalTitle">Logout?</h2>
+
+        <p id="logoutModalDescription">
+            Are you sure you want to logout from your account?
+        </p>
+
+        <!-- Actions -->
+        <div class="logout-modal-actions">
+
+            <button type="button"
+                    class="logout-btn logout-btn-cancel"
+                    id="logoutCancelBtn">
+                No, Stay
+            </button>
+
+            <button type="button"
+                    class="logout-btn logout-btn-confirm"
+                    id="logoutConfirmBtn">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 17L15 12L10 7"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M15 12H3"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"/>
+                    <path d="M12 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                Yes, Logout
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- JAVASCRIPT -->
+    <script src="js/dashboard.js"></script>
+    <script src="js/global-settings.js"></script>
+
+</body>
+</html>

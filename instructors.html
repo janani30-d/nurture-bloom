@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nurture & Bloom | Prenatal & Postnatal Fitness</title>
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         HEADER
+    =============================== -->
+    <header class="nb-header" id="nbHeader">
+
+        <div class="nb-header-container">
+
+            <!-- LOGO -->
+            <a href="index.html"
+               class="nb-logo"
+               aria-label="Nurture and Bloom Home">
+
+                <img src="images/logo.png"
+                     alt="Nurture & Bloom"
+                     width="180"
+                     height="60">
+            </a>
+
+            <!-- NAVIGATION -->
+            <nav class="nb-navigation"
+                 id="nbNavigation"
+                 aria-label="Main navigation">
+
+                <!-- MOBILE MENU HEADER -->
+                <div class="nb-mobile-menu-header">
+
+                   
+
+                    <button type="button"
+                            class="nb-menu-close"
+                            id="nbMenuClose"
+                            aria-label="Close navigation menu">
+
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+
+                    </button>
+
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <ul class="nb-nav-list">
+
+                    <!-- HOME DROPDOWN -->
+                    <li class="nb-nav-item nb-home-dropdown">
+
+                        <button type="button"
+                                class="nb-nav-link nb-home-toggle"
+                                id="nbHomeToggle"
+                                aria-expanded="false"
+                                aria-controls="nbHomeSubmenu">
+
+                            <span>Home</span>
+
+                            <i class="fa-solid fa-chevron-down"
+                               aria-hidden="true"></i>
+
+                        </button>
+
+                        <ul class="nb-home-submenu" id="nbHomeSubmenu">
+
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nb-nav-item">
+                        <a href="about.html" class="nb-nav-link">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li class="nb-nav-item">
+                        <a href="classes.html" class="nb-nav-link">
+                            Classes
+                        </a>
+                    </li>
+
+                    <li class="nb-nav-item">
+                        <a href="instructors.html" class="nb-nav-link active">
+                            Instructors
+                        </a>
+                    </li>
+
+                    
+
+                    <li class="nb-nav-item">
+                        <a href="pricing.html" class="nb-nav-link">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li class="nb-nav-item">
+                        <a href="contact.html" class="nb-nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- MOBILE MENU ACTIONS -->
+                <div class="nb-header-actions">
+
+                    <!-- RTL TOGGLE -->
+                    <button type="button"
+                            class="nb-icon-button"
+                            id="nbRtlToggle"
+                            aria-label="Switch to right-to-left layout"
+                            aria-pressed="false"
+                            title="Toggle text direction">
+
+                        <i class="fa-solid fa-right-left"
+                           aria-hidden="true"></i>
+
+                    </button>
+
+                    <!-- DARK MODE TOGGLE -->
+                    <button type="button"
+                            class="nb-icon-button"
+                            id="nbThemeToggle"
+                            aria-label="Enable dark mode"
+                            aria-pressed="false"
+                            title="Toggle dark mode">
+
+                        <i class="fa-solid fa-moon"
+                           aria-hidden="true"></i>
+
+                    </button>
+
+                    <!-- LOGIN -->
+                    <a href="login.html"
+                       class="nb-button nb-button-secondary">
+
+                        Login
+
+                    </a>
+
+                    <!-- DASHBOARD -->
+                    <a href="dashboard.html"
+                       class="nb-button nb-button-primary">
+
+                        Dashboard
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE MENU TOGGLE -->
+            <button type="button"
+                    class="nb-menu-toggle"
+                    id="nbMenuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nbNavigation">
+
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ==============================
+         MENU OVERLAY
+         Outside the header
+    =============================== -->
+    <div class="nb-menu-overlay"
+         id="nbMenuOverlay"
+         aria-hidden="true">
+    </div>
+
+    <!-- ==============================
+         MAIN CONTENT
+         Add page sections here later
+    =============================== -->
+    <main id="mainContent">
+
+<!-- ==========================================
+     SECTION 1 — INSTRUCTORS HERO
+========================================== -->
+
+<section class="instructors-hero" id="instructorsHero">
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="instructors-hero-background">
+        <img
+            src="images/instructors-hero.jpg"
+            alt="A peaceful prenatal wellness studio with a supportive fitness instructor"
+            class="instructors-hero-image"
+        >
+    </div>
+
+    <!-- BACKGROUND OVERLAY -->
+    <div class="instructors-hero-overlay"></div>
+
+    <!-- HERO CONTENT -->
+    <div class="instructors-hero-container">
+
+        <div class="instructors-hero-content">
+
+            <span class="instructors-hero-eyebrow">
+                THE PEOPLE BEHIND YOUR JOURNEY
+            </span>
+
+            <h1 class="instructors-hero-title">
+                Meet the Hearts
+                <span>Behind Your Care</span>
+            </h1>
+
+            <p class="instructors-hero-description">
+                Get to know the caring people who guide your movement,
+                encourage your growth, and support you through every
+                stage of your motherhood journey.
+            </p>
+
+            <!-- BREADCRUMB -->
+            <nav class="instructors-hero-breadcrumb"
+                 aria-label="Breadcrumb">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <span class="instructors-hero-breadcrumb-arrow"
+                      aria-hidden="true">
+                    /
+                </span>
+
+                <span class="instructors-hero-breadcrumb-current"
+                      aria-current="page">
+                    Instructors
+                </span>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END SECTION 1 — INSTRUCTORS HERO -->
+
+<!-- ==========================================
+     SECTION 2 — MEET OUR INSTRUCTORS
+========================================== -->
+
+<section class="instructors-team" id="meetOurInstructors">
+
+    <div class="instructors-team-container">
+
+        <!-- SECTION HEADER -->
+        <div class="instructors-team-header">
+
+            <span class="instructors-team-eyebrow">
+                OUR CARING TEAM
+            </span>
+
+            <h2 class="instructors-team-title">
+                Guidance
+                <span>from the Heart</span>
+            </h2>
+
+            <p class="instructors-team-description">
+                Meet the caring people who bring knowledge, patience,
+                and compassion to every session. Our approach is centred
+                on helping you feel supported throughout your motherhood journey.
+            </p>
+
+        </div>
+
+        <!-- INSTRUCTOR GRID -->
+        <div class="instructors-team-grid">
+
+            <!-- INSTRUCTOR 1 -->
+            <article class="instructors-team-card">
+
+                <div class="instructors-team-image-wrap">
+
+                    <img
+                        src="images/instructor-prenatal-yoga.jpg"
+                        alt="Prenatal yoga instructor in a peaceful wellness studio"
+                        class="instructors-team-image"
+                        loading="lazy"
+                    >
+
+                    <span class="instructors-team-image-number">01</span>
+
+                </div>
+
+                <div class="instructors-team-card-content">
+
+                    <span class="instructors-team-specialty">
+                        PRENATAL YOGA
+                    </span>
+
+                    <h3 class="instructors-team-name">
+                        Emily Carter
+                    </h3>
+
+                    <p class="instructors-team-bio">
+                        Focused on gentle movement, mindful breathing,
+                        and helping expectant mothers feel more connected
+                        with their changing bodies.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="instructors-team-link"
+                        aria-label="Enquire about prenatal yoga classes"
+                    >
+                        <span>Explore Classes</span>
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M5 12h14"/>
+                            <path d="m13 6 6 6-6 6"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- INSTRUCTOR 2 -->
+            <article class="instructors-team-card">
+
+                <div class="instructors-team-image-wrap">
+
+                    <img
+                        src="images/instructor-pregnancy-fitness.jpg"
+                        alt="Pregnancy fitness instructor in a bright wellness studio"
+                        class="instructors-team-image"
+                        loading="lazy"
+                    >
+
+                    <span class="instructors-team-image-number">02</span>
+
+                </div>
+
+                <div class="instructors-team-card-content">
+
+                    <span class="instructors-team-specialty">
+                        PREGNANCY FITNESS
+                    </span>
+
+                    <h3 class="instructors-team-name">
+                        Sophia Bennett
+                    </h3>
+
+                    <p class="instructors-team-bio">
+                        Encourages mindful, appropriate movement that
+                        prioritises comfort, individual needs, and
+                        confidence during pregnancy.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="instructors-team-link"
+                        aria-label="Enquire about pregnancy fitness classes"
+                    >
+                        <span>Explore Classes</span>
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M5 12h14"/>
+                            <path d="m13 6 6 6-6 6"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- INSTRUCTOR 3 -->
+            <article class="instructors-team-card">
+
+                <div class="instructors-team-image-wrap">
+
+                    <img
+                        src="images/instructor-postnatal-recovery.jpg"
+                        alt="Postnatal recovery instructor in a calm studio"
+                        class="instructors-team-image"
+                        loading="lazy"
+                    >
+
+                    <span class="instructors-team-image-number">03</span>
+
+                </div>
+
+                <div class="instructors-team-card-content">
+
+                    <span class="instructors-team-specialty">
+                        POSTNATAL RECOVERY
+                    </span>
+
+                    <h3 class="instructors-team-name">
+                        Olivia Bennett
+                    </h3>
+
+                    <p class="instructors-team-bio">
+                        Supports a gradual, individualised return to
+                        movement, with an emphasis on comfort and
+                        rebuilding confidence after birth.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="instructors-team-link"
+                        aria-label="Enquire about postnatal recovery classes"
+                    >
+                        <span>Explore Classes</span>
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M5 12h14"/>
+                            <path d="m13 6 6 6-6 6"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- INSTRUCTOR 4 -->
+            <article class="instructors-team-card">
+
+                <div class="instructors-team-image-wrap">
+
+                    <img
+                        src="images/instructor-breathwork.jpg"
+                        alt="Mindfulness and breathing instructor in a serene studio"
+                        class="instructors-team-image"
+                        loading="lazy"
+                    >
+
+                    <span class="instructors-team-image-number">04</span>
+
+                </div>
+
+                <div class="instructors-team-card-content">
+
+                    <span class="instructors-team-specialty">
+                        BREATHWORK & RELAXATION
+                    </span>
+
+                    <h3 class="instructors-team-name">
+                        Grace Wilson
+                    </h3>
+
+                    <p class="instructors-team-bio">
+                        Introduces gentle breathing and relaxation
+                        practices to encourage moments of calm,
+                        awareness, and mindful rest.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="instructors-team-link"
+                        aria-label="Enquire about breathing and relaxation classes"
+                    >
+                        <span>Explore Classes</span>
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M5 12h14"/>
+                            <path d="m13 6 6 6-6 6"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- SECTION FOOTER -->
+        <div class="instructors-team-footer">
+
+            <p class="instructors-team-footer-text">
+                Every journey is different. We're here to help you
+                find the support that feels right for you.
+            </p>
+
+            <a href="contact.html" class="instructors-team-contact-btn">
+                <span>Get in Touch</span>
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="M5 12h14"/>
+                    <path d="m13 6 6 6-6 6"/>
+                </svg>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END SECTION 2 — MEET OUR INSTRUCTORS -->
+
+<!-- ==========================================
+     SECTION 3 — OUR APPROACH TO CARE
+========================================== -->
+
+<section class="instructors-approach" id="ourApproach">
+
+    <div class="instructors-approach-container">
+
+        <!-- LEFT: IMAGE -->
+        <div class="instructors-approach-visual">
+
+            <div class="instructors-approach-image-wrap">
+
+                <img
+                    src="images/instructors-approach.jpg"
+                    alt="A prenatal fitness instructor guiding a mother through gentle movement in a calm studio"
+                    class="instructors-approach-image"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <!-- IMAGE CAPTION -->
+            <div class="instructors-approach-image-caption">
+                <span class="instructors-approach-caption-line"></span>
+
+                <p>
+                    Care that meets you where you are
+                </p>
+            </div>
+
+            <!-- DECORATIVE BORDER -->
+            <div class="instructors-approach-decoration"></div>
+
+        </div>
+
+        <!-- RIGHT: CONTENT -->
+        <div class="instructors-approach-content">
+
+            <span class="instructors-approach-eyebrow">
+                CARE THAT FEELS PERSONAL
+            </span>
+
+            <h2 class="instructors-approach-title">
+                Support That
+                <span>Starts With You</span>
+            </h2>
+
+            <p class="instructors-approach-intro">
+                No two motherhood journeys are the same. That's why
+                our approach begins with listening, understanding your
+                needs, and helping you feel comfortable in your practice.
+            </p>
+
+            <p class="instructors-approach-description">
+                We aim to create a welcoming environment where you can
+                move mindfully, ask questions, and take each step at
+                a pace that feels right for you.
+            </p>
+
+            <!-- CARE PRINCIPLES -->
+            <div class="instructors-approach-principles">
+
+                <!-- PRINCIPLE 1 -->
+                <div class="instructors-approach-item">
+
+                    <div class="instructors-approach-icon">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.6"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+                        </svg>
+
+                    </div>
+
+                    <div class="instructors-approach-item-content">
+
+                        <h3>Individual Attention</h3>
+
+                        <p>
+                            We recognise your unique needs, listen to
+                            your concerns, and help you explore an
+                            appropriate practice.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- PRINCIPLE 2 -->
+                <div class="instructors-approach-item">
+
+                    <div class="instructors-approach-icon">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.6"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M12 22V12"/>
+                            <path d="M12 15C6 15 3 11 3 5c6 0 9 4 9 10Z"/>
+                            <path d="M12 11c0-5 3-8 9-8 0 5-3 8-9 8Z"/>
+                        </svg>
+
+                    </div>
+
+                    <div class="instructors-approach-item-content">
+
+                        <h3>Mindful Movement</h3>
+
+                        <p>
+                            We encourage you to respect your comfort
+                            level and focus on thoughtful movement
+                            rather than comparison.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- PRINCIPLE 3 -->
+                <div class="instructors-approach-item">
+
+                    <div class="instructors-approach-icon">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.6"
+                             stroke-linecap="round" stroke-linejoin="round"
+                             aria-hidden="true">
+                            <circle cx="9" cy="8" r="3"/>
+                            <path d="M3 20v-2a6 6 0 0 1 12 0v2"/>
+                            <path d="M16 5.2a3 3 0 0 1 0 5.6"/>
+                            <path d="M18 14a5 5 0 0 1 3 4.5V20"/>
+                        </svg>
+
+                    </div>
+
+                    <div class="instructors-approach-item-content">
+
+                        <h3>A Supportive Community</h3>
+
+                        <p>
+                            We strive to create a respectful space
+                            where you can feel welcomed, encouraged,
+                            and comfortable asking questions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <a href="contact.html" class="instructors-approach-btn">
+
+                <span>Let's Talk About Your Needs</span>
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="M5 12h14"/>
+                    <path d="m13 6 6 6-6 6"/>
+                </svg>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END SECTION 3 — OUR APPROACH TO CARE -->
+
+<!-- =========================================
+     SECTION 4 — THE HEART BEHIND YOUR CARE
+========================================= -->
+
+<section class="instructors-heart" id="instructorStory">
+
+    <div class="instructors-heart-container">
+
+        <!-- SECTION INTRODUCTION -->
+        <div class="instructors-heart-header">
+
+            <span class="instructors-heart-eyebrow">
+                THE PERSON BEHIND THE PRACTICE
+            </span>
+
+            <h2 class="instructors-heart-title">
+                The Heart Behind
+                <span>Your Care</span>
+            </h2>
+
+            <p class="instructors-heart-description">
+                Every motherhood journey deserves understanding,
+                encouragement, and thoughtful guidance. Meet the
+                person who helps bring that philosophy to life at
+                Nurture &amp; Bloom.
+            </p>
+
+        </div>
+
+        <!-- PROFILE AND PHILOSOPHY -->
+        <div class="instructors-heart-feature">
+
+            <!-- INSTRUCTOR PROFILE -->
+            <div class="instructors-heart-profile">
+
+                <div class="instructors-heart-image-wrap">
+
+                    <img
+                        src="images/instructors-lead.jpg"
+                        alt="Lead instructor at Nurture and Bloom"
+                        class="instructors-heart-image"
+                        loading="lazy"
+                    >
+
+                    <div class="instructors-heart-image-label">
+                        <span class="instructors-heart-label-dot"></span>
+                        <span>HERE FOR YOUR JOURNEY</span>
+                    </div>
+
+                </div>
+
+                <div class="instructors-heart-profile-content">
+
+                    <span class="instructors-heart-profile-eyebrow">
+                        YOUR LEAD INSTRUCTOR
+                    </span>
+
+                    <h3 class="instructors-heart-name">
+                        Meet Your Guide
+                    </h3>
+
+                    <p class="instructors-heart-role">
+                        Prenatal &amp; Postnatal Fitness Instructor
+                    </p>
+
+                    <p class="instructors-heart-bio">
+                        With a passion for supporting mothers through
+                        every stage of their journey, our lead instructor
+                        believes that movement should feel welcoming,
+                        adaptable, and empowering. Each class is an
+                        opportunity to listen to your body and build
+                        confidence at your own pace.
+                    </p>
+
+                    <a
+                        href="contact.html"
+                        class="instructors-heart-profile-link"
+                    >
+                        <span>Connect With Our Team</span>
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="M5 12h14"/>
+                            <path d="m13 6 6 6-6 6"/>
+                        </svg>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PHILOSOPHY CARD -->
+            <div class="instructors-heart-philosophy">
+
+                <div class="instructors-heart-quote-icon">
+                    <svg
+                        viewBox="0 0 48 48"
+                        fill="currentColor"
+                        aria-hidden="true"
+                    >
+                        <path d="M8 25h12v15H5V27C5 15 10 8 20 5l3 6
+                        C14 14 10 18 8 25Zm22 0h12v15H27V27
+                        C27 15 32 8 42 5l3 6c-9 3-13 7-15 14Z"/>
+                    </svg>
+                </div>
+
+                <span class="instructors-heart-philosophy-eyebrow">
+                    OUR GUIDING PHILOSOPHY
+                </span>
+
+                <h3 class="instructors-heart-quote">
+                    Every motherhood journey deserves care that feels
+                    <span>personal.</span>
+                </h3>
+
+                <div class="instructors-heart-quote-divider"></div>
+
+                <p class="instructors-heart-philosophy-text">
+                    We believe there is no single way to experience
+                    motherhood. Our role is to create a supportive
+                    environment where you feel heard, respected, and
+                    encouraged to discover what works for you.
+                </p>
+
+                <div class="instructors-heart-signature">
+                    <span class="instructors-heart-signature-line"></span>
+                    <span>Nurture &amp; Bloom</span>
+                </div>
+
+                <div class="instructors-heart-decoration"></div>
+
+            </div>
+
+        </div>
+
+        <!-- VALUES STRIP -->
+        <div class="instructors-heart-values">
+
+            <!-- VALUE 1 -->
+            <div class="instructors-heart-value">
+
+                <div class="instructors-heart-value-icon">
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7
+                        l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21
+                        l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+                    </svg>
+                </div>
+
+                <div class="instructors-heart-value-content">
+                    <h4>Personal Care</h4>
+                    <p>Guidance that respects your individual needs.</p>
+                </div>
+
+            </div>
+
+            <!-- VALUE 2 -->
+            <div class="instructors-heart-value">
+
+                <div class="instructors-heart-value-icon">
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <path d="M12 22V12"/>
+                        <path d="M12 15C6 15 3 11 3 5c6 0 9 4 9 10Z"/>
+                        <path d="M12 11c0-5 3-8 9-8 0 5-3 8-9 8Z"/>
+                    </svg>
+                </div>
+
+                <div class="instructors-heart-value-content">
+                    <h4>Mindful Movement</h4>
+                    <p>Comfort and confidence at your own pace.</p>
+                </div>
+
+            </div>
+
+            <!-- VALUE 3 -->
+            <div class="instructors-heart-value">
+
+                <div class="instructors-heart-value-icon">
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="9" cy="8" r="3"/>
+                        <path d="M3 20v-2a6 6 0 0 1 12 0v2"/>
+                        <path d="M16 5.2a3 3 0 0 1 0 5.6"/>
+                        <path d="M18 14a5 5 0 0 1 3 4.5V20"/>
+                    </svg>
+                </div>
+
+                <div class="instructors-heart-value-content">
+                    <h4>Community</h4>
+                    <p>A welcoming space to learn and grow together.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     SECTION 5 — WHAT MAKES OUR APPROACH DIFFERENT
+========================================= -->
+
+<section class="instructors-values" id="ourValues">
+
+    <div class="instructors-values-container">
+
+        <!-- SECTION HEADER -->
+        <div class="instructors-values-header">
+
+            <span class="instructors-values-eyebrow">
+                THE NURTURE &amp; BLOOM DIFFERENCE
+            </span>
+
+            <h2 class="instructors-values-title">
+                More Than Movement,
+                <span>A Feeling of Support</span>
+            </h2>
+
+            <p class="instructors-values-description">
+                We believe that meaningful care goes beyond the
+                movements we practise. It's about feeling understood,
+                respecting your individual journey, and finding a
+                supportive space where you can grow with confidence.
+            </p>
+
+        </div>
+
+        <!-- VALUES GRID -->
+        <div class="instructors-values-grid">
+
+            <!-- CARD 1 — COMPASSIONATE GUIDANCE -->
+            <article class="instructors-values-card">
+
+                <div class="instructors-values-card-top">
+                    <span class="instructors-values-number">01</span>
+
+                    <div class="instructors-values-icon">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7
+                            l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21
+                            l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <h3 class="instructors-values-card-title">
+                    Compassionate Guidance
+                </h3>
+
+                <p class="instructors-values-card-description">
+                    We begin by listening. Your questions, concerns,
+                    and comfort matter, helping create a practice
+                    that feels respectful and supportive.
+                </p>
+
+                <div class="instructors-values-card-line"></div>
+
+            </article>
+
+            <!-- CARD 2 — MINDFUL MOVEMENT -->
+            <article class="instructors-values-card">
+
+                <div class="instructors-values-card-top">
+                    <span class="instructors-values-number">02</span>
+
+                    <div class="instructors-values-icon">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="M12 22V12"/>
+                            <path d="M12 15C6 15 3 11 3 5c6 0 9 4 9 10Z"/>
+                            <path d="M12 11c0-5 3-8 9-8 0 5-3 8-9 8Z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <h3 class="instructors-values-card-title">
+                    Mindful Movement
+                </h3>
+
+                <p class="instructors-values-card-description">
+                    We encourage thoughtful movement, body awareness,
+                    and a pace that respects your comfort rather
+                    than comparing your progress with others.
+                </p>
+
+                <div class="instructors-values-card-line"></div>
+
+            </article>
+
+            <!-- CARD 3 — EVERY JOURNEY -->
+            <article class="instructors-values-card">
+
+                <div class="instructors-values-card-top">
+                    <span class="instructors-values-number">03</span>
+
+                    <div class="instructors-values-icon">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <h3 class="instructors-values-card-title">
+                    Respect for Every Journey
+                </h3>
+
+                <p class="instructors-values-card-description">
+                    Every experience of motherhood is differently.
+                    We aim to honourable your individual needs and
+                    encourages progress without pressure.
+                </p>
+
+                <div class="instructors-values-card-line"></div>
+
+            </article>
+
+            <!-- CARD 4 — COMMUNITY -->
+            <article class="instructors-values-card">
+
+                <div class="instructors-values-card-top">
+                    <span class="instructors-values-number">04</span>
+
+                    <div class="instructors-values-icon">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <circle cx="9" cy="8" r="3"/>
+                            <path d="M3 20v-2a6 6 0 0 1 12 0v2"/>
+                            <path d="M16 5.2a3 3 0 0 1 0 5.6"/>
+                            <path d="M18 14a5 5 0 0 1 3 4.5V20"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <h3 class="instructors-values-card-title">
+                    A Welcoming Community
+                </h3>
+
+                <p class="instructors-values-card-description">
+                    We strive to create a warm, inclusive environment
+                    where you can connect, ask questions, and feel
+                    encouraged throughout your journey.
+                </p>
+
+                <div class="instructors-values-card-line"></div>
+
+            </article>
+
+        </div>
+
+        <!-- CLOSING STATEMENT -->
+        <div class="instructors-values-footer">
+
+            <span class="instructors-values-footer-line"></span>
+
+            <p>
+                A little more understanding.
+                <span>A little more encouragement.</span>
+                Care that puts you first.
+            </p>
+
+            <span class="instructors-values-footer-line"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     INSTRUCTORS — A DAY AT OUR STUDIO
+=========================================== -->
+
+<section class="instructors-day" id="instructorsDay">
+
+    <div class="instructors-day-container">
+
+        <!-- SECTION HEADER -->
+        <div class="instructors-day-header">
+
+            <span class="instructors-day-eyebrow">
+                INSIDE OUR STUDIO
+            </span>
+
+            <h2 class="instructors-day-title">
+                A Day Filled With
+                <span>Care & Connection</span>
+            </h2>
+
+            <p class="instructors-day-description">
+                Every visit is an opportunity to slow down, reconnect
+                with yourself, and feel supported by people who
+                understand your motherhood journey.
+            </p>
+
+        </div>
+
+        <!-- EXPERIENCE CARDS -->
+        <div class="instructors-day-grid">
+
+            <!-- CARD 01 -->
+            <article class="instructors-day-card">
+
+                <div class="instructors-day-image-wrap">
+
+                    <img
+                        src="images/studio-gentle-movement.jpg"
+                        alt="Gentle prenatal movement in a peaceful studio"
+                        class="instructors-day-image"
+                        loading="lazy"
+                    >
+
+                    <span class="instructors-day-number">01</span>
+
+                </div>
+
+                <div class="instructors-day-card-content">
+
+                    <span class="instructors-day-card-label">
+                        MOVE WITH EASE
+                    </span>
+
+                    <h3 class="instructors-day-card-title">
+                        Move at Your Pace
+                    </h3>
+
+                    <p class="instructors-day-card-description">
+                        Explore gentle, thoughtfully guided movement
+                        adapted to your comfort, needs, and stage
+                        of your motherhood journey.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- CARD 02 -->
+            <article class="instructors-day-card">
+
+                <div class="instructors-day-image-wrap">
+
+                    <img
+                        src="images/studio-personal-support.jpg"
+                        alt="Prenatal instructor offering individual guidance"
+                        class="instructors-day-image"
+                        loading="lazy"
+                    >
+
+                    <span class="instructors-day-number">02</span>
+
+                </div>
+
+                <div class="instructors-day-card-content">
+
+                    <span class="instructors-day-card-label">
+                        CARE THAT LISTENS
+                    </span>
+
+                    <h3 class="instructors-day-card-title">
+                        Feel Truly Supported
+                    </h3>
+
+                    <p class="instructors-day-card-description">
+                        Receive thoughtful guidance in a welcoming
+                        environment where your questions, feelings,
+                        and individual needs matter.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- CARD 03 -->
+            <article class="instructors-day-card">
+
+                <div class="instructors-day-image-wrap">
+
+                    <img
+                        src="images/studio-motherhood-community.jpg"
+                        alt="Expectant mothers connecting after a group class"
+                        class="instructors-day-image"
+                        loading="lazy"
+                    >
+
+                    <span class="instructors-day-number">03</span>
+
+                </div>
+
+                <div class="instructors-day-card-content">
+
+                    <span class="instructors-day-card-label">
+                        GROW TOGETHER
+                    </span>
+
+                    <h3 class="instructors-day-card-title">
+                        Find Your Community
+                    </h3>
+
+                    <p class="instructors-day-card-description">
+                        Connect with other mothers, share experiences, journey
+                        and enjoy a sense of belonging throughout
+                        your journey.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- CLOSING MESSAGE -->
+        <div class="instructors-day-footer">
+
+            <span class="instructors-day-footer-line"></span>
+
+            <p class="instructors-day-footer-text">
+                A little movement, a little connection,
+                and a lot of care.
+            </p>
+
+            <span class="instructors-day-footer-line"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+     INSTRUCTORS — FINAL CTA BANNER
+=========================================== -->
+
+<section class="instructors-final-cta" id="instructorsFinalCta">
+
+    <!-- BACKGROUND IMAGE + OVERLAY -->
+    <div class="instructors-final-cta-background">
+        <img
+            src="images/instructors-final-cta.jpg"
+            alt="A peaceful prenatal wellness studio"
+            class="instructors-final-cta-image"
+        >
+        <div class="instructors-final-cta-overlay"></div>
+    </div>
+
+    <!-- CTA CONTENT -->
+    <div class="instructors-final-cta-container">
+
+        <span class="instructors-final-cta-eyebrow">
+            YOUR NEXT CHAPTER STARTS HERE
+        </span>
+
+        <h2 class="instructors-final-cta-title">
+            You Deserve
+            <span>Support, Too.</span>
+        </h2>
+
+        <p class="instructors-final-cta-description">
+            Find a welcoming space to move, connect, and feel supported
+            through your motherhood journey. We are here to help you
+            feel confident, cared for, and connected every step of the way.
+        </p>
+
+        <!-- CTA BUTTONS -->
+        <div class="instructors-final-cta-actions">
+
+            <a
+                href="classes.html#exploreClasses"
+                class="instructors-final-cta-btn instructors-final-cta-btn-primary"
+            >
+                Explore Our Classes
+
+                <svg
+                    class="instructors-final-cta-btn-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                </svg>
+            </a>
+
+            <a
+                href="contact.html"
+                class="instructors-final-cta-btn instructors-final-cta-btn-secondary"
+            >
+                Contact Our Team
+            </a>
+
+        </div>
+
+        <!-- DECORATIVE DETAIL -->
+        <div class="instructors-final-cta-note">
+            <span class="instructors-final-cta-note-line"></span>
+            <span>Gentle movement. Genuine care. A community that understands.</span>
+            <span class="instructors-final-cta-note-line"></span>
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+<!-- =========================================
+     NURTURE & BLOOM — FOOTER
+========================================= -->
+
+<footer class="nb-footer" id="nbFooter">
+
+    <div class="nb-footer-container">
+
+        <!-- BRAND COLUMN -->
+        <div class="nb-footer-brand">
+
+            <a href="index.html" class="nb-footer-logo">
+                <img src="images/logo.png"
+                     alt="Nurture & Bloom">
+            </a>
+
+            <p class="nb-footer-description">
+                Supporting your journey through pregnancy and
+                postpartum with safe, nurturing movement,
+                expert guidance, and a community that cares.
+            </p>
+
+            <!-- SOCIAL LINKS -->
+            <div class="nb-footer-socials">
+
+                <a href="https://www.instagram.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"
+                       aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.facebook.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"
+                       aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.youtube.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"
+                       aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"
+                       aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="nb-footer-column">
+
+            <h3 class="nb-footer-heading">Quick Links</h3>
+
+            <ul class="nb-footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Our Classes</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+
+        </div>
+
+        <!-- OUR PROGRAMS -->
+        <div class="nb-footer-column">
+
+            <h3 class="nb-footer-heading">Our Programs</h3>
+
+            <ul class="nb-footer-links">
+                <li>
+                    <a href="classes.html">Prenatal Fitness</a>
+                </li>
+                <li>
+                    <a href="classes.html">Postnatal Recovery</a>
+                </li>
+                <li>
+                    <a href="classes.html">Gentle Yoga</a>
+                </li>
+                <li>
+                    <a href="classes.html">Breathing & Relaxation</a>
+                </li>
+                <li>
+                    <a href="classes.html">Core Strengthening</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="nb-footer-column nb-footer-contact">
+
+            <h3 class="nb-footer-heading">Get in Touch</h3>
+
+            <p class="nb-footer-contact-text">
+                Have questions about our classes? We'd love
+                to help you find the right program.
+            </p>
+
+            <a href="contact.html" class="nb-footer-contact-link">
+                Contact Our Team
+                <i class="fa-solid fa-arrow-right"
+                   aria-hidden="true"></i>
+            </a>
+
+            <a href="login.html" class="nb-footer-member-link">
+                Member Login
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+    <div class="nb-footer-bottom">
+
+        <div class="nb-footer-bottom-container">
+
+            <p class="nb-footer-copyright">
+                &copy; <span id="nbFooterYear">2026</span>
+                Nurture & Bloom. All rights reserved.
+            </p>
+
+            <div class="nb-footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<button type="button"
+        class="nb-scroll-top"
+        id="nbScrollTop"
+        aria-label="Scroll to top"
+        title="Back to top">
+
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+
+</button>
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+    <script src="js/global-settings.js"></script>
+
+
+</body>
+</html>

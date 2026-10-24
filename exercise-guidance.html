@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Nurture & Bloom</title>
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/res-dash.css">
+</head>
+
+<body class="nb-dashboard">
+
+    <!-- =====================================
+         FIXED SIDEBAR
+    ====================================== -->
+    <aside class="dash-sidebar" id="dashSidebar">
+
+        <!-- LOGO -->
+        <a href="index.html" class="dash-logo">
+            <img src="images/logo.png" alt="Nurture & Bloom">
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="dash-navigation" aria-label="Dashboard navigation">
+
+            <span class="dash-nav-heading">MAIN MENU</span>
+
+            <!-- Dashboard -->
+            <a href="dashboard.html"
+               class="dash-nav-link"
+               aria-current="page">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="3" width="8" height="8" rx="1.5"/>
+                    <rect x="13" y="3" width="8" height="5" rx="1.5"/>
+                    <rect x="13" y="10" width="8" height="11" rx="1.5"/>
+                    <rect x="3" y="13" width="8" height="8" rx="1.5"/>
+                </svg>
+
+                <span>Dashboard</span>
+            </a>
+
+            <!-- Book a Class -->
+            <a href="book-class.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                    <path d="M12 13v5M9.5 15.5h5"/>
+                </svg>
+
+                <span>Book a Class</span>
+            </a>
+
+            <!-- My Bookings -->
+            <a href="my-bookings.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                    <path d="m9 15 2 2 4-4"/>
+                </svg>
+
+                <span>My Bookings</span>
+            </a>
+
+            <!-- Session History -->
+            <a href="session-history.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 11a9 9 0 1 1 2.6 6.4"/>
+                    <path d="M3 4v7h7"/>
+                    <path d="M12 7v5l3 2"/>
+                </svg>
+
+                <span>Session History</span>
+            </a>
+
+            <!-- Exercise Guidance -->
+            <a href="exercise-guidance.html" class="dash-nav-link active">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11z"/>
+                    <path d="M8 12h3l1.5-3 2 6 1.5-3H19"/>
+                </svg>
+
+                <span>Exercise Guidance</span>
+            </a>
+
+            <!-- Payments -->
+            <a href="payments.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <path d="M2 10h20M6 15h4"/>
+                </svg>
+
+                <span>Payments</span>
+            </a>
+
+            <!-- My Profile -->
+            <a href="dashboard-profile.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21v-2a8 8 0 0 1 16 0v2z"/>
+                </svg>
+
+                <span>My Profile</span>
+            </a>
+
+        </nav>
+
+        <!-- LOGOUT AT BOTTOM -->
+        <!-- LOGOUT AT BOTTOM -->
+<div class="dash-sidebar-bottom">
+
+    <a href="#" class="dash-logout-link" data-logout-trigger>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M10 17l5-5-5-5M15 12H3"/>
+            <path d="M12 3h6a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-6"/>
+        </svg>
+
+        <span>Logout</span>
+    </a>
+
+</div>
+
+    </aside>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div class="dash-sidebar-overlay" id="dashSidebarOverlay"></div>
+
+
+    <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+    <div class="dash-main">
+
+        <!-- FIXED TOPBAR -->
+        <header class="dash-topbar">
+
+            <!-- LEFT: HAMBURGER + TITLE -->
+            <div class="dash-topbar-left">
+
+                <button type="button"
+                        class="dash-menu-toggle"
+                        id="dashMenuToggle"
+                        aria-label="Open navigation menu"
+                        aria-controls="dashSidebar"
+                        aria-expanded="false">
+
+                    <svg class="dash-menu-icon"
+                         viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+
+                    <svg class="dash-close-icon"
+                         viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="m6 6 12 12M18 6 6 18"/>
+                    </svg>
+
+                </button>
+
+                <div class="dash-page-heading">
+                    <span class="dash-heading-eyebrow">
+                        YOUR WELLNESS SPACE
+                    </span>
+                    <h1>Dashboard</h1>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: TOPBAR ICONS -->
+            <div class="dash-topbar-actions">
+
+                <!-- 1. DARK MODE -->
+                <button type="button"
+                        class="dash-icon-btn dash-dark-btn"
+                        id="dashDarkToggle"
+                        aria-label="Toggle dark mode"
+                        title="Dark Mode">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5
+                                 8.5 8.5 0 1 0 20.5 15.5Z"/>
+                    </svg>
+
+                </button>
+
+
+                <!-- 2. RTL -->
+                <button type="button"
+                        class="dash-icon-btn dash-rtl-btn"
+                        id="dashRtlToggle"
+                        aria-label="Toggle right-to-left layout"
+                        title="RTL">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 7h13l-4-4"/>
+                        <path d="m20 7-4 4"/>
+                        <path d="M17 17H4l4 4"/>
+                        <path d="m4 17 4-4"/>
+                    </svg>
+
+                </button>
+
+
+                <!-- 3. NOTIFICATIONS -->
+                <div class="dash-action-wrap">
+
+                    <button type="button"
+                            class="dash-icon-btn dash-notification-btn"
+                            id="dashNotificationToggle"
+                            aria-label="Notifications, 3 unread"
+                            aria-controls="dashNotificationPanel"
+                            aria-expanded="false"
+                            title="Notifications">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z"/>
+                            <path d="M10 21h4"/>
+                        </svg>
+
+                        <span class="dash-notification-count">3</span>
+
+                    </button>
+
+                    <!-- NOTIFICATION DROPDOWN -->
+                    <div class="dash-dropdown dash-notification-panel"
+                         id="dashNotificationPanel"
+                         hidden>
+
+                        <div class="dash-dropdown-heading">
+                            <strong>Notifications</strong>
+                            <span>3 unread</span>
+                        </div>
+
+                        <a href="my-bookings.html"
+                           class="dash-notification-item">
+
+                            <span class="dash-notification-symbol">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Upcoming class</strong>
+                                <small>Check your next scheduled session.</small>
+                            </span>
+
+                        </a>
+
+                        <a href="payments.html"
+                           class="dash-notification-item">
+
+                            <span class="dash-notification-symbol">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                                    <path d="M2 10h20"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Payment update</strong>
+                                <small>View your latest payment details.</small>
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 4. SETTINGS -->
+                <a href="dashboard-settings.html"
+                   class="dash-icon-btn dash-settings-btn"
+                   aria-label="Settings"
+                   title="Settings">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 8.5a3.5 3.5 0 1 0 0 7
+                                 3.5 3.5 0 0 0 0-7Z"/>
+
+                        <path d="M19.4 13.5a7.5 7.5 0 0 0 0-3
+                                 l1.5-1.2-1.8-3.1-1.8.7
+                                 a7.5 7.5 0 0 0-2.6-1.5L14.4 3h-3.6
+                                 l-.3 2.4a7.5 7.5 0 0 0-2.6 1.5l-1.8-.7
+                                 -1.8 3.1 1.5 1.2a7.5 7.5 0 0 0 0 3
+                                 l-1.5 1.2 1.8 3.1 1.8-.7
+                                 a7.5 7.5 0 0 0 2.6 1.5l.3 2.4h3.6
+                                 l.3-2.4a7.5 7.5 0 0 0 2.6-1.5l1.8.7
+                                 1.8-3.1Z"/>
+                    </svg>
+
+                </a>
+
+
+                <!-- PROFILE -->
+                <div class="dash-action-wrap dash-profile-wrap">
+
+                    <button type="button"
+                            class="dash-profile-btn"
+                            id="dashProfileToggle"
+                            aria-controls="dashProfilePanel"
+                            aria-expanded="false">
+
+                        <img src="images/profile.jpg"
+                             alt=""
+                             class="dash-profile-avatar">
+
+                        <span class="dash-profile-info">
+                            <strong>Priya</strong>
+                            <small>Member</small>
+                        </span>
+
+                        <svg class="dash-profile-chevron"
+                             viewBox="0 0 24 24"
+                             aria-hidden="true">
+                            <path d="m7 10 5 5 5-5"/>
+                        </svg>
+
+                    </button>
+
+                    <!-- PROFILE DROPDOWN -->
+                    <div class="dash-dropdown dash-profile-panel"
+                         id="dashProfilePanel"
+                         hidden>
+
+                        <a href="dashboard-profile.html">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4"/>
+                                <path d="M4 21v-2a8 8 0 0 1 16 0v2z"/>
+                            </svg>
+                            <span>My Profile</span>
+                        </a>
+
+                        <a href="dashboard-settings.html">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19 13.5a7 7 0 0 0 0-3l2-1.5-2-3.5
+                                         -2.3.9a7 7 0 0 0-2.5-1.4L14 2h-4l-.4 3
+                                         a7 7 0 0 0-2.5 1.4L5 5.5 3 9l2 1.5
+                                         a7 7 0 0 0 0 3L3 15l2 3.5 2.3-.9
+                                         a7 7 0 0 0 2.5 1.4L10 22h4l.4-3
+                                         a7 7 0 0 0 2.5-1.4l2.3.9 2-3.5z"/>
+                            </svg>
+                            <span>Settings</span>
+                        </a>
+
+                        <a href="login.html" class="dash-profile-logout">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M10 17l5-5-5-5M15 12H3"/>
+                                <path d="M12 3h6a3 3 0 0 1 3 3v12
+                                         a3 3 0 0 1-3 3h-6"/>
+                            </svg>
+                            <span>Logout</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+<!-- ==========================================
+     NURTURE & BLOOM — EXERCISE GUIDANCE
+     PART 1: HTML
+=========================================== -->
+
+<main class="dash-content exercise-guidance-content" id="dashContent">
+
+    <!-- PAGE HERO -->
+    <section class="eg-hero">
+        <div class="eg-hero-copy">
+            <span class="eg-eyebrow">YOUR WELLNESS JOURNEY</span>
+
+            <h1>Move Gently.<br>Feel Stronger.</h1>
+
+            <p>
+                Discover gentle, guided movements designed to support
+                your wellbeing through pregnancy and postnatal recovery.
+                Take each step at your own pace.
+            </p>
+
+            <div class="eg-hero-actions">
+                <a href="#egExercises" class="eg-btn eg-btn-primary">
+                    Explore Exercises
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 12h14M12 5l7 7-7 7"
+                              fill="none" stroke="currentColor"
+                              stroke-width="1.8" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </a>
+
+                <a href="#egSafety" class="eg-btn eg-btn-outline">
+                    Safety Guidelines
+                </a>
+            </div>
+
+            <div class="eg-hero-note">
+                <span class="eg-note-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 3l8 4v5c0 4.5-3.2 7.5-8 9-4.8-1.5-8-4.5-8-9V7l8-4z"
+                              fill="none" stroke="currentColor"
+                              stroke-width="1.7" stroke-linejoin="round"/>
+                        <path d="M8.5 12l2.3 2.3 4.8-5"
+                              fill="none" stroke="currentColor"
+                              stroke-width="1.7" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </span>
+
+                <span>Gentle movement. Your pace. Your journey.</span>
+            </div>
+        </div>
+
+        <div class="eg-hero-image">
+            <img
+                src="images/prenatal-exercise-guidance.jpg"
+                alt="Woman practicing gentle prenatal stretching on a yoga mat"
+            >
+
+            <div class="eg-image-badge">
+                <span class="eg-badge-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 21s-8-4.5-8-11a4.5 4.5 0 018-2.9A4.5 4.5 0 0120 10c0 6.5-8 11-8 11z"
+                              fill="none" stroke="currentColor"
+                              stroke-width="1.7" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <span>
+                    <strong>Care in Every Movement</strong>
+                    <small>Made for your wellness journey</small>
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PAGE INTRODUCTION -->
+    <section class="eg-intro">
+        <div class="eg-section-heading">
+            <span class="eg-eyebrow">MOVE WITH CONFIDENCE</span>
+            <h2>Find Your Flow</h2>
+            <p>
+                Explore guided exercises, learn proper techniques,
+                and make time for yourself every day.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- PROGRESS SUMMARY -->
+    <section class="eg-progress-grid" aria-label="Exercise progress">
+
+        <article class="eg-progress-card">
+            <div class="eg-progress-icon eg-icon-rose">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9 11l2 2 4-4M5 4h14v16H5z"
+                          fill="none" stroke="currentColor"
+                          stroke-width="1.7" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div>
+                <span class="eg-progress-label">Completed Exercises</span>
+                <strong id="egCompletedCount">0</strong>
+                <small>Keep building your routine</small>
+            </div>
+        </article>
+
+        <article class="eg-progress-card">
+            <div class="eg-progress-icon eg-icon-peach">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"
+                            fill="none" stroke="currentColor"
+                            stroke-width="1.7"/>
+                    <path d="M12 7v5l3 2"
+                          fill="none" stroke="currentColor"
+                          stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div>
+                <span class="eg-progress-label">Minutes Practiced</span>
+                <strong><span id="egTotalMinutes">0</span> min</strong>
+                <small>Every gentle step counts</small>
+            </div>
+        </article>
+
+        <article class="eg-progress-card">
+            <div class="eg-progress-icon eg-icon-lilac">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3l2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3z"
+                          fill="none" stroke="currentColor"
+                          stroke-width="1.6" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div>
+                <span class="eg-progress-label">Available Exercises</span>
+                <strong id="egAvailableCount">6</strong>
+                <small>Choose what feels right for you</small>
+            </div>
+        </article>
+    </section>
+
+
+    <!-- EXERCISE LIBRARY -->
+    <section class="eg-exercises-section" id="egExercises">
+
+        <div class="eg-section-heading eg-heading-row">
+            <div>
+                <span class="eg-eyebrow">YOUR EXERCISE LIBRARY</span>
+                <h2>Explore Exercises</h2>
+                <p>
+                    Choose an activity to view its instructions and
+                    recommended practice time.
+                </p>
+            </div>
+
+            <span class="eg-library-count" id="egLibraryCount">
+                6 exercises
+            </span>
+        </div>
+
+
+        <!-- SEARCH AND FILTERS -->
+        <div class="eg-filter-panel">
+
+            <label class="eg-search-box" for="egSearchInput">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="10.8" cy="10.8" r="6.8"
+                            fill="none" stroke="currentColor"
+                            stroke-width="1.7"/>
+                    <path d="M16 16l4.5 4.5"
+                          fill="none" stroke="currentColor"
+                          stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+
+                <input
+                    type="search"
+                    id="egSearchInput"
+                    placeholder="Search exercises..."
+                    autocomplete="off"
+                >
+            </label>
+
+            <label class="eg-select-wrap" for="egStageFilter">
+                <span class="eg-sr-only">Filter by stage</span>
+                <select id="egStageFilter">
+                    <option value="all">All Stages</option>
+                    <option value="prenatal">Prenatal</option>
+                    <option value="postnatal">Postnatal</option>
+                    <option value="all-stages">All Stages</option>
+                </select>
+            </label>
+
+            <label class="eg-select-wrap" for="egCategoryFilter">
+                <span class="eg-sr-only">Filter by category</span>
+                <select id="egCategoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="stretching">Stretching</option>
+                    <option value="breathing">Breathing</option>
+                    <option value="recovery">Recovery</option>
+                    <option value="pelvic">Pelvic Floor</option>
+                    <option value="relaxation">Relaxation</option>
+                </select>
+            </label>
+
+            <button type="button" class="eg-reset-btn" id="egResetFilters">
+                Reset
+            </button>
+        </div>
+
+
+        <!-- EXERCISE CARDS -->
+        <div class="eg-exercise-grid" id="egExerciseGrid">
+
+            <!-- CARD 1 -->
+            <article class="eg-exercise-card"
+                     data-exercise-id="EG001"
+                     data-stage="prenatal"
+                     data-category="yoga"
+                     data-duration="15">
+
+                <div class="eg-card-image">
+                    <img
+                        src="images/prenatal-yoga.jpg"
+                        alt="Gentle prenatal yoga practice"
+                        loading="lazy"
+                    >
+                    <span class="eg-card-tag">Prenatal</span>
+                    <span class="eg-duration">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"
+                                    fill="none" stroke="currentColor"
+                                    stroke-width="1.7"/>
+                            <path d="M12 7v5l3 2"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                        15 min
+                    </span>
+                </div>
+
+                <div class="eg-card-body">
+                    <span class="eg-card-category">Yoga</span>
+                    <h3>Gentle Prenatal Yoga</h3>
+                    <p>
+                        Slow, mindful movements focused on comfortable
+                        stretching and relaxation.
+                    </p>
+
+                    <div class="eg-card-meta">
+                        <span class="eg-level eg-level-gentle">Gentle</span>
+                        <span class="eg-step-count">4 steps</span>
+                    </div>
+
+                    <button type="button"
+                            class="eg-view-btn"
+                            data-eg-action="view"
+                            data-exercise-id="EG001">
+                        View Guidance
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.8" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- CARD 2 -->
+            <article class="eg-exercise-card"
+                     data-exercise-id="EG002"
+                     data-stage="all-stages"
+                     data-category="stretching"
+                     data-duration="10">
+
+                <div class="eg-card-image">
+                    <img
+                        src="images/stretch-restore.jpg"
+                        alt="Gentle seated stretching exercise"
+                        loading="lazy"
+                    >
+                    <span class="eg-card-tag">All Stages</span>
+                    <span class="eg-duration">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"
+                                    fill="none" stroke="currentColor"
+                                    stroke-width="1.7"/>
+                            <path d="M12 7v5l3 2"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                        10 min
+                    </span>
+                </div>
+
+                <div class="eg-card-body">
+                    <span class="eg-card-category">Stretching</span>
+                    <h3>Gentle Body Stretch</h3>
+                    <p>
+                        Easy, controlled stretches to encourage
+                        comfortable movement and flexibility.
+                    </p>
+
+                    <div class="eg-card-meta">
+                        <span class="eg-level eg-level-gentle">Gentle</span>
+                        <span class="eg-step-count">4 steps</span>
+                    </div>
+
+                    <button type="button"
+                            class="eg-view-btn"
+                            data-eg-action="view"
+                            data-exercise-id="EG002">
+                        View Guidance
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.8" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- CARD 3 -->
+            <article class="eg-exercise-card"
+                     data-exercise-id="EG003"
+                     data-stage="all-stages"
+                     data-category="breathing"
+                     data-duration="5">
+
+                <div class="eg-card-image">
+                    <img
+                        src="images/mindful-breathing.jpg"
+                        alt="Calm breathing practice in a peaceful studio"
+                        loading="lazy"
+                    >
+                    <span class="eg-card-tag">All Stages</span>
+                    <span class="eg-duration">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"
+                                    fill="none" stroke="currentColor"
+                                    stroke-width="1.7"/>
+                            <path d="M12 7v5l3 2"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                        5 min
+                    </span>
+                </div>
+
+                <div class="eg-card-body">
+                    <span class="eg-card-category">Breathing</span>
+                    <h3>Mindful Breathing</h3>
+                    <p>
+                        Practice relaxed, natural breathing in a
+                        comfortable seated position.
+                    </p>
+
+                    <div class="eg-card-meta">
+                        <span class="eg-level eg-level-gentle">Gentle</span>
+                        <span class="eg-step-count">3 steps</span>
+                    </div>
+
+                    <button type="button"
+                            class="eg-view-btn"
+                            data-eg-action="view"
+                            data-exercise-id="EG003">
+                        View Guidance
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.8" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- CARD 4 -->
+            <article class="eg-exercise-card"
+                     data-exercise-id="EG004"
+                     data-stage="postnatal"
+                     data-category="recovery"
+                     data-duration="10">
+
+                <div class="eg-card-image">
+                    <img
+                        src="images/postnatal-recovery.jpg"
+                        alt="Gentle postnatal recovery movement"
+                        loading="lazy"
+                    >
+                    <span class="eg-card-tag">Postnatal</span>
+                    <span class="eg-duration">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"
+                                    fill="none" stroke="currentColor"
+                                    stroke-width="1.7"/>
+                            <path d="M12 7v5l3 2"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                        10 min
+                    </span>
+                </div>
+
+                <div class="eg-card-body">
+                    <span class="eg-card-category">Recovery</span>
+                    <h3>Postnatal Gentle Movement</h3>
+                    <p>
+                        Simple, low-intensity movements to explore
+                        comfortable mobility during recovery.
+                    </p>
+
+                    <div class="eg-card-meta">
+                        <span class="eg-level eg-level-gentle">Gentle</span>
+                        <span class="eg-step-count">4 steps</span>
+                    </div>
+
+                    <button type="button"
+                            class="eg-view-btn"
+                            data-eg-action="view"
+                            data-exercise-id="EG004">
+                        View Guidance
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.8" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- CARD 5 -->
+            <article class="eg-exercise-card"
+                     data-exercise-id="EG005"
+                     data-stage="prenatal"
+                     data-category="pelvic"
+                     data-duration="5">
+
+                <div class="eg-card-image">
+                    <img
+                        src="images/pelvic-floor.jpg"
+                        alt="Prenatal pelvic floor awareness session"
+                        loading="lazy"
+                    >
+                    <span class="eg-card-tag">Prenatal</span>
+                    <span class="eg-duration">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"
+                                    fill="none" stroke="currentColor"
+                                    stroke-width="1.7"/>
+                            <path d="M12 7v5l3 2"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                        5 min
+                    </span>
+                </div>
+
+                <div class="eg-card-body">
+                    <span class="eg-card-category">Pelvic Floor</span>
+                    <h3>Pelvic Floor Awareness</h3>
+                    <p>
+                        Learn about gentle pelvic floor awareness
+                        with a focus on relaxation and control.
+                    </p>
+
+                    <div class="eg-card-meta">
+                        <span class="eg-level eg-level-gentle">Gentle</span>
+                        <span class="eg-step-count">3 steps</span>
+                    </div>
+
+                    <button type="button"
+                            class="eg-view-btn"
+                            data-eg-action="view"
+                            data-exercise-id="EG005">
+                        View Guidance
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.8" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </article>
+
+
+            <!-- CARD 6 -->
+            <article class="eg-exercise-card"
+                     data-exercise-id="EG006"
+                     data-stage="all-stages"
+                     data-category="relaxation"
+                     data-duration="8">
+
+                <div class="eg-card-image">
+                    <img
+                        src="images/relaxation-mobility.jpg"
+                        alt="Relaxation and gentle mobility practice"
+                        loading="lazy"
+                    >
+                    <span class="eg-card-tag">All Stages</span>
+                    <span class="eg-duration">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"
+                                    fill="none" stroke="currentColor"
+                                    stroke-width="1.7"/>
+                            <path d="M12 7v5l3 2"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                        8 min
+                    </span>
+                </div>
+
+                <div class="eg-card-body">
+                    <span class="eg-card-category">Relaxation</span>
+                    <h3>Relaxation &amp; Mobility</h3>
+                    <p>
+                        A calm session combining comfortable movement
+                        with moments of rest.
+                    </p>
+
+                    <div class="eg-card-meta">
+                        <span class="eg-level eg-level-gentle">Gentle</span>
+                        <span class="eg-step-count">4 steps</span>
+                    </div>
+
+                    <button type="button"
+                            class="eg-view-btn"
+                            data-eg-action="view"
+                            data-exercise-id="EG006">
+                        View Guidance
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"
+                                  fill="none" stroke="currentColor"
+                                  stroke-width="1.8" stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+
+        <!-- EMPTY STATE -->
+        <div class="eg-empty-state" id="egEmptyState" hidden>
+            <div class="eg-empty-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="10.8" cy="10.8" r="6.8"
+                            fill="none" stroke="currentColor"
+                            stroke-width="1.7"/>
+                    <path d="M16 16l4.5 4.5"
+                          fill="none" stroke="currentColor"
+                          stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <h3>No exercises found</h3>
+            <p>Try another search term or change your filters.</p>
+
+            <button type="button" class="eg-btn eg-btn-primary"
+                    id="egEmptyReset">
+                Show All Exercises
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- SAFETY REMINDER -->
+    <section class="eg-safety-banner" id="egSafety">
+        <div class="eg-safety-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3l9 16H3L12 3z"
+                      fill="none" stroke="currentColor"
+                      stroke-width="1.7" stroke-linejoin="round"/>
+                <path d="M12 9v4M12 16h.01"
+                      fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <div class="eg-safety-copy">
+            <h2>Your Safety Comes First</h2>
+            <p>
+                Every pregnancy and recovery journey is different.
+                Consult your healthcare professional before beginning
+                or changing an exercise routine. Follow individualized
+                guidance and stop if you feel unwell.
+            </p>
+        </div>
+
+        <a href="contact.html" class="eg-safety-link">
+            Ask for Guidance
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"
+                      fill="none" stroke="currentColor"
+                      stroke-width="1.8" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </section>
+
+</main>
+
+
+<!-- ==========================================
+     EXERCISE GUIDANCE MODAL
+=========================================== -->
+
+<div class="eg-modal" id="egGuidanceModal"
+     aria-hidden="true" role="dialog"
+     aria-modal="true" aria-labelledby="egModalTitle">
+
+    <div class="eg-modal-dialog">
+
+        <div class="eg-modal-header">
+            <div>
+                <span class="eg-eyebrow">EXERCISE DETAILS</span>
+                <h2 id="egModalTitle">Exercise Guidance</h2>
+            </div>
+
+            <button type="button" class="eg-modal-close"
+                    data-eg-close aria-label="Close exercise guidance">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 6l12 12M18 6L6 18"
+                          fill="none" stroke="currentColor"
+                          stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="eg-modal-body">
+
+            <div class="eg-modal-image">
+                <img src="images/prenatal-yoga.jpg"
+                     alt="" id="egModalImage">
+            </div>
+
+            <div class="eg-modal-info">
+                <span class="eg-card-category" id="egModalCategory">
+                    Yoga
+                </span>
+
+                <h3 id="egModalExerciseName">Gentle Prenatal Yoga</h3>
+
+                <p id="egModalDescription">
+                    Follow the guidance at a comfortable pace.
+                </p>
+
+                <div class="eg-modal-meta">
+                    <span>
+                        <strong>Duration</strong>
+                        <span id="egModalDuration">15 min</span>
+                    </span>
+
+                    <span>
+                        <strong>Stage</strong>
+                        <span id="egModalStage">Prenatal</span>
+                    </span>
+
+                    <span>
+                        <strong>Difficulty</strong>
+                        <span id="egModalDifficulty">Gentle</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="eg-instructions">
+                <h3>Step-by-Step Instructions</h3>
+
+                <ol id="egInstructionList">
+                    <li>Choose a comfortable position with adequate support.</li>
+                    <li>Move gently and avoid forcing any stretch.</li>
+                    <li>Breathe naturally and take breaks whenever needed.</li>
+                    <li>Finish slowly and rest before continuing your day.</li>
+                </ol>
+            </div>
+
+            <div class="eg-modal-safety">
+                <strong>Remember</strong>
+                <p>
+                    These are general educational prompts, not
+                    individualized medical advice. Follow your
+                    healthcare professional's recommendations.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="eg-modal-footer">
+            <button type="button" class="eg-btn eg-btn-outline"
+                    data-eg-close>
+                Close
+            </button>
+
+            <button type="button" class="eg-btn eg-btn-primary"
+                    id="egMarkCompleted">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 12l4 4L19 6"
+                          fill="none" stroke="currentColor"
+                          stroke-width="1.8" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                Mark as Completed
+            </button>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- TOAST NOTIFICATION -->
+<div class="eg-toast" id="egToast"
+     role="status" aria-live="polite">
+    <span class="eg-toast-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+            <path d="M5 12l4 4L19 6"
+                  fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"/>
+        </svg>
+    </span>
+    <span id="egToastMessage">Exercise updated.</span>
+</div>
+
+
+
+        </div>
+
+<!-- LOGOUT CONFIRMATION MODAL -->
+<div class="logout-modal-overlay" id="logoutModal" aria-hidden="true">
+
+    <div class="logout-modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="logoutModalTitle"
+         aria-describedby="logoutModalDescription">
+
+        <!-- Close Button -->
+        <button type="button"
+                class="logout-modal-close"
+                id="logoutCloseBtn"
+                aria-label="Close logout popup">
+            &times;
+        </button>
+
+        <!-- Logout Icon -->
+        <div class="logout-modal-icon">
+            <svg viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 17L15 12L10 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M15 12H3"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"/>
+                <path d="M12 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <!-- Content -->
+        <h2 id="logoutModalTitle">Logout?</h2>
+
+        <p id="logoutModalDescription">
+            Are you sure you want to logout from your account?
+        </p>
+
+        <!-- Actions -->
+        <div class="logout-modal-actions">
+
+            <button type="button"
+                    class="logout-btn logout-btn-cancel"
+                    id="logoutCancelBtn">
+                No, Stay
+            </button>
+
+            <button type="button"
+                    class="logout-btn logout-btn-confirm"
+                    id="logoutConfirmBtn">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 17L15 12L10 7"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M15 12H3"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"/>
+                    <path d="M12 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                Yes, Logout
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- JAVASCRIPT -->
+    <script src="js/dashboard.js"></script>
+    <script src="js/global-settings.js"></script>
+
+</body>
+</html>

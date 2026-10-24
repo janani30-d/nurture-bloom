@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nurture & Bloom | Prenatal & Postnatal Fitness</title>
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- ==============================
+         HEADER
+    =============================== -->
+    <header class="nb-header" id="nbHeader">
+
+        <div class="nb-header-container">
+
+            <!-- LOGO -->
+            <a href="index.html"
+               class="nb-logo"
+               aria-label="Nurture and Bloom Home">
+
+                <img src="images/logo.png"
+                     alt="Nurture & Bloom"
+                     width="180"
+                     height="60">
+            </a>
+
+            <!-- NAVIGATION -->
+            <nav class="nb-navigation"
+                 id="nbNavigation"
+                 aria-label="Main navigation">
+
+                <!-- MOBILE MENU HEADER -->
+                <div class="nb-mobile-menu-header">
+
+                   
+
+                    <button type="button"
+                            class="nb-menu-close"
+                            id="nbMenuClose"
+                            aria-label="Close navigation menu">
+
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+
+                    </button>
+
+                </div>
+
+                <!-- NAVIGATION LINKS -->
+                <ul class="nb-nav-list">
+
+                    <!-- HOME DROPDOWN -->
+                    <li class="nb-nav-item nb-home-dropdown">
+
+                        <button type="button"
+                                class="nb-nav-link nb-home-toggle active"
+                                id="nbHomeToggle"
+                                aria-expanded="false"
+                                aria-controls="nbHomeSubmenu">
+
+                            <span>Home</span>
+
+                            <i class="fa-solid fa-chevron-down"
+                               aria-hidden="true"></i>
+
+                        </button>
+
+                        <ul class="nb-home-submenu" id="nbHomeSubmenu">
+
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+
+                            <li>
+                                <a href="home-2.html"class="active">Home 2</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nb-nav-item">
+                        <a href="about.html" class="nb-nav-link">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li class="nb-nav-item">
+                        <a href="classes.html" class="nb-nav-link">
+                            Classes
+                        </a>
+                    </li>
+
+                    <li class="nb-nav-item">
+                        <a href="instructors.html" class="nb-nav-link">
+                            Instructors
+                        </a>
+                    </li>
+
+                    
+
+                    <li class="nb-nav-item">
+                        <a href="pricing.html" class="nb-nav-link">
+                            Pricing
+                        </a>
+                    </li>
+
+                    <li class="nb-nav-item">
+                        <a href="contact.html" class="nb-nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- MOBILE MENU ACTIONS -->
+                <div class="nb-header-actions">
+
+                    <!-- RTL TOGGLE -->
+                    <button type="button"
+                            class="nb-icon-button"
+                            id="nbRtlToggle"
+                            aria-label="Switch to right-to-left layout"
+                            aria-pressed="false"
+                            title="Toggle text direction">
+
+                        <i class="fa-solid fa-right-left"
+                           aria-hidden="true"></i>
+
+                    </button>
+
+                    <!-- DARK MODE TOGGLE -->
+                    <button type="button"
+                            class="nb-icon-button"
+                            id="nbThemeToggle"
+                            aria-label="Enable dark mode"
+                            aria-pressed="false"
+                            title="Toggle dark mode">
+
+                        <i class="fa-solid fa-moon"
+                           aria-hidden="true"></i>
+
+                    </button>
+
+                    <!-- LOGIN -->
+                    <a href="login.html"
+                       class="nb-button nb-button-secondary">
+
+                        Login
+
+                    </a>
+
+                    <!-- DASHBOARD -->
+                    <a href="dashboard.html"
+                       class="nb-button nb-button-primary">
+
+                        Dashboard
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+            <!-- MOBILE MENU TOGGLE -->
+            <button type="button"
+                    class="nb-menu-toggle"
+                    id="nbMenuToggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nbNavigation">
+
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ==============================
+         MENU OVERLAY
+         Outside the header
+    =============================== -->
+    <div class="nb-menu-overlay"
+         id="nbMenuOverlay"
+         aria-hidden="true">
+    </div>
+
+    <!-- ==============================
+         MAIN CONTENT
+         Add page sections here later
+    =============================== -->
+    <main id="mainContent">
+
+<!-- ==========================================
+     HOME 2 — SPLIT HERO
+=========================================== -->
+
+<section class="h2-hero" id="home2Hero">
+
+    <div class="h2-hero-container">
+
+        <!-- LEFT: HERO CONTENT -->
+        <div class="h2-hero-content">
+
+            <span class="h2-hero-eyebrow">
+                YOUR SPACE TO BLOOM
+            </span>
+
+            <h1 class="h2-hero-title">
+                Motherhood Is a Journey.
+                <span>Let Yourself Bloom.</span>
+            </h1>
+
+            <p class="h2-hero-description">
+                Find your rhythm through mindful movement, nurturing
+                guidance, and a community that supports you through
+                pregnancy and beyond.
+            </p>
+
+            <div class="h2-hero-buttons">
+
+                <a href="classes.html" class="h2-hero-btn-primary">
+                    Discover Our Classes
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="about.html" class="h2-hero-btn-secondary">
+                    Our Philosophy
+                </a>
+
+            </div>
+
+            <div class="h2-hero-note">
+                <span class="h2-hero-note-line"></span>
+                <p>Gentle movement. Meaningful support. Your pace.</p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT: HERO IMAGE -->
+        <div class="h2-hero-visual">
+
+            <div class="h2-hero-image-main">
+                <img
+                    src="images/home2-hero-main.jpg"
+                    alt="Expectant mother enjoying a peaceful moment in a wellness studio"
+                    fetchpriority="high"
+                >
+            </div>
+
+            <div class="h2-hero-image-accent">
+                <img
+                    src="images/home2-hero-detail.jpg"
+                    alt="A peaceful detail from the Nurture and Bloom wellness studio"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="h2-hero-floating-note">
+                <i class="fa-solid fa-heart"></i>
+                <span>Care for every stage</span>
+            </div>
+
+            <div class="h2-hero-decorative-circle"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     HOME 2 — OUR PHILOSOPHY
+========================================= -->
+<section class="h2-philosophy" id="ourPhilosophy">
+    <div class="h2-philosophy-container">
+
+        <!-- LEFT: IMAGE AREA -->
+        <div class="h2-philosophy-visual">
+            <div class="h2-philosophy-image-wrap">
+                <img
+                    src="images/home2-philosophy.jpg"
+                    alt="Expectant mother enjoying gentle movement in a peaceful wellness studio"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="h2-philosophy-image-label">
+                <span class="h2-philosophy-label-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+                <div class="h2-philosophy-label-content">
+                    <strong>Made for Your Journey</strong>
+                    <span>Support through every stage</span>
+                </div>
+            </div>
+
+            <span class="h2-philosophy-image-decoration"></span>
+        </div>
+
+        <!-- RIGHT: CONTENT AREA -->
+        <div class="h2-philosophy-content">
+
+            <span class="h2-philosophy-eyebrow">
+                OUR PHILOSOPHY
+            </span>
+
+            <h2 class="h2-philosophy-title">
+                Care That Moves
+                <span>With You</span>
+            </h2>
+
+            <p class="h2-philosophy-intro">
+                Every motherhood journey is different. Your movement,
+                your needs, and your pace deserve to be respected.
+            </p>
+
+            <p class="h2-philosophy-description">
+                At Nurture &amp; Bloom, we believe fitness should feel
+                supportive, not overwhelming. We create a welcoming
+                space where you can reconnect with your body, build
+                confidence, and feel supported through pregnancy
+                and postpartum recovery.
+            </p>
+
+            <!-- PHILOSOPHY POINTS -->
+            <div class="h2-philosophy-points">
+
+                <div class="h2-philosophy-point">
+                    <span class="h2-philosophy-point-icon">
+                        <i class="fa-solid fa-spa"></i>
+                    </span>
+                    <div class="h2-philosophy-point-content">
+                        <h3>Move With Intention</h3>
+                        <p>
+                            Gentle, mindful movement that respects
+                            your comfort and individual needs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="h2-philosophy-point">
+                    <span class="h2-philosophy-point-icon">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </span>
+                    <div class="h2-philosophy-point-content">
+                        <h3>Feel Supported</h3>
+                        <p>
+                            Encouragement and guidance as you navigate
+                            the changes of motherhood.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <a href="about.html" class="h2-philosophy-btn">
+                Get to Know Us
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- SMALL SIGNATURE -->
+            <div class="h2-philosophy-signature">
+                <span class="h2-philosophy-signature-line"></span>
+                <span>Honoring your journey, every step of the way.</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- =========================================
+     HOME 2 — FIND YOUR PRACTICE
+========================================= -->
+<section class="h2-practice" id="findYourPractice">
+
+    <div class="h2-practice-container">
+
+        <!-- SECTION HEADER -->
+        <div class="h2-practice-header">
+
+            <div class="h2-practice-heading">
+                <span class="h2-practice-eyebrow">
+                    YOUR MOVEMENT, YOUR WAY
+                </span>
+
+                <h2 class="h2-practice-title">
+                    Find Your <span>Practice</span>
+                </h2>
+            </div>
+
+            <p class="h2-practice-intro">
+                Movement that meets you where you are.
+                Explore supportive practices designed around
+                your changing body and your motherhood journey.
+            </p>
+
+        </div>
+
+        <!-- PRACTICE PANELS -->
+        <div class="h2-practice-list">
+
+            <!-- PRENATAL YOGA -->
+            <article class="h2-practice-panel">
+
+                <img
+                    class="h2-practice-image"
+                    src="images/home2-prenatal-yoga.jpg"
+                    alt="Expectant mother practicing gentle prenatal yoga"
+                    loading="lazy"
+                >
+
+                <div class="h2-practice-overlay"></div>
+
+                <div class="h2-practice-number">01</div>
+
+                <div class="h2-practice-content">
+
+                    <span class="h2-practice-category">
+                        DURING PREGNANCY
+                    </span>
+
+                    <h3 class="h2-practice-name">
+                        Prenatal Yoga
+                    </h3>
+
+                    <p class="h2-practice-description">
+                        Find calm, connect with your breath, and
+                        explore gentle movement with supportive guidance.
+                    </p>
+
+                    <a href="classes.html" class="h2-practice-link">
+                        Explore the Practice
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- PREGNANCY FITNESS -->
+            <article class="h2-practice-panel">
+
+                <img
+                    class="h2-practice-image"
+                    src="images/home2-pregnancy-fitness.jpg"
+                    alt="Pregnant woman performing a gentle fitness exercise"
+                    loading="lazy"
+                >
+
+                <div class="h2-practice-overlay"></div>
+
+                <div class="h2-practice-number">02</div>
+
+                <div class="h2-practice-content">
+
+                    <span class="h2-practice-category">
+                        BUILDING CONFIDENCE
+                    </span>
+
+                    <h3 class="h2-practice-name">
+                        Pregnancy Fitness
+                    </h3>
+
+                    <p class="h2-practice-description">
+                        Build strength and body awareness through
+                        movement adapted to your individual needs.
+                    </p>
+
+                    <a href="classes.html" class="h2-practice-link">
+                        Explore the Practice
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- POSTNATAL RECOVERY -->
+            <article class="h2-practice-panel">
+
+                <img
+                    class="h2-practice-image"
+                    src="images/home2-postnatal-recovery.jpg"
+                    alt="Mother enjoying a peaceful postnatal wellness moment"
+                    loading="lazy"
+                >
+
+                <div class="h2-practice-overlay"></div>
+
+                <div class="h2-practice-number">03</div>
+
+                <div class="h2-practice-content">
+
+                    <span class="h2-practice-category">
+                        AFTER BIRTH
+                    </span>
+
+                    <h3 class="h2-practice-name">
+                        Postnatal Recovery
+                    </h3>
+
+                    <p class="h2-practice-description">
+                        Reconnect with your body through gradual,
+                        supportive movement at your own pace.
+                    </p>
+
+                    <a href="classes.html" class="h2-practice-link">
+                        Explore the Practice
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- BOTTOM NOTE -->
+        <div class="h2-practice-footer">
+            <span class="h2-practice-footer-line"></span>
+
+            <p>
+                Every journey is different. Choose the practice
+                that feels right for you.
+            </p>
+
+            <a href="classes.html" class="h2-practice-all-link">
+                View All Classes
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     HOME 2 — MOTHERHOOD JOURNEY
+     ELEGANT HORIZONTAL TIMELINE
+========================================= -->
+<section class="h2-journey" id="motherhoodJourney">
+
+    <div class="h2-journey-container">
+
+        <!-- SECTION HEADER -->
+        <div class="h2-journey-header">
+            <span class="h2-journey-eyebrow">
+                YOUR JOURNEY, OUR SUPPORT
+            </span>
+
+            <h2 class="h2-journey-title">
+                Your Motherhood <span>Journey</span>
+            </h2>
+
+            <p class="h2-journey-intro">
+                Every stage brings new experiences.
+                Find thoughtful movement and supportive guidance
+                for each chapter of your pregnancy journey.
+            </p>
+        </div>
+
+        <!-- HORIZONTAL TIMELINE -->
+        <div class="h2-journey-timeline">
+
+            <!-- CONNECTING LINE -->
+            <div class="h2-journey-track" aria-hidden="true">
+                <span class="h2-journey-track-line"></span>
+            </div>
+
+            <!-- STAGE 01 -->
+            <article class="h2-journey-stage h2-journey-stage-one">
+
+                <!-- IMAGE ABOVE THE LINE -->
+                <div class="h2-journey-visual">
+                    <div class="h2-journey-photo">
+                        <img
+                            src="images/home2-journey-pregnancy.jpg"
+                            alt="Pregnant woman receiving guidance from a fitness instructor"
+                            loading="lazy"
+                        >
+                    </div>
+                </div>
+
+                <!-- TIMELINE MARKER -->
+                <span class="h2-journey-marker" aria-hidden="true">
+                    <span>01</span>
+                </span>
+
+                <!-- TEXT BELOW THE LINE -->
+                <div class="h2-journey-content">
+                    <span class="h2-journey-stage-label">
+                        FIRST TRIMESTER
+                    </span>
+
+                    <h3 class="h2-journey-stage-title">
+                        Empower &amp; Educate
+                    </h3>
+
+                    <p class="h2-journey-description">
+                        Begin with a supportive starting point.
+                        Explore your movement goals and understand
+                        your changing needs.
+                    </p>
+
+                    <a href="classes.html" class="h2-journey-link">
+                        Explore Classes
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </article>
+
+            <!-- STAGE 02 -->
+            <article class="h2-journey-stage h2-journey-stage-two">
+
+                <!-- TEXT ABOVE THE LINE -->
+                <div class="h2-journey-content">
+                    <span class="h2-journey-stage-label">
+                        SECOND TRIMESTER
+                    </span>
+
+                    <h3 class="h2-journey-stage-title">
+                        Maintain &amp; Move
+                    </h3>
+
+                    <p class="h2-journey-description">
+                        Explore suitable movement, strength,
+                        balance, and body awareness with guidance
+                        tailored to your individual needs.
+                    </p>
+
+                    <a href="classes.html" class="h2-journey-link">
+                        Find Your Practice
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- TIMELINE MARKER -->
+                <span class="h2-journey-marker" aria-hidden="true">
+                    <span>02</span>
+                </span>
+
+                <!-- IMAGE BELOW THE LINE -->
+                <div class="h2-journey-visual">
+                    <div class="h2-journey-photo">
+                        <img
+                            src="images/home2-journey-preparation.jpg"
+                            alt="Pregnant woman practicing gentle guided movement"
+                            loading="lazy"
+                        >
+                    </div>
+                </div>
+
+            </article>
+
+            <!-- STAGE 03 -->
+            <article class="h2-journey-stage h2-journey-stage-three">
+
+                <!-- IMAGE ABOVE THE LINE -->
+                <div class="h2-journey-visual">
+                    <div class="h2-journey-photo">
+                        <img
+                            src="images/home2-journey-postpartum.jpg"
+                            alt="Expectant mother practicing a gentle exercise with a fitness ball"
+                            loading="lazy"
+                        >
+                    </div>
+                </div>
+
+                <!-- TIMELINE MARKER -->
+                <span class="h2-journey-marker" aria-hidden="true">
+                    <span>03</span>
+                </span>
+
+                <!-- TEXT BELOW THE LINE -->
+                <div class="h2-journey-content">
+                    <span class="h2-journey-stage-label">
+                        THIRD TRIMESTER
+                    </span>
+
+                    <h3 class="h2-journey-stage-title">
+                        Prepare &amp; Plan
+                    </h3>
+
+                    <p class="h2-journey-description">
+                        Discover breathing, relaxation, and
+                        comfortable movement as you prepare
+                        for birth and postpartum.
+                    </p>
+
+                    <a href="classes.html" class="h2-journey-link">
+                        Explore Classes
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </article>
+
+        </div>
+
+        <!-- BOTTOM CTA -->
+        <div class="h2-journey-bottom">
+
+            <div class="h2-journey-bottom-content">
+                <span class="h2-journey-bottom-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+
+                <div class="h2-journey-bottom-text">
+                    <h3>Every Journey Is Different</h3>
+                    <p>
+                        Find the support that feels right for you.
+                    </p>
+                </div>
+            </div>
+
+            <a href="contact.html" class="h2-journey-bottom-btn">
+                Let's Connect
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+     HOME 2 — MEET OUR INSTRUCTOR
+========================================== -->
+
+<section class="h2-instructor" id="meetYourGuide">
+    <div class="h2-instructor-container">
+
+        <!-- LEFT: INSTRUCTOR IMAGE -->
+        <div class="h2-instructor-visual">
+
+            <div class="h2-instructor-image-area">
+
+                <span class="h2-instructor-image-decoration"
+                      aria-hidden="true"></span>
+
+                <div class="h2-instructor-image-wrap">
+                    <img
+                        src="images/home2-instructor.jpg"
+                        alt="Prenatal and postnatal fitness instructor"
+                        class="h2-instructor-image"
+                        loading="lazy"
+                    >
+                </div>
+
+                <span class="h2-instructor-image-outline"
+                      aria-hidden="true"></span>
+
+            </div>
+
+            <!-- NOTE: OUTSIDE THE IMAGE AREA -->
+            <div class="h2-instructor-image-caption">
+                <span class="h2-instructor-caption-line"
+                      aria-hidden="true"></span>
+
+                <p>
+                    Movement with care. Confidence for every chapter.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT: INSTRUCTOR CONTENT -->
+        <div class="h2-instructor-content">
+
+            <!-- SECTION HEADING -->
+            <div class="h2-instructor-header">
+
+                <span class="h2-instructor-eyebrow">
+                    MEET OUR INSTRUCTOR
+                </span>
+
+                <h2 class="h2-instructor-title">
+                    Guided by Experience
+                    <br>
+                    and <span>Care</span>
+                </h2>
+
+                <p class="h2-instructor-intro">
+                    Every motherhood journey is unique. Our approach
+                    combines thoughtful movement, personal guidance,
+                    and compassionate support to help you feel more
+                    confident throughout every stage.
+                </p>
+
+            </div>
+
+            <!-- INSTRUCTOR'S MESSAGE -->
+            <div class="h2-instructor-quote">
+
+                <span class="h2-instructor-quote-mark"
+                      aria-hidden="true">&ldquo;</span>
+
+                <blockquote>
+                    Movement during pregnancy is not about doing more,
+                    but about doing what feels right for you. With the
+                    right guidance, you can build strength, ease
+                    discomfort, and prepare your body and mind for
+                    the beautiful journey ahead.
+                </blockquote>
+
+            </div>
+
+            <!-- BENEFITS -->
+            <div class="h2-instructor-benefits">
+
+                <!-- BENEFIT 1 -->
+                <div class="h2-instructor-benefit">
+
+                    <span class="h2-instructor-benefit-icon"
+                          aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 21C12 15 7 13 7 8C7 5 9 3 12 2C15 3 17 5 17 8C17 13 12 15 12 21Z"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M12 21V9M12 15L8.5 11.5M12 17L15.5 13.5"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                    </span>
+
+                    <p>
+                        Builds strength
+                        <br>
+                        and endurance
+                    </p>
+
+                </div>
+
+                <!-- BENEFIT 2 -->
+                <div class="h2-instructor-benefit">
+
+                    <span class="h2-instructor-benefit-icon"
+                          aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M20.8 8.8C20.8 14 12 20 12 20S3.2 14 3.2 8.8A4.8 4.8 0 0 1 12 5.7A4.8 4.8 0 0 1 20.8 8.8Z"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+
+                    <p>
+                        Supports physical
+                        <br>
+                        and emotional good
+                    </p>
+
+                </div>
+
+                <!-- BENEFIT 3 -->
+                <div class="h2-instructor-benefit">
+
+                    <span class="h2-instructor-benefit-icon"
+                          aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 22V11M12 15C7 15 4 12 4 7C9 7 12 10 12 15ZM12 11C12 6 15 3 20 3C20 8 17 11 12 11Z"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+
+                    <p>
+                        Encourages mindful
+                        <br>
+                        preparation for birth
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- SIGNATURE AND CREDENTIALS -->
+            <div class="h2-instructor-profile">
+
+                <div class="h2-instructor-signature">
+                    Ananya Rao
+                </div>
+
+                <span class="h2-instructor-signature-line"
+                      aria-hidden="true"></span>
+
+                <h3 class="h2-instructor-name">
+                    ANANYA RAO
+                </h3>
+
+                <p class="h2-instructor-role">
+                    Prenatal &amp; Postnatal Fitness Instructor
+                </p>
+
+                <p class="h2-instructor-credential">
+                    Supporting your movement journey with care
+                    and individual attention.
+                </p>
+
+                <a href="instructors.html" class="h2-instructor-link">
+    Meet Your Instructor
+    <span class="h2-instructor-arrow" aria-hidden="true"></span>
+</a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- ==========================================
+     HOME 2 — COMMUNITY TESTIMONIAL
+========================================== -->
+
+<section class="h2-community" id="communityNote">
+    <div class="h2-community-container">
+
+        <!-- LEFT: TESTIMONIAL CONTENT -->
+        <div class="h2-community-content">
+
+            <span class="h2-community-eyebrow">
+                A NOTE FROM OUR COMMUNITY
+            </span>
+
+            <h2 class="h2-community-title">
+                A Little More
+                <span>Confidence.</span>
+                A Lot More Care.
+            </h2>
+
+            <div class="h2-community-quote">
+
+                <span class="h2-community-quote-mark"
+                      aria-hidden="true">&ldquo;</span>
+
+                <blockquote>
+                    Finding Nurture &amp; Bloom helped me feel more
+                    connected to my body and confident in my journey
+                    through motherhood. Every session felt welcoming,
+                    supportive, and tailored to what I needed that day.
+                    I learned to slow down, listen to myself, and
+                    celebrate every little step.
+                </blockquote>
+
+            </div>
+
+            <!-- MEMBER DETAILS -->
+            <div class="h2-community-member">
+
+                <span class="h2-community-member-line"
+                      aria-hidden="true"></span>
+
+                <div class="h2-community-member-details">
+
+                    <h3 class="h2-community-member-name">
+                        Meera Sharma
+                    </h3>
+
+                    <p class="h2-community-member-role">
+                        Nurture &amp; Bloom Community Member
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- TESTIMONIAL FOOTNOTE -->
+            <p class="h2-community-note">
+                Every journey is different. We're here to support yours.
+            </p>
+
+        </div>
+
+        <!-- RIGHT: COMMUNITY MEMBER IMAGE -->
+        <div class="h2-community-visual">
+
+            <div class="h2-community-image-area">
+
+                <span class="h2-community-decoration"
+                      aria-hidden="true"></span>
+
+                <div class="h2-community-image-wrap">
+
+                    <img
+                        src="images/home2-community-mother.jpg"
+                        alt="Mother enjoying a peaceful moment with her baby"
+                        class="h2-community-image"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <span class="h2-community-image-outline"
+                      aria-hidden="true"></span>
+
+                <!-- FLOATING MESSAGE -->
+                <div class="h2-community-floating-note">
+
+                    <span class="h2-community-heart"
+                          aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M20.8 8.8C20.8 14 12 20 12 20S3.2 14 3.2 8.8A4.8 4.8 0 0 1 12 5.7A4.8 4.8 0 0 1 20.8 8.8Z"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </span>
+
+                    <div class="h2-community-floating-text">
+                        <span>YOU ARE NOT ALONE</span>
+                        <p>A community that grows with you.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGE CAPTION -->
+            <div class="h2-community-image-caption">
+                <span class="h2-community-caption-line"
+                      aria-hidden="true"></span>
+
+                <p>
+                    Real journeys. Gentle support. Meaningful connections.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- ==========================================
+     HOME 2 — FINAL CTA BANNER
+========================================== -->
+
+<section class="h2-cta" id="beginYourJourney">
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="h2-cta-background">
+        <img
+            src="images/home2-cta-banner.jpg"
+            alt=""
+            class="h2-cta-background-image"
+            loading="lazy"
+        >
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="h2-cta-overlay"></div>
+
+    <!-- CTA CONTENT -->
+    <div class="h2-cta-container">
+
+        <span class="h2-cta-eyebrow">
+            YOUR JOURNEY STARTS HERE
+        </span>
+
+        <h2 class="h2-cta-title">
+            Begin Where
+            <span>You Are.</span>
+        </h2>
+
+        <p class="h2-cta-description">
+            You don't have to have it all figured out.
+            Take a gentle first step toward feeling stronger,
+            more supported, and more connected throughout
+            your motherhood journey.
+        </p>
+
+        <!-- CTA BUTTONS -->
+        <div class="h2-cta-buttons">
+
+            <a href="classes.html" class="h2-cta-btn-primary">
+                Explore Our Classes
+                <span class="h2-cta-arrow" aria-hidden="true"></span>
+            </a>
+
+            <a href="contact.html" class="h2-cta-btn-secondary">
+                Let's Talk
+            </a>
+
+        </div>
+
+        <!-- SUPPORTING NOTE -->
+        <div class="h2-cta-note">
+            <span class="h2-cta-note-line"
+                  aria-hidden="true"></span>
+
+            <p>
+                A little movement. A little care. A space just for you.
+            </p>
+
+            <span class="h2-cta-note-line"
+                  aria-hidden="true"></span>
+        </div>
+
+    </div>
+
+</section>
+    </main>
+<!-- =========================================
+     NURTURE & BLOOM — FOOTER
+========================================= -->
+
+<footer class="nb-footer" id="nbFooter">
+
+    <div class="nb-footer-container">
+
+        <!-- BRAND COLUMN -->
+        <div class="nb-footer-brand">
+
+            <a href="index.html" class="nb-footer-logo">
+                <img src="images/logo.png"
+                     alt="Nurture & Bloom">
+            </a>
+
+            <p class="nb-footer-description">
+                Supporting your journey through pregnancy and
+                postpartum with safe, nurturing movement,
+                expert guidance, and a community that cares.
+            </p>
+
+            <!-- SOCIAL LINKS -->
+            <div class="nb-footer-socials">
+
+                <a href="https://www.instagram.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"
+                       aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.facebook.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"
+                       aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.youtube.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"
+                       aria-hidden="true"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                   class="nb-social-link"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"
+                       aria-hidden="true"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="nb-footer-column">
+
+            <h3 class="nb-footer-heading">Quick Links</h3>
+
+            <ul class="nb-footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Our Classes</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+            </ul>
+
+        </div>
+
+        <!-- OUR PROGRAMS -->
+        <div class="nb-footer-column">
+
+            <h3 class="nb-footer-heading">Our Programs</h3>
+
+            <ul class="nb-footer-links">
+                <li>
+                    <a href="classes.html">Prenatal Fitness</a>
+                </li>
+                <li>
+                    <a href="classes.html">Postnatal Recovery</a>
+                </li>
+                <li>
+                    <a href="classes.html">Gentle Yoga</a>
+                </li>
+                <li>
+                    <a href="classes.html">Breathing & Relaxation</a>
+                </li>
+                <li>
+                    <a href="classes.html">Core Strengthening</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="nb-footer-column nb-footer-contact">
+
+            <h3 class="nb-footer-heading">Get in Touch</h3>
+
+            <p class="nb-footer-contact-text">
+                Have questions about our classes? We'd love
+                to help you find the right program.
+            </p>
+
+            <a href="contact.html" class="nb-footer-contact-link">
+                Contact Our Team
+                <i class="fa-solid fa-arrow-right"
+                   aria-hidden="true"></i>
+            </a>
+
+            <a href="login.html" class="nb-footer-member-link">
+                Member Login
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER BOTTOM -->
+    <div class="nb-footer-bottom">
+
+        <div class="nb-footer-bottom-container">
+
+            <p class="nb-footer-copyright">
+                &copy; <span id="nbFooterYear">2026</span>
+                Nurture & Bloom. All rights reserved.
+            </p>
+
+            <div class="nb-footer-bottom-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+<button type="button"
+        class="nb-scroll-top"
+        id="nbScrollTop"
+        aria-label="Scroll to top"
+        title="Back to top">
+
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+
+</button>
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+    <script src="js/global-settings.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Nurture & Bloom</title>
+    <link
+    rel="icon"
+    type="image/png"
+    href="images/logo.png"
+>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/res-dash.css">
+</head>
+
+<body class="nb-dashboard">
+
+    <!-- =====================================
+         FIXED SIDEBAR
+    ====================================== -->
+    <aside class="dash-sidebar" id="dashSidebar">
+
+        <!-- LOGO -->
+        <a href="index.html" class="dash-logo">
+            <img src="images/logo.png" alt="Nurture & Bloom">
+        </a>
+
+        <!-- NAVIGATION -->
+        <nav class="dash-navigation" aria-label="Dashboard navigation">
+
+            <span class="dash-nav-heading">MAIN MENU</span>
+
+            <!-- Dashboard -->
+            <a href="dashboard.html"
+               class="dash-nav-link"
+               aria-current="page">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="3" width="8" height="8" rx="1.5"/>
+                    <rect x="13" y="3" width="8" height="5" rx="1.5"/>
+                    <rect x="13" y="10" width="8" height="11" rx="1.5"/>
+                    <rect x="3" y="13" width="8" height="8" rx="1.5"/>
+                </svg>
+
+                <span>Dashboard</span>
+            </a>
+
+            <!-- Book a Class -->
+            <a href="book-class.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                    <path d="M12 13v5M9.5 15.5h5"/>
+                </svg>
+
+                <span>Book a Class</span>
+            </a>
+
+            <!-- My Bookings -->
+            <a href="my-bookings.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                    <path d="m9 15 2 2 4-4"/>
+                </svg>
+
+                <span>My Bookings</span>
+            </a>
+
+            <!-- Session History -->
+            <a href="session-history.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 11a9 9 0 1 1 2.6 6.4"/>
+                    <path d="M3 4v7h7"/>
+                    <path d="M12 7v5l3 2"/>
+                </svg>
+
+                <span>Session History</span>
+            </a>
+
+            <!-- Exercise Guidance -->
+            <a href="exercise-guidance.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 21s-8-4.5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6.5-8 11-8 11z"/>
+                    <path d="M8 12h3l1.5-3 2 6 1.5-3H19"/>
+                </svg>
+
+                <span>Exercise Guidance</span>
+            </a>
+
+            <!-- Payments -->
+            <a href="payments.html" class="dash-nav-link">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <path d="M2 10h20M6 15h4"/>
+                </svg>
+
+                <span>Payments</span>
+            </a>
+
+            <!-- My Profile -->
+            <a href="dashboard-profile.html" class="dash-nav-link active">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21v-2a8 8 0 0 1 16 0v2z"/>
+                </svg>
+
+                <span>My Profile</span>
+            </a>
+
+        </nav>
+
+        <!-- LOGOUT AT BOTTOM -->
+        <!-- LOGOUT AT BOTTOM -->
+<div class="dash-sidebar-bottom">
+
+    <a href="#" class="dash-logout-link" data-logout-trigger>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M10 17l5-5-5-5M15 12H3"/>
+            <path d="M12 3h6a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-6"/>
+        </svg>
+
+        <span>Logout</span>
+    </a>
+
+</div>
+
+    </aside>
+
+
+    <!-- MOBILE OVERLAY -->
+    <div class="dash-sidebar-overlay" id="dashSidebarOverlay"></div>
+
+
+    <!-- =====================================
+         MAIN AREA
+    ====================================== -->
+    <div class="dash-main">
+
+        <!-- FIXED TOPBAR -->
+        <header class="dash-topbar">
+
+            <!-- LEFT: HAMBURGER + TITLE -->
+            <div class="dash-topbar-left">
+
+                <button type="button"
+                        class="dash-menu-toggle"
+                        id="dashMenuToggle"
+                        aria-label="Open navigation menu"
+                        aria-controls="dashSidebar"
+                        aria-expanded="false">
+
+                    <svg class="dash-menu-icon"
+                         viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+
+                    <svg class="dash-close-icon"
+                         viewBox="0 0 24 24"
+                         aria-hidden="true">
+                        <path d="m6 6 12 12M18 6 6 18"/>
+                    </svg>
+
+                </button>
+
+                <div class="dash-page-heading">
+                    <span class="dash-heading-eyebrow">
+                        YOUR WELLNESS SPACE
+                    </span>
+                    <h1>Dashboard</h1>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT: TOPBAR ICONS -->
+            <div class="dash-topbar-actions">
+
+                <!-- 1. DARK MODE -->
+                <button type="button"
+                        class="dash-icon-btn dash-dark-btn"
+                        id="dashDarkToggle"
+                        aria-label="Toggle dark mode"
+                        title="Dark Mode">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5
+                                 8.5 8.5 0 1 0 20.5 15.5Z"/>
+                    </svg>
+
+                </button>
+
+
+                <!-- 2. RTL -->
+                <button type="button"
+                        class="dash-icon-btn dash-rtl-btn"
+                        id="dashRtlToggle"
+                        aria-label="Toggle right-to-left layout"
+                        title="RTL">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 7h13l-4-4"/>
+                        <path d="m20 7-4 4"/>
+                        <path d="M17 17H4l4 4"/>
+                        <path d="m4 17 4-4"/>
+                    </svg>
+
+                </button>
+
+
+                <!-- 3. NOTIFICATIONS -->
+                <div class="dash-action-wrap">
+
+                    <button type="button"
+                            class="dash-icon-btn dash-notification-btn"
+                            id="dashNotificationToggle"
+                            aria-label="Notifications, 3 unread"
+                            aria-controls="dashNotificationPanel"
+                            aria-expanded="false"
+                            title="Notifications">
+
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z"/>
+                            <path d="M10 21h4"/>
+                        </svg>
+
+                        <span class="dash-notification-count">3</span>
+
+                    </button>
+
+                    <!-- NOTIFICATION DROPDOWN -->
+                    <div class="dash-dropdown dash-notification-panel"
+                         id="dashNotificationPanel"
+                         hidden>
+
+                        <div class="dash-dropdown-heading">
+                            <strong>Notifications</strong>
+                            <span>3 unread</span>
+                        </div>
+
+                        <a href="my-bookings.html"
+                           class="dash-notification-item">
+
+                            <span class="dash-notification-symbol">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                    <path d="M16 3v4M8 3v4M3 10h18"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Upcoming class</strong>
+                                <small>Check your next scheduled session.</small>
+                            </span>
+
+                        </a>
+
+                        <a href="payments.html"
+                           class="dash-notification-item">
+
+                            <span class="dash-notification-symbol">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                                    <path d="M2 10h20"/>
+                                </svg>
+                            </span>
+
+                            <span>
+                                <strong>Payment update</strong>
+                                <small>View your latest payment details.</small>
+                            </span>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 4. SETTINGS -->
+                <a href="dashboard-settings.html"
+                   class="dash-icon-btn dash-settings-btn"
+                   aria-label="Settings"
+                   title="Settings">
+
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 8.5a3.5 3.5 0 1 0 0 7
+                                 3.5 3.5 0 0 0 0-7Z"/>
+
+                        <path d="M19.4 13.5a7.5 7.5 0 0 0 0-3
+                                 l1.5-1.2-1.8-3.1-1.8.7
+                                 a7.5 7.5 0 0 0-2.6-1.5L14.4 3h-3.6
+                                 l-.3 2.4a7.5 7.5 0 0 0-2.6 1.5l-1.8-.7
+                                 -1.8 3.1 1.5 1.2a7.5 7.5 0 0 0 0 3
+                                 l-1.5 1.2 1.8 3.1 1.8-.7
+                                 a7.5 7.5 0 0 0 2.6 1.5l.3 2.4h3.6
+                                 l.3-2.4a7.5 7.5 0 0 0 2.6-1.5l1.8.7
+                                 1.8-3.1Z"/>
+                    </svg>
+
+                </a>
+
+
+                <!-- PROFILE -->
+                <div class="dash-action-wrap dash-profile-wrap">
+
+                    <button type="button"
+                            class="dash-profile-btn"
+                            id="dashProfileToggle"
+                            aria-controls="dashProfilePanel"
+                            aria-expanded="false">
+
+                        <img src="images/profile.jpg"
+                             alt=""
+                             class="dash-profile-avatar">
+
+                        <span class="dash-profile-info">
+                            <strong>Priya</strong>
+                            <small>Member</small>
+                        </span>
+
+                        <svg class="dash-profile-chevron"
+                             viewBox="0 0 24 24"
+                             aria-hidden="true">
+                            <path d="m7 10 5 5 5-5"/>
+                        </svg>
+
+                    </button>
+
+                    <!-- PROFILE DROPDOWN -->
+                    <div class="dash-dropdown dash-profile-panel"
+                         id="dashProfilePanel"
+                         hidden>
+
+                        <a href="dashboard-profile.html">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4"/>
+                                <path d="M4 21v-2a8 8 0 0 1 16 0v2z"/>
+                            </svg>
+                            <span>My Profile</span>
+                        </a>
+
+                        <a href="dashboard-settings.html">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19 13.5a7 7 0 0 0 0-3l2-1.5-2-3.5
+                                         -2.3.9a7 7 0 0 0-2.5-1.4L14 2h-4l-.4 3
+                                         a7 7 0 0 0-2.5 1.4L5 5.5 3 9l2 1.5
+                                         a7 7 0 0 0 0 3L3 15l2 3.5 2.3-.9
+                                         a7 7 0 0 0 2.5 1.4L10 22h4l.4-3
+                                         a7 7 0 0 0 2.5-1.4l2.3.9 2-3.5z"/>
+                            </svg>
+                            <span>Settings</span>
+                        </a>
+
+                        <a href="login.html" class="dash-profile-logout">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M10 17l5-5-5-5M15 12H3"/>
+                                <path d="M12 3h6a3 3 0 0 1 3 3v12
+                                         a3 3 0 0 1-3 3h-6"/>
+                            </svg>
+                            <span>Logout</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+<!-- =========================================
+     MY PROFILE — PAGE CONTENT
+========================================= -->
+
+<main class="dash-content profile-content" id="profileContent">
+
+    <!-- PROFILE HERO -->
+    <section class="profile-hero">
+        <div class="profile-hero-content">
+            <span class="profile-eyebrow">YOUR PERSONAL SPACE</span>
+            <h1>My Profile</h1>
+            <p>Manage your personal information, membership, and account preferences.</p>
+        </div>
+
+        <div class="profile-hero-art" aria-hidden="true">
+            <svg viewBox="0 0 180 180" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <circle cx="90" cy="90" r="78" fill="#F3DDE0"/>
+                <circle cx="90" cy="90" r="59" fill="#E9C3C9"/>
+                <path d="M45 139C49 116 65 105 90 105C115 105 131 116 135 139"
+                      stroke="#B76E79" stroke-width="8" stroke-linecap="round"/>
+                <circle cx="90" cy="75" r="26"
+                        fill="#FFF8F5" stroke="#B76E79" stroke-width="5"/>
+                <path d="M72 75C76 87 83 93 90 93C97 93 104 87 108 75"
+                      stroke="#B76E79" stroke-width="4" stroke-linecap="round"/>
+                <path d="M132 34L137 45L148 50L137 55L132 66L127 55L116 50L127 45L132 34Z"
+                      fill="#B76E79"/>
+                <circle cx="42" cy="58" r="5" fill="#B76E79"/>
+                <circle cx="143" cy="108" r="4" fill="#FFF8F5"/>
+            </svg>
+        </div>
+    </section>
+
+
+    <!-- PROFILE OVERVIEW -->
+    <section class="profile-overview">
+        <div class="profile-overview-main">
+
+            <!-- PROFILE AVATAR -->
+<div class="profile-avatar-wrapper">
+    <div class="profile-avatar" id="profileAvatar">
+        <img
+            src="images/profile.jpg"
+            alt="Priya Sharma profile photo"
+            id="profileAvatarImage">
+    </div>
+
+    <label class="profile-avatar-upload"
+           for="profilePhotoInput"
+           aria-label="Upload profile photo">
+        <svg viewBox="0 0 24 24" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 16V4M7.5 8.5L12 4L16.5 8.5"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <path d="M4 15V19C4 20.1 4.9 21 6 21H18C19.1 21 20 20.1 20 19V15"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"/>
+        </svg>
+    </label>
+
+    <input type="file"
+           id="profilePhotoInput"
+           accept="image/*"
+           hidden>
+</div>
+
+            <div class="profile-overview-info">
+                <span class="profile-member-label">MEMBER PROFILE</span>
+                <h2 id="profileDisplayName">Priya Sharma</h2>
+                <p class="profile-member-id">Member ID: <span>NB2026108</span></p>
+
+                <div class="profile-status-row">
+                    <span class="profile-status-badge">
+                        <span class="profile-status-dot"></span>
+                        Active Member
+                    </span>
+                    <span class="profile-member-since">Member since October 2026</span>
+                </div>
+            </div>
+
+        </div>
+
+        <button type="button" class="profile-edit-btn"
+                onclick="document.getElementById('profileFullName').focus(); document.getElementById('profilePersonalInfo').scrollIntoView({behavior:'smooth',block:'start'});">
+            <svg viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg"
+                 aria-hidden="true">
+                <path d="M12 20H21" stroke="currentColor"
+                      stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M16.5 3.5C17.3 2.7 18.7 2.7 19.5 3.5C20.3 4.3 20.3 5.7 19.5 6.5L8 18L3 19L4 14L16.5 3.5Z"
+                      stroke="currentColor" stroke-width="1.8"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Edit Profile
+        </button>
+    </section>
+
+
+    <!-- PROFILE QUICK DETAILS -->
+    <section class="profile-quick-stats">
+
+        <article class="profile-stat-card">
+            <div class="profile-stat-icon profile-stat-icon-rose">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="3"
+                          stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M16 3V7M8 3V7M3 10H21"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linecap="round"/>
+                    <path d="M8 14H8.01M12 14H12.01M16 14H16.01"
+                          stroke="currentColor" stroke-width="2.5"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div>
+                <span class="profile-stat-label">Classes Attended</span>
+                <h3>24</h3>
+                <p>Keep up your progress</p>
+            </div>
+        </article>
+
+        <article class="profile-stat-card">
+            <div class="profile-stat-icon profile-stat-icon-peach">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
+                    <path d="M12 21S3 16 3 9.5C3 6.5 5.3 4.5 8 4.5C9.7 4.5 11.1 5.4 12 6.7C12.9 5.4 14.3 4.5 16 4.5C18.7 4.5 21 6.5 21 9.5C21 16 12 21 12 21Z"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div>
+                <span class="profile-stat-label">Wellness Streak</span>
+                <h3>7 Days</h3>
+                <p>One day at a time</p>
+            </div>
+        </article>
+
+        <article class="profile-stat-card">
+            <div class="profile-stat-icon profile-stat-icon-lilac">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
+                    <path d="M12 3L14.8 8.7L21 9.6L16.5 14L17.6 20.2L12 17.2L6.4 20.2L7.5 14L3 9.6L9.2 8.7L12 3Z"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div>
+                <span class="profile-stat-label">Membership Plan</span>
+                <h3>Bloom Plus</h3>
+                <p>Personalized wellness</p>
+            </div>
+        </article>
+
+    </section>
+
+
+    <!-- PERSONAL INFORMATION -->
+    <section class="profile-card" id="profilePersonalInfo">
+
+        <div class="profile-section-heading">
+            <div class="profile-section-heading-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"
+                            stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M4.5 20C4.5 16.4 7.5 13.5 12 13.5C16.5 13.5 19.5 16.4 19.5 20"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <div>
+                <h2>Personal Information</h2>
+                <p>Keep your contact details up to date.</p>
+            </div>
+        </div>
+
+        <form id="profilePersonalForm" class="profile-form">
+
+            <div class="profile-form-grid">
+
+                <div class="profile-form-group">
+                    <label for="profileFullName">Full Name</label>
+                    <input type="text" id="profileFullName"
+                           name="fullName" value="Priya Sharma"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="profile-form-group">
+                    <label for="profileEmail">Email Address</label>
+                    <input type="email" id="profileEmail"
+                           name="email" value="priya@example.com"
+                           placeholder="Enter your email address" required>
+                </div>
+
+                <div class="profile-form-group">
+                    <label for="profilePhone">Phone Number</label>
+                    <input type="tel" id="profilePhone"
+                           name="phone" value=""
+                           placeholder="Enter your phone number">
+                </div>
+
+                <div class="profile-form-group">
+                    <label for="profileDob">Date of Birth</label>
+                    <input type="date" id="profileDob" name="dob">
+                </div>
+
+                <div class="profile-form-group">
+                    <label for="profileCity">City</label>
+                    <input type="text" id="profileCity"
+                           name="city" placeholder="Enter your city">
+                </div>
+
+                <div class="profile-form-group">
+                    <label for="profilePostalCode">Postal Code</label>
+                    <input type="text" id="profilePostalCode"
+                           name="postalCode" placeholder="Enter postal code">
+                </div>
+
+                <div class="profile-form-group profile-form-group-full">
+                    <label for="profileAddress">Address</label>
+                    <textarea id="profileAddress" name="address"
+                              rows="3"
+                              placeholder="Enter your complete address"></textarea>
+                </div>
+
+                <div class="profile-form-group">
+                    <label for="profileEmergencyName">Emergency Contact Name</label>
+                    <input type="text" id="profileEmergencyName"
+                           name="emergencyName"
+                           placeholder="Enter contact name">
+                </div>
+
+                <div class="profile-form-group">
+                    <label for="profileEmergencyPhone">Emergency Contact Number</label>
+                    <input type="tel" id="profileEmergencyPhone"
+                           name="emergencyPhone"
+                           placeholder="Enter contact number">
+                </div>
+
+            </div>
+
+            <div class="profile-form-actions">
+                <button type="reset" class="profile-btn profile-btn-secondary">
+                    Cancel
+                </button>
+                <button type="submit" class="profile-btn profile-btn-primary">
+                    Save Changes
+                </button>
+            </div>
+
+        </form>
+    </section>
+
+
+    <!-- MEMBERSHIP DETAILS -->
+    <section class="profile-card">
+
+        <div class="profile-section-heading">
+            <div class="profile-section-heading-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
+                    <path d="M12 3L19 6V11C19 15.5 16 19 12 21C8 19 5 15.5 5 11V6L12 3Z"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linejoin="round"/>
+                    <path d="M9 12L11 14L15 10"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <div>
+                <h2>Membership Details</h2>
+                <p>View your current plan and membership status.</p>
+            </div>
+        </div>
+
+        <div class="profile-membership-panel">
+
+            <div class="profile-membership-top">
+                <div>
+                    <span class="profile-membership-label">CURRENT PLAN</span>
+                    <h3>Bloom Plus</h3>
+                    <p>Support for your wellness journey</p>
+                </div>
+
+                <span class="profile-membership-status">Active</span>
+            </div>
+
+            <div class="profile-membership-details">
+
+                <div class="profile-membership-detail">
+                    <span>Member ID</span>
+                    <strong>NB2026108</strong>
+                </div>
+
+                <div class="profile-membership-detail">
+                    <span>Billing Cycle</span>
+                    <strong>Monthly</strong>
+                </div>
+
+                <div class="profile-membership-detail">
+                    <span>Next Renewal</span>
+                    <strong>November 22, 2026</strong>
+                </div>
+
+            </div>
+
+            <div class="profile-membership-footer">
+                <p>Manage your plan and review your payments.</p>
+                <a href="payments.html" class="profile-text-link">
+                    View Payment History
+                    <svg viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg"
+                         aria-hidden="true">
+                        <path d="M5 12H19M12 5L19 12L12 19"
+                              stroke="currentColor" stroke-width="1.8"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- NOTIFICATION PREFERENCES -->
+    <section class="profile-card">
+
+        <div class="profile-section-heading">
+            <div class="profile-section-heading-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
+                    <path d="M18 8C18 4.7 15.3 2 12 2C8.7 2 6 4.7 6 8C6 15 3 15 3 17H21C21 15 18 15 18 8Z"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linejoin="round"/>
+                    <path d="M10 21H14"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <div>
+                <h2>Notification Preferences</h2>
+                <p>Choose how you would like to receive updates.</p>
+            </div>
+        </div>
+
+        <div class="profile-preference-list">
+
+            <div class="profile-preference-item">
+                <div class="profile-preference-info">
+                    <h3>Email Notifications</h3>
+                    <p>Receive class updates, reminders, and announcements.</p>
+                </div>
+                <label class="profile-switch">
+                    <input type="checkbox" id="profileEmailNotifications"
+                           checked>
+                    <span class="profile-switch-slider"></span>
+                </label>
+            </div>
+
+            <div class="profile-preference-item">
+                <div class="profile-preference-info">
+                    <h3>Class Reminders</h3>
+                    <p>Get reminders before your scheduled sessions.</p>
+                </div>
+                <label class="profile-switch">
+                    <input type="checkbox" id="profileClassReminders"
+                           checked>
+                    <span class="profile-switch-slider"></span>
+                </label>
+            </div>
+
+            <div class="profile-preference-item">
+                <div class="profile-preference-info">
+                    <h3>Wellness Tips</h3>
+                    <p>Receive helpful fitness and wellbeing content.</p>
+                </div>
+                <label class="profile-switch">
+                    <input type="checkbox" id="profileWellnessTips">
+                    <span class="profile-switch-slider"></span>
+                </label>
+            </div>
+
+            <div class="profile-preference-item">
+                <div class="profile-preference-info">
+                    <h3>Promotional Updates</h3>
+                    <p>Hear about new classes, events, and special offers.</p>
+                </div>
+                <label class="profile-switch">
+                    <input type="checkbox" id="profilePromotions">
+                    <span class="profile-switch-slider"></span>
+                </label>
+            </div>
+
+        </div>
+
+        <div class="profile-form-actions">
+            <button type="button" class="profile-btn profile-btn-primary"
+                    id="profileSavePreferences">
+                Save Preferences
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- CHANGE PASSWORD -->
+    <section class="profile-card">
+
+        <div class="profile-section-heading">
+            <div class="profile-section-heading-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
+                    <rect x="4" y="10" width="16" height="11" rx="2"
+                          stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M8 10V7C8 4.8 9.8 3 12 3C14.2 3 16 4.8 16 7V10"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linecap="round"/>
+                    <circle cx="12" cy="15" r="1.2"
+                            fill="currentColor"/>
+                    <path d="M12 16.2V18"
+                          stroke="currentColor" stroke-width="1.7"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <div>
+                <h2>Security & Password</h2>
+                <p>Keep your account secure with a strong password.</p>
+            </div>
+        </div>
+
+        <form id="profilePasswordForm" class="profile-form">
+
+            <div class="profile-form-grid">
+
+                <div class="profile-form-group profile-form-group-full">
+                    <label for="profileCurrentPassword">Current Password</label>
+                    <input type="password" id="profileCurrentPassword"
+                           name="currentPassword"
+                           placeholder="Enter current password"
+                           autocomplete="current-password">
+                </div>
+
+                <div class="profile-form-group">
+                    <label for="profileNewPassword">New Password</label>
+                    <input type="password" id="profileNewPassword"
+                           name="newPassword"
+                           placeholder="Enter new password"
+                           autocomplete="new-password">
+                </div>
+
+                <div class="profile-form-group">
+                    <label for="profileConfirmPassword">Confirm New Password</label>
+                    <input type="password" id="profileConfirmPassword"
+                           name="confirmPassword"
+                           placeholder="Confirm new password"
+                           autocomplete="new-password">
+                </div>
+
+            </div>
+
+            <div class="profile-password-note">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"
+                            stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M12 11V16M12 8H12.01"
+                          stroke="currentColor" stroke-width="1.9"
+                          stroke-linecap="round"/>
+                </svg>
+                <p>Use a strong password with a combination of letters, numbers, and symbols.</p>
+            </div>
+
+            <div class="profile-form-actions">
+                <button type="reset" class="profile-btn profile-btn-secondary">
+                    Clear
+                </button>
+                <button type="submit" class="profile-btn profile-btn-primary">
+                    Update Password
+                </button>
+            </div>
+
+        </form>
+    </section>
+
+
+    <!-- ACCOUNT ACTIONS -->
+    <section class="profile-card profile-account-card">
+
+        <div class="profile-section-heading">
+            <div class="profile-section-heading-icon">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"
+                            stroke="currentColor" stroke-width="1.7"/>
+                    <path d="M12 8V12M12 16H12.01"
+                          stroke="currentColor" stroke-width="1.9"
+                          stroke-linecap="round"/>
+                </svg>
+            </div>
+
+            <div>
+                <h2>Account Actions</h2>
+                <p>Manage your account access and personal data.</p>
+            </div>
+        </div>
+
+        <div class="profile-account-action">
+            <div>
+                <h3>Sign Out</h3>
+                <p>Sign out of your current account on this device.</p>
+            </div>
+
+            <button type="button" class="profile-btn profile-btn-secondary"
+                    id="profileLogoutBtn">
+                Sign Out
+            </button>
+        </div>
+
+        <div class="profile-account-action profile-account-action-danger">
+            <div>
+                <h3>Delete Account</h3>
+                <p>Request permanent removal of your account and associated data.</p>
+            </div>
+
+            <button type="button" class="profile-btn profile-btn-danger"
+                    id="profileDeleteAccountBtn">
+                Delete Account
+            </button>
+        </div>
+
+    </section>
+
+
+    <!-- PROFILE TOAST -->
+    <div class="profile-toast" id="profileToast"
+         role="status" aria-live="polite">
+        <span class="profile-toast-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12L10 17L19 7"
+                      stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+        <span id="profileToastMessage">Changes saved successfully.</span>
+    </div>
+
+</main>
+        </div>
+
+    <!-- LOGOUT CONFIRMATION MODAL -->
+<div class="logout-modal-overlay" id="logoutModal" aria-hidden="true">
+
+    <div class="logout-modal"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="logoutModalTitle"
+         aria-describedby="logoutModalDescription">
+
+        <!-- Close Button -->
+        <button type="button"
+                class="logout-modal-close"
+                id="logoutCloseBtn"
+                aria-label="Close logout popup">
+            &times;
+        </button>
+
+        <!-- Logout Icon -->
+        <div class="logout-modal-icon">
+            <svg viewBox="0 0 24 24" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 17L15 12L10 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <path d="M15 12H3"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"/>
+                <path d="M12 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <!-- Content -->
+        <h2 id="logoutModalTitle">Logout?</h2>
+
+        <p id="logoutModalDescription">
+            Are you sure you want to logout from your account?
+        </p>
+
+        <!-- Actions -->
+        <div class="logout-modal-actions">
+
+            <button type="button"
+                    class="logout-btn logout-btn-cancel"
+                    id="logoutCancelBtn">
+                No, Stay
+            </button>
+
+            <button type="button"
+                    class="logout-btn logout-btn-confirm"
+                    id="logoutConfirmBtn">
+                <svg viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 17L15 12L10 7"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M15 12H3"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"/>
+                    <path d="M12 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                Yes, Logout
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- JAVASCRIPT -->
+    <script src="js/dashboard.js"></script>
+    <script src="js/global-settings.js"></script>
+
+</body>
+</html>
