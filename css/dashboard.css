@@ -10406,3 +10406,9 @@ body.nb-dark .logout-btn-confirm:hover {
 .dash-content {
     padding-top: 20px !important;
 }
+/* Gentle Badge — Dark Mode */
+body.nb-dark .eg-card-meta .eg-level-gentle {
+    background-color: #244B38 !important;
+    color: #B9F6CA !important;
+    border: 1px solid #387653 !important;
+}
