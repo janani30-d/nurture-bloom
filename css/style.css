@@ -21003,3 +21003,164 @@ body.nb-dark .nb-navigation .nb-home-submenu a.active,
 body.nb-dark .nb-navigation .nb-home-submenu a[aria-current="page"] {
     background: var(--nb-primary-light);
 }
+
+
+
+
+
+
+
+
+
+/* =========================================
+   REGISTER — SOCIAL SIGN-UP BUTTONS
+========================================= */
+
+.register-social-divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    margin: 24px 0 18px;
+}
+
+.register-social-divider span {
+    flex: 1;
+    height: 1px;
+    background: #EAE0DC;
+}
+
+.register-social-divider p {
+    margin: 0;
+    color: #8C7C79;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.register-social-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+}
+
+.register-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    min-width: 0;
+    min-height: 46px;
+    padding: 10px 8px;
+    border: 1px solid #EAE0DC;
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: #423735;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+    cursor: pointer;
+    transition: background-color 0.25s ease,
+                border-color 0.25s ease,
+                color 0.25s ease;
+}
+
+.register-social-icon {
+    display: block;
+    flex: 0 0 19px;
+    width: 19px;
+    height: 19px;
+}
+
+.register-social-btn:hover {
+    background: #F7F2EC;
+    border-color: #B76E79;
+}
+
+.register-social-btn:focus-visible {
+    outline: 2px solid #B76E79;
+    outline-offset: 3px;
+}
+
+/* APPLE ICON */
+.register-social-btn[aria-label="Continue with Apple"]
+.register-social-icon {
+    color: #000000;
+}
+
+/* DARK MODE */
+body.nb-dark .register-social-divider span {
+    background: #493B38;
+}
+
+body.nb-dark .register-social-divider p {
+    color: #B7A6A1;
+}
+
+body.nb-dark .register-social-btn {
+    background: #2D2625;
+    border-color: #493B38;
+    color: #F4E9E5;
+}
+
+body.nb-dark .register-social-btn:hover {
+    background: #3B2D2F;
+    border-color: #D18A95;
+}
+
+body.nb-dark
+.register-social-btn[aria-label="Continue with Apple"]
+.register-social-icon {
+    color: #FFFFFF;
+}
+
+/* RTL SUPPORT */
+html[dir="rtl"] .register-social-divider {
+    direction: rtl;
+}
+
+html[dir="rtl"] .register-social-buttons {
+    direction: rtl;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .register-social-buttons {
+        gap: 8px;
+    }
+
+    .register-social-btn {
+        gap: 6px;
+        padding: 10px 6px;
+        font-size: 12px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .register-social-divider {
+        gap: 10px;
+        margin: 20px 0 16px;
+    }
+
+    .register-social-buttons {
+        gap: 8px;
+    }
+
+    .register-social-btn {
+        min-height: 44px;
+        gap: 5px;
+        padding: 9px 4px;
+        font-size: 11px;
+    }
+
+    .register-social-icon {
+        flex-basis: 17px;
+        width: 17px;
+        height: 17px;
+    }
+}
