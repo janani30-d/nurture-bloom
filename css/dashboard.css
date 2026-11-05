@@ -10412,3 +10412,905 @@ body.nb-dark .eg-card-meta .eg-level-gentle {
     color: #B9F6CA !important;
     border: 1px solid #387653 !important;
 }
+
+
+
+
+
+
+
+/* =========================================
+   BOOK A CLASS — COMMON BUTTON SHAPE
+========================================= */
+
+.bc-hero-btn,
+.bc-stage-link,
+.bc-book-btn,
+.bc-reset-filter,
+.bc-secondary-btn,
+.bc-confirm-btn,
+.bc-guidance-link {
+    min-height: 46px;
+    padding: 11px 22px;
+    border-radius: 6px !important;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    text-decoration: none;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+/* HERO BUTTON */
+.bc-hero-btn {
+    min-height: 54px;
+    padding: 14px 28px;
+}
+
+/* STAGE AND GUIDANCE LINKS */
+.bc-stage-link,
+.bc-guidance-link {
+    min-height: 46px;
+}
+
+/* CLASS BOOKING BUTTON */
+.bc-book-btn {
+    width: 100%;
+}
+
+/* FILTER BUTTON */
+.bc-reset-filter {
+    cursor: pointer;
+}
+
+/* MODAL BUTTONS */
+.bc-secondary-btn,
+.bc-confirm-btn {
+    min-height: 44px;
+    padding: 10px 22px;
+    cursor: pointer;
+}
+
+/* BUTTON ICONS */
+.bc-hero-btn svg,
+.bc-stage-link svg,
+.bc-guidance-link svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .bc-hero-btn,
+    .bc-stage-link,
+    .bc-book-btn,
+    .bc-reset-filter,
+    .bc-secondary-btn,
+    .bc-confirm-btn,
+    .bc-guidance-link {
+        min-height: 42px;
+        padding: 10px 17px;
+        font-size: 13px;
+    }
+
+    .bc-book-btn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* =====================================
+   DASHBOARD — COMMON BUTTON SHAPE
+===================================== */
+
+.db-primary-btn,
+.db-outline-btn,
+.logout-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    min-height: 46px;
+    padding: 11px 24px;
+
+    border-radius: 6px !important;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: none;
+    cursor: pointer;
+
+    transition: background-color 0.25s ease,
+                border-color 0.25s ease,
+                color 0.25s ease;
+}
+
+/* PRIMARY BUTTON */
+.db-primary-btn {
+    background: #B76E79;
+    color: #FFFFFF;
+    border: 1px solid #B76E79;
+}
+
+.db-primary-btn:hover {
+    background: #A65C68;
+    border-color: #A65C68;
+    color: #FFFFFF;
+}
+
+/* OUTLINE BUTTON */
+.db-outline-btn {
+    background: transparent;
+    color: #B76E79;
+    border: 1px solid #B76E79;
+}
+
+.db-outline-btn:hover {
+    background: #B76E79;
+    color: #FFFFFF;
+}
+
+/* BUTTON ARROWS */
+.db-primary-btn svg,
+.db-outline-btn svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* LOGOUT BUTTONS */
+.logout-btn {
+    min-height: 44px;
+    padding: 10px 22px;
+}
+
+/* TEXT BUTTON — KEEP AS TEXT */
+.db-text-btn {
+    border-radius: 0;
+    background: transparent;
+    padding: 8px 12px;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .db-primary-btn,
+    .db-outline-btn,
+    .logout-btn {
+        min-height: 42px;
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+/* BOOK A CLASS — REDUCED BUTTON HEIGHT */
+.bc-hero-btn,
+.bc-stage-link,
+.bc-book-btn,
+.bc-reset-filter,
+.bc-guidance-link {
+    min-height: 40px !important;
+    padding: 8px 18px !important;
+    font-size: 13px;
+    border-radius: 6px !important;
+}
+
+/* MODAL BUTTONS */
+.bc-secondary-btn,
+.bc-confirm-btn {
+    min-height: 38px !important;
+    padding: 8px 18px !important;
+    font-size: 13px;
+    border-radius: 6px !important;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .bc-hero-btn,
+    .bc-stage-link,
+    .bc-book-btn,
+    .bc-reset-filter,
+    .bc-guidance-link,
+    .bc-secondary-btn,
+    .bc-confirm-btn {
+        min-height: 38px !important;
+        padding: 8px 14px !important;
+    }
+}
+
+
+
+
+/* =====================================
+   DASHBOARD — COMMON BUTTON SHAPE
+===================================== */
+
+.db-primary-btn,
+.db-outline-btn,
+.logout-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 38px;
+    padding: 8px 22px;
+
+    border-radius: 6px !important;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: none;
+    cursor: pointer;
+
+    transition: background-color 0.25s ease,
+                border-color 0.25s ease,
+                color 0.25s ease;
+}
+
+/* PRIMARY BUTTON */
+.db-primary-btn {
+    background: #B76E79;
+    color: #FFFFFF;
+    border: 1px solid #B76E79;
+}
+
+.db-primary-btn:hover {
+    background: #A65C68;
+    border-color: #A65C68;
+    color: #FFFFFF;
+}
+
+/* OUTLINE BUTTON */
+.db-outline-btn {
+    background: transparent;
+    color: #B76E79;
+    border: 1px solid #B76E79;
+}
+
+.db-outline-btn:hover {
+    background: #B76E79;
+    color: #FFFFFF;
+}
+
+/* BUTTON ARROWS */
+.db-primary-btn svg,
+.db-outline-btn svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+/* LOGOUT BUTTONS */
+.logout-btn {
+    min-height: 36px;
+    padding: 7px 20px;
+}
+
+/* TEXT BUTTON */
+.db-text-btn {
+    border-radius: 0;
+    background: transparent;
+    padding: 6px 12px;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .db-primary-btn,
+    .db-outline-btn,
+    .logout-btn {
+        min-height: 36px;
+        padding: 7px 16px;
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+/* =====================================
+   MY BOOKINGS — REDUCED BUTTON HEIGHT
+===================================== */
+
+.mb-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    min-height: 36px !important;
+    padding: 7px 16px !important;
+
+    border-radius: 6px !important;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+/* BUTTON ICONS */
+.mb-btn svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .mb-btn {
+        min-height: 34px !important;
+        padding: 7px 12px !important;
+        font-size: 11px;
+        gap: 6px;
+    }
+}
+
+
+
+
+
+
+/* =========================================
+   SESSION HISTORY — REDUCED BUTTON HEIGHT
+========================================= */
+
+/* Main buttons */
+.sh-btn {
+    min-height: 36px !important;
+    padding: 7px 16px !important;
+    border-radius: 6px !important;
+    font-size: 12px;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+
+/* View details icon button */
+.sh-view-btn {
+    width: 34px !important;
+    height: 34px !important;
+    min-height: 34px !important;
+    padding: 7px !important;
+    border-radius: 6px !important;
+    box-sizing: border-box;
+}
+
+.sh-view-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Modal close button */
+.sh-modal-close {
+    width: 34px !important;
+    height: 34px !important;
+    min-height: 34px !important;
+    padding: 7px !important;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .sh-btn {
+        min-height: 34px !important;
+        padding: 7px 13px !important;
+        font-size: 11px;
+    }
+
+    .sh-view-btn {
+        width: 32px !important;
+        height: 32px !important;
+        min-height: 32px !important;
+    }
+
+    .sh-modal-close {
+        width: 32px !important;
+        height: 32px !important;
+        min-height: 32px !important;
+    }
+}
+
+
+
+
+
+
+/* =========================================
+   EXERCISE GUIDANCE — REDUCED BUTTON HEIGHT
+========================================= */
+
+/* All main buttons */
+.eg-btn,
+.eg-view-btn,
+.eg-reset-btn,
+.eg-safety-link {
+    min-height: 36px !important;
+    padding: 7px 16px !important;
+    border-radius: 6px !important;
+    font-size: 12px;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+
+/* Keep icons proportional */
+.eg-btn svg,
+.eg-view-btn svg,
+.eg-safety-link svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+/* Modal close button */
+.eg-modal-close {
+    width: 34px !important;
+    height: 34px !important;
+    min-height: 34px !important;
+    padding: 7px !important;
+    border-radius: 6px !important;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .eg-btn,
+    .eg-view-btn,
+    .eg-reset-btn,
+    .eg-safety-link {
+        min-height: 34px !important;
+        padding: 7px 13px !important;
+        font-size: 11px;
+    }
+
+    .eg-modal-close {
+        width: 32px !important;
+        height: 32px !important;
+        min-height: 32px !important;
+    }
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   PAYMENT HISTORY — REDUCED BUTTON HEIGHT
+========================================= */
+
+/* Main Buttons */
+.ph-btn,
+.ph-reset-btn,
+.ph-help-link {
+    min-height: 36px !important;
+    padding: 7px 16px !important;
+    border-radius: 6px !important;
+    font-size: 12px;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+
+/* Button Icons */
+.ph-btn svg,
+.ph-help-link svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+/* Transaction View Button */
+.ph-action-btn {
+    width: 34px !important;
+    height: 34px !important;
+    min-height: 34px !important;
+    padding: 7px !important;
+    border-radius: 6px !important;
+    box-sizing: border-box;
+}
+
+.ph-action-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Modal Close Button */
+.ph-modal-close {
+    width: 34px !important;
+    height: 34px !important;
+    min-height: 34px !important;
+    padding: 7px !important;
+    border-radius: 6px !important;
+    box-sizing: border-box;
+}
+
+.ph-modal-close svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .ph-btn,
+    .ph-reset-btn,
+    .ph-help-link {
+        min-height: 34px !important;
+        padding: 7px 13px !important;
+        font-size: 11px;
+    }
+
+    .ph-action-btn,
+    .ph-modal-close {
+        width: 32px !important;
+        height: 32px !important;
+        min-height: 32px !important;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================
+   MY PROFILE — REDUCED BUTTON HEIGHT
+========================================= */
+
+.profile-edit-btn,
+.profile-btn,
+#profileLogoutBtn,
+#profileDeleteAccountBtn {
+    min-height: 36px !important;
+    padding: 7px 16px !important;
+    border-radius: 6px !important;
+    font-size: 12px;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+
+/* Membership link */
+.profile-text-link {
+    min-height: 34px;
+    padding: 7px 12px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+/* Logout modal buttons */
+.logout-btn {
+    min-height: 36px !important;
+    padding: 7px 16px !important;
+    border-radius: 6px !important;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .profile-edit-btn,
+    .profile-btn,
+    #profileLogoutBtn,
+    #profileDeleteAccountBtn,
+    .logout-btn {
+        min-height: 34px !important;
+        padding: 7px 13px !important;
+        font-size: 11px;
+    }
+
+    .profile-text-link {
+        min-height: 32px;
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+
+
+/* SPACE ABOVE DISCLAIMER */
+.db-guidance-disclaimer {
+    margin-top: 24px !important;
+}
+
+
+
+/* CLASS FILTER — ARROW SPACING FIX */
+.bc-filter-field select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    padding-right: 42px !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23423735' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-position: right 14px center !important;
+    background-size: 15px !important;
+}
+
+/* RTL */
+html[dir="rtl"] .bc-filter-field select {
+    padding-right: 16px !important;
+    padding-left: 42px !important;
+    background-position: left 14px center !important;
+}
+
+
+
+
+/* DARK MODE — FILTER DROPDOWN ARROW */
+body.nb-dark .bc-filter-field select {
+    color: #F4E9E5 !important;
+    background-color: #2D2625 !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23F4E9E5' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-position: right 14px center !important;
+    background-size: 15px !important;
+
+    border-color: #493B38 !important;
+}
+
+/* DARK MODE — RTL */
+html[dir="rtl"] body.nb-dark .bc-filter-field select {
+    background-position: left 14px center !important;
+}
+
+
+
+
+/* =========================================
+   MY BOOKINGS — FILTER ARROW SPACING
+========================================= */
+
+.mb-filter-field select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    padding-right: 42px !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23423735' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-position: right 14px center !important;
+    background-size: 15px !important;
+}
+
+/* RTL */
+html[dir="rtl"] .mb-filter-field select {
+    padding-right: 16px !important;
+    padding-left: 42px !important;
+    background-position: left 14px center !important;
+}
+
+/* DARK MODE */
+body.nb-dark .mb-filter-field select {
+    color: #F4E9E5 !important;
+    background-color: #2D2625 !important;
+    border-color: #493B38 !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23F4E9E5' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+}
+
+/* DARK MODE — RTL */
+html[dir="rtl"] body.nb-dark .mb-filter-field select {
+    background-position: left 14px center !important;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================
+   SESSION HISTORY — FILTER ARROW SPACING
+========================================= */
+
+.sh-filter-field select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    padding-right: 42px !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23423735' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-position: right 14px center !important;
+    background-size: 15px !important;
+}
+
+/* RTL */
+html[dir="rtl"] .sh-filter-field select {
+    padding-right: 16px !important;
+    padding-left: 42px !important;
+    background-position: left 14px center !important;
+}
+
+/* DARK MODE */
+body.nb-dark .sh-filter-field select {
+    color: #F4E9E5 !important;
+    background-color: #2D2625 !important;
+    border-color: #493B38 !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23F4E9E5' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+}
+
+/* DARK MODE — RTL */
+html[dir="rtl"] body.nb-dark .sh-filter-field select {
+    background-position: left 14px center !important;
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   EXERCISE GUIDANCE — FILTER ARROW SPACING
+========================================= */
+
+.eg-select-wrap select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    padding-right: 42px !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23423735' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-position: right 14px center !important;
+    background-size: 15px !important;
+}
+
+/* RTL */
+html[dir="rtl"] .eg-select-wrap select {
+    padding-right: 16px !important;
+    padding-left: 42px !important;
+    background-position: left 14px center !important;
+}
+
+/* DARK MODE */
+body.nb-dark .eg-select-wrap select {
+    color: #F4E9E5 !important;
+    background-color: #2D2625 !important;
+    border-color: #493B38 !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23F4E9E5' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+}
+
+/* DARK MODE — RTL */
+html[dir="rtl"] body.nb-dark .eg-select-wrap select {
+    background-position: left 14px center !important;
+}
+
+
+
+
+
+
+/* =========================================
+   PAYMENT HISTORY — FILTER ARROW SPACING
+========================================= */
+
+.ph-select-wrap select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    padding-right: 42px !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23423735' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-position: right 14px center !important;
+    background-size: 15px !important;
+}
+
+/* RTL */
+html[dir="rtl"] .ph-select-wrap select {
+    padding-right: 16px !important;
+    padding-left: 42px !important;
+    background-position: left 14px center !important;
+}
+
+/* DARK MODE */
+body.nb-dark .ph-select-wrap select {
+    color: #F4E9E5 !important;
+    background-color: #2D2625 !important;
+    border-color: #493B38 !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23F4E9E5' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+    background-repeat: no-repeat !important;
+    background-size: 15px !important;
+}
+
+/* DARK MODE — RTL */
+html[dir="rtl"] body.nb-dark .ph-select-wrap select {
+    background-position: left 14px center !important;
+}
+
+
+
+/* DATE PICKER ICON — DARK MODE */
+body.nb-dark .profile-form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+/* RTL — DATE PICKER ICON INSIDE INPUT ON LEFT */
+html[dir="rtl"] .profile-form-group input[type="date"] {
+    direction: rtl !important;
+    text-align: right !important;
+    padding: 0 16px !important;
+    box-sizing: border-box;
+}
+
+html[dir="rtl"] .profile-form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    position: static !important;
+    margin: 0 0 0 10px !important;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+html[dir="rtl"] .profile-form-group input[type="date"]::-webkit-datetime-edit {
+    text-align: right;
+}

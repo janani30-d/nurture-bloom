@@ -21164,3 +21164,453 @@ html[dir="rtl"] .register-social-buttons {
         height: 17px;
     }
 }
+
+
+
+
+
+
+/* LOGIN & DASHBOARD BUTTON SHAPE */
+.nb-button {
+    width: fit-content;
+    min-width: 150px;
+    min-height: 63px;
+    padding: 18px 24px;
+
+    border-radius: 6px !important;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+/* LOGIN & DASHBOARD */
+.nb-button-secondary,
+.nb-button-primary {
+    border-radius: 6px !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    .nb-button {
+        min-width: 125px;
+        min-height: 48px;
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+}
+
+
+.nb-button {
+    width: fit-content;
+    min-width: 100px;
+    min-height: 63px;
+    padding: 18px 16px;
+    border-radius: 6px !important;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+@media (max-width: 767px) {
+    .nb-button {
+        min-width: 105px;
+        min-height: 48px;
+        padding: 13px 14px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* LOGIN & DASHBOARD BUTTON HEIGHT */
+.nb-button {
+    min-height: 48px !important;
+    padding: 10px 34px !important;
+    border-radius: 6px !important;
+    line-height: 1.2;
+}
+
+
+
+
+
+/* FOOTER CONTACT LINK */
+.nb-footer-contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+
+    
+
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.nb-footer-contact-link i {
+    font-size: 13px;
+    transition: transform 0.25s ease;
+}
+
+.nb-footer-contact-link:hover i {
+    transform: translateX(5px);
+}
+
+/* RTL */
+html[dir="rtl"] .nb-footer-contact-link:hover i {
+    transform: translateX(-5px);
+}
+
+
+
+
+
+/* FOOTER CONTACT BUTTON */
+.nb-footer-contact-link {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: fit-content;
+    min-width: 190px;
+    min-height: 54px;
+
+    padding: 14px 20px !important;
+
+    background: #B76E79;
+    color: #FFFFFF !important;
+
+    border: none;
+    border-radius: 6px !important;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    text-decoration: none !important;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition: background 0.25s ease;
+}
+
+.nb-footer-contact-link:hover {
+    background: #A65C68;
+    color: #FFFFFF !important;
+}
+
+.nb-footer-contact-link i {
+    font-size: 14px;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+.nb-footer-contact-link:hover i {
+    transform: translateX(4px);
+}
+
+/* RTL */
+html[dir="rtl"] .nb-footer-contact-link:hover i {
+    transform: translateX(-4px);
+}
+
+
+
+
+
+/* HERO BUTTONS */
+.h1-hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.h1-hero-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    min-height: 54px;
+    padding: 14px 28px;
+
+    border-radius: 6px !important;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    text-decoration: none;
+    white-space: nowrap;
+    box-sizing: border-box;
+
+    transition: all 0.25s ease;
+}
+
+/* PRIMARY BUTTON */
+.h1-hero-btn-primary {
+    background: #B76E79;
+    color: #FFFFFF !important;
+    border: 1px solid #B76E79;
+}
+
+.h1-hero-btn-primary:hover {
+    background: #A65C68;
+    border-color: #A65C68;
+}
+
+/* OUTLINE BUTTON */
+.h1-hero-btn-outline {
+    background: transparent;
+    color: #B76E79;
+    border: 1px solid #B76E79;
+}
+
+.h1-hero-btn-outline:hover {
+    background: #B76E79;
+    color: #FFFFFF;
+}
+
+/* ARROW */
+.h1-hero-btn i {
+    font-size: 13px;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+.h1-hero-btn-primary:hover i {
+    transform: translateX(4px);
+}
+
+/* RTL */
+html[dir="rtl"] .h1-hero-btn-primary:hover i {
+    transform: translateX(-4px);
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .h1-hero-buttons {
+        gap: 10px;
+    }
+
+    .h1-hero-btn {
+        min-height: 46px;
+        padding: 11px 18px;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+/* =========================================
+   OUR JOURNEY — CONTINUOUS TIMELINE LINE
+========================================= */
+
+.about-story-milestones {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 34px;
+}
+
+/* One continuous line connecting all 3 dots */
+.about-story-milestones::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 7.5px;
+    right: calc(33.333% - 30px);
+    height: 1px;
+    background-color: rgba(183, 110, 121, 0.45);
+    z-index: 0;
+}
+
+/* Milestone */
+.about-story-milestone {
+    position: relative;
+    min-width: 0;
+    padding-top: 42px;
+}
+
+/* Timeline circles */
+.about-story-milestone-marker {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 15px;
+    height: 15px;
+
+    border: 1px solid #B76E79;
+    border-radius: 50%;
+    background-color: #F7F2EC;
+}
+
+.about-story-milestone-marker span {
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #B76E79;
+}
+
+/* Remove old individual connecting lines */
+.about-story-milestone-marker::after {
+    display: none !important;
+}
+
+
+
+
+
+
+/* =========================================
+   FAQ PLUS / CLOSE ICON
+========================================= */
+
+.pricing-faq-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #B76E79;
+}
+
+/* Hide existing SVG */
+.pricing-faq-toggle svg {
+    display: none !important;
+}
+
+/* Draw plus icon */
+.pricing-faq-toggle::before,
+.pricing-faq-toggle::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+.pricing-faq-toggle::after {
+    transform: rotate(90deg);
+}
+
+/* Open FAQ — show X */
+.pricing-faq-item[open] .pricing-faq-toggle::before {
+    transform: rotate(45deg);
+}
+
+.pricing-faq-item[open] .pricing-faq-toggle::after {
+    transform: rotate(-45deg);
+}
+
+/* Dark mode */
+body.nb-dark .pricing-faq-toggle {
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+/* MAP ONLY — INCREASE HEIGHT */
+
+.contact-location-map iframe {
+    display: block;
+    width: 100%;
+    height: 480px !important;
+    min-height: 480px;
+    border: 0;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .contact-location-map iframe {
+        height: 400px !important;
+        min-height: 400px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .contact-location-map iframe {
+        height: 340px !important;
+        min-height: 340px;
+    }
+}
+
+
+
+.contact-location-map iframe {
+    width: 100%;
+    height: 600px !important;
+    min-height: 600px;
+    display: block;
+    border: 0;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .contact-location-map iframe {
+        height: 450px !important;
+        min-height: 450px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .contact-location-map iframe {
+        height: 350px !important;
+        min-height: 350px;
+    }
+}
+
+
+
+/* REDUCE MAP PANEL EMPTY SPACE */
+.contact-location-map-panel {
+    min-height: auto !important;
+    height: auto !important;
+    padding-bottom: 25px !important;
+}
+
+
+
+/* REDUCE EMPTY SPACE BELOW MAP */
+.contact-location-map-panel {
+    padding-bottom: 20px !important;
+}
+
+.contact-location-map-footer {
+    margin-bottom: 0 !important;
+}
+
+
+
+/* STOP MAP PANEL FROM STRETCHING */
+.contact-location-layout {
+    align-items: start !important;
+}
+
+.contact-location-map-panel {
+    align-self: start !important;
+    height: fit-content !important;
+    min-height: 0 !important;
+    padding-bottom: 24px !important;
+}
