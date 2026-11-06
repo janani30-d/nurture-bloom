@@ -6847,3 +6847,236 @@ html[dir="rtl"] .eg-toast {
         font-size: 11px !important;
     }
 }
+
+
+
+
+
+
+
+
+
+.mb-history-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mb-history-table {
+    min-width: 650px;
+}
+
+
+
+
+
+/* MY BOOKINGS — SESSION DATE COLUMN */
+@media (max-width: 767px) {
+
+    .mb-history-table {
+        min-width: 680px !important;
+        table-layout: auto !important;
+    }
+
+    .mb-history-table th:nth-child(3),
+    .mb-history-table td:nth-child(3) {
+        min-width: 125px !important;
+        width: 125px !important;
+        white-space: nowrap !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .mb-history-table-wrap {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+
+
+
+
+
+/* MY BOOKINGS — MOBILE TABLE WIDTH */
+@media (max-width: 767px) {
+
+    .mb-history-panel {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .mb-history-table-wrap {
+        width: 100%;
+        overflow-x: auto !important;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+    }
+
+    .mb-history-table {
+        width: 850px !important;
+        min-width: 850px !important;
+        table-layout: fixed !important;
+    }
+
+    .mb-history-table th:nth-child(1),
+    .mb-history-table td:nth-child(1) {
+        width: 210px !important;
+    }
+
+    .mb-history-table th:nth-child(2),
+    .mb-history-table td:nth-child(2) {
+        width: 115px !important;
+        white-space: nowrap;
+    }
+
+    .mb-history-table th:nth-child(3),
+    .mb-history-table td:nth-child(3) {
+        width: 135px !important;
+        min-width: 135px !important;
+        white-space: nowrap !important;
+    }
+
+    .mb-history-table th:nth-child(4),
+    .mb-history-table td:nth-child(4) {
+        width: 100px !important;
+        white-space: nowrap;
+    }
+
+    .mb-history-table th:nth-child(5),
+    .mb-history-table td:nth-child(5) {
+        width: 110px !important;
+        white-space: nowrap;
+    }
+
+    .mb-history-table th:nth-child(6),
+    .mb-history-table td:nth-child(6) {
+        width: 90px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SESSION HISTORY — MOBILE TABLE WIDTH */
+.sh-table-wrap {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.sh-table {
+    width: 100%;
+    min-width: 850px;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+.sh-table th,
+.sh-table td {
+    white-space: nowrap;
+}
+
+/* Keep the session details readable */
+.sh-table td:first-child {
+    min-width: 220px;
+}
+
+@media (max-width: 767px) {
+    .sh-table {
+        min-width: 850px;
+    }
+
+    .sh-table-wrap {
+        scrollbar-width: thin;
+    }
+}
+
+
+
+
+
+
+
+
+/* MOBILE TABLE — FULL WIDTH WITH HORIZONTAL SCROLL */
+@media (max-width: 767px) {
+
+    .mb-history-table-wrap,
+    .sh-history-table-wrap {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto !important;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .mb-history-table,
+    .sh-history-table {
+        width: max-content !important;
+        min-width: 900px !important;
+        table-layout: auto !important;
+    }
+
+    .mb-history-table th,
+    .mb-history-table td,
+    .sh-history-table th,
+    .sh-history-table td {
+        white-space: nowrap;
+    }
+
+    /* Keep class/session column readable */
+    .mb-history-table td:first-child,
+    .sh-history-table td:first-child {
+        min-width: 220px;
+    }
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    .mb-history-table,
+    .sh-history-table {
+        min-width: 820px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* MOBILE — CENTER THIRD PROGRESS CARD */
+@media (max-width: 767px) {
+
+    .eg-progress-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .eg-progress-card:nth-child(3) {
+        grid-column: 1 / -1;
+        width: calc((100% - 12px) / 2);
+        justify-self: center;
+    }
+
+}
